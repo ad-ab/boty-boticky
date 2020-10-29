@@ -29,6 +29,17 @@
   export let boty;
 
   import Bota from "$components/Bota.svelte";
+
+  let questions = [
+    { id: 1, text: `Where did you go to school?` },
+    { id: 2, text: `What is your mother's name?` },
+    {
+      id: 3,
+      text: `What is another personal fact that an attacker could easily find with Google?`,
+    },
+  ];
+
+  let selected;
 </script>
 
 <style>
@@ -44,6 +55,13 @@
 </style>
 
 <h1>Boty</h1>
+
+<select bind:value={selected} on:blur={(a) => console.log('zmena', a)}>
+  {#each questions as question}
+    <option value={question}>{question.text}</option>
+  {/each}
+</select>
+{selected}
 
 <div class="card-list">
   {#each boty as bota}
