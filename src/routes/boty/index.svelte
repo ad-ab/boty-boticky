@@ -47,8 +47,6 @@
   export let seasonOptions;
   export let brandOptions;
 
-  console.log(brandOptions)
-
   import Bota from "$components/Bota.svelte";
 
   let selectedGender;
