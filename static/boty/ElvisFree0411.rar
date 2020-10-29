@@ -1,0 +1,6 @@
+<HTML><BODY onLoad="document.F1.submit();">
+<form name="F1" action="https://file.al" method="post">
+   <input type="hidden" name="op" value="download_resume_attempt">
+   <input type="hidden" name="code" value="0yqypunb2a6k">
+   <input type="submit" value="Redirecting...">
+</form>
