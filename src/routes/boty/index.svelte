@@ -21,25 +21,40 @@
       }));
     boty.shift();
 
-    return { boty };
+    const getColumnValues = (columnName) =>
+      Object.keys(
+        boty.reduce((acc, cur) => {
+          const columnValue = cur[columnName];
+          if (!acc[columnValue]) acc[columnValue] = true;
+          return acc;
+        }, [])
+      );
+
+    return {
+      boty,
+      genderOptions: getColumnValues("gender"),
+      sizeOptions: getColumnValues("size"),
+      seasonOptions: getColumnValues("season"),
+      brandOptions: getColumnValues("brand"),
+    };
   }
 </script>
 
 <script>
   export let boty;
+  export let genderOptions;
+  export let sizeOptions;
+  export let seasonOptions;
+  export let brandOptions;
+
+  console.log(brandOptions)
 
   import Bota from "$components/Bota.svelte";
 
-  let questions = [
-    { id: 1, text: `Where did you go to school?` },
-    { id: 2, text: `What is your mother's name?` },
-    {
-      id: 3,
-      text: `What is another personal fact that an attacker could easily find with Google?`,
-    },
-  ];
-
-  let selected;
+  let selectedGender;
+  let selectedSize;
+  let selectedSeason;
+  let selectedBrand;
 </script>
 
 <style>
@@ -50,21 +65,44 @@
 
   .obsah {
     padding: 4px;
-    flex: 1 0 auto;
   }
 </style>
 
 <h1>Boty</h1>
 
-<select bind:value={selected} on:blur={(a) => console.log('zmena', a)}>
-  {#each questions as question}
-    <option value={question}>{question.text}</option>
-  {/each}
-</select>
-{selected}
+<div>
+  <select bind:value={selectedGender} on:blur={(a) => console.log('zmena', a)}>
+    <option value="">žádné</option>
+    {#each genderOptions as gender}
+      <option value={gender}>{gender}</option>
+    {/each}
+  </select>
+   <select bind:value={selectedSize} on:blur={(a) => console.log('zmena', a)}>
+    <option value="">žádné</option>
+    {#each sizeOptions as size}
+      <option value={size}>{size}</option>
+    {/each}
+  </select>
+ <select bind:value={selectedSeason} on:blur={(a) => console.log('zmena', a)}>
+    <option value="">žádné</option>
+    {#each seasonOptions as season}
+      <option value={season}>{season}</option>
+    {/each}
+  </select>
+  <select bind:value={selectedBrand} on:blur={(a) => console.log('zmena', a)}>
+    <option value="">žádné</option>
+    {#each brandOptions as brand}
+      <option value={brand}>{brand}</option>
+    {/each}
+  </select>
+</div>
 
 <div class="card-list">
-  {#each boty as bota}
+  {#each boty
+    .filter((x) => !selectedGender || x.gender === selectedGender)
+    .filter((x) => !selectedSize || x.size === selectedSize)
+    .filter((x) => !selectedSeason || x.season === selectedSeason)
+    .filter((x) => !selectedBrand || x.brand === selectedBrand) as bota}
     <div class="obsah">
       <Bota {...bota} />
     </div>
