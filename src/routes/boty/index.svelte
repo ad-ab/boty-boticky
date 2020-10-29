@@ -9,7 +9,7 @@
     const boty = botyFile
       .split(/\r?\n/)
       .filter((x) => x.trim())
-      .map((x) => x.split(","))
+      .map((x) => x.split(",").map(x => x.trim()))
       .map(([photo, name, gender, size, season, price, brand]) => ({
         photo,
         name,
