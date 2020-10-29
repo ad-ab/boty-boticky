@@ -102,7 +102,7 @@
     .filter((x) => !selectedSeason || x.season === selectedSeason)
     .filter((x) => !selectedBrand || x.brand === selectedBrand) as bota}
     <div class="obsah">
-      <Bota {...bota} />
+      <Bota width="200px" height="380px" {...bota} />
     </div>
     <!-- content here -->
   {/each}

@@ -1,10 +1,11 @@
 <script>
   export let photo, name, gender, size, season, price, brand;
+  export let width = "auto", height = "auto";
 </script>
 
 <style>
   .card {
-    max-width: 200px;
+    min-width: 200px;
     padding: 8px;
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -22,8 +23,8 @@
   }
 </style>
 
-<div class="card">
-  <img src="boty/{photo}" alt={name} style="width:100%" />
+<div class="card" style={`width:${width};height:${height}`}>
+  <img src="/boty/{photo}" alt={name} style="width:100%" />
   <div class="container">
     <h4><b>{name}</b></h4>
     {gender},
