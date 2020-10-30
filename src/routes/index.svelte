@@ -2,10 +2,6 @@
   export const prerender = true;
 </script>
 
-<script>
-  import Bota from "$components/Bota.svelte";
-</script>
-
 <style>
   h1 {
     color: #ff3e00;

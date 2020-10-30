@@ -1,33 +1,33 @@
 <script context="module">
+  import { boty as botyStore } from "$components/data.js";
+
   export const prerender = true;
   export async function preload(page, opts) {
     const { slug } = page.params;
 
-    const res = await this.fetch(`/boty/boty.csv`);
-    const botyFile = await res.text();
+    const getData = () =>
+      new Promise((resolve) => {
+        botyStore.subscribe((v) => resolve(v));
+      });
 
-    const delimiter = "|";
+    let result = page.host && (await getData());
+    if (!result || result.length === 0) result = await botyStore.load(this);
 
-    const [headerLine, ...botyLines] = botyFile.split(/\r?\n/);
-    const headers = headerLine.split("|").map((x) => x.trim());
+    const { boty } = result;
 
-    const arrayToObject = (array) => {
-      const result = {};
-      for (let i = 0; i < array.length; i++) result[headers[i]] = array[i];
-      return result;
-    };
+    const bota = boty.find(
+      (x) => x.name.replace(/ /g, "-").toLowerCase() === slug
+    );
 
-    const bota = botyLines
-      .filter((x) => x)
-      .map((x) => x.split(delimiter).map((x) => x.trim()))
-      .map(arrayToObject)
-      .find((x) => x.name.replace(/ /g, "-").toLowerCase() === slug);
-    return { bota };
+    return { bota, boty };
   }
 </script>
 
 <script>
   export let bota = {};
+  export let boty;
+
+  if (boty) botyStore.set({ boty });
 </script>
 
 <style>

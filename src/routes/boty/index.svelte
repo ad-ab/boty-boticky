@@ -1,44 +1,19 @@
 <script context="module">
+  import { boty as botyStore } from "$components/data.js";
+
   export const prerender = true;
   export async function preload(page) {
-    const { slug } = page.params;
+    const getData = () =>
+      new Promise((resolve) => {
+        botyStore.subscribe((v) => resolve(v));
+      });
 
-    const res = await this.fetch(`/boty/boty.csv`);
-    const botyFile = await res.text();
+    let result = page.host && (await getData());
+    if (!result || result.length === 0) result = await botyStore.load(this);
 
-    const delimiter = "|";
-    const filterColumns = ["gender", "size", "season", "brand"];
-    const [headerLine, ...botyLines] = botyFile.split(/\r?\n/);
-    const headers = headerLine.split("|").map((x) => x.trim());
+    const { boty } = result;
 
-    const arrayToObject = (array) => {
-      const result = {};
-      for (let i = 0; i < array.length; i++) result[headers[i]] = array[i];
-      return result;
-    };
-
-    const boty = botyLines
-      .filter((x) => x)
-      .map((x) => x.split(delimiter).map((x) => x.trim()))
-      .map(arrayToObject);
-
-    const getColumnValues = (columnName) =>
-      Object.keys(
-        boty.reduce((acc, cur) => {
-          const columnValue = cur[columnName];
-          if (!acc[columnValue]) acc[columnValue] = true;
-          return acc;
-        }, [])
-      );
-
-    let options = headers
-      .filter((x) => filterColumns.includes(x))
-      .reduce((acc, cur) => {
-        acc[cur] = getColumnValues(cur);
-        return acc;
-      }, {});
-
-    return { boty, options };
+    return { boty };
   }
 </script>
 
@@ -46,16 +21,17 @@
   import Bota from "$components/Bota.svelte";
 
   export let boty;
-  export let options;
+
+  if (boty) botyStore.set({ boty });
 
   // result of all option filters
-  let filterResults = {};
+  // let filterResults = { boty };
 
   // applies all the filters from filterResults over each other
-  const applyFilters = (filterResults) => (product) =>
-    Object.entries(filterResults)
-      .map(([key, value]) => !value || product[key] === value)
-      .reduce((acc, cur) => acc && cur, true);
+  // const applyFilters = (filterResults) => (product) =>
+  //   Object.entries(filterResults)
+  //     .map(([key, value]) => !value || product[key] === value)
+  //     .reduce((acc, cur) => acc && cur, true);
 </script>
 
 <style>
@@ -71,7 +47,7 @@
 
 <h1>Boty</h1>
 
-<div>
+<!-- <div>
   {#each Object.keys(options) as optionName}
     <select bind:value={filterResults[optionName]}>
       <option value="">žádné</option>
@@ -80,14 +56,17 @@
       {/each}
     </select>
   {/each}
-</div>
+</div> -->
 
 <hr />
 
 <div class="card-list">
-  {#each boty.filter(applyFilters(filterResults)) as bota}
+  <!-- {#each boty.filter(applyFilters(filterResults)) as bota} -->
+  {#each boty || $botyStore as bota}
     <div class="obsah">
       <Bota width="220px" height="400px" {...bota} />
     </div>
   {/each}
+
+  {$botyStore.length}
 </div>
