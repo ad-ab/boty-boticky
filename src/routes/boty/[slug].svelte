@@ -1,6 +1,6 @@
 <script context="module">
   export const prerender = true;
-  export async function preload(page) {
+  export async function preload(page, opts) {
     const { slug } = page.params;
 
     const res = await this.fetch(`/boty/boty.csv`);
@@ -22,7 +22,6 @@
       .map((x) => x.split(delimiter).map((x) => x.trim()))
       .map(arrayToObject)
       .find((x) => x.name.replace(/ /g, "-").toLowerCase() === slug);
-
     return { bota };
   }
 </script>

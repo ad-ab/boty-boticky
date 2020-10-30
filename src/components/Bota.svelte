@@ -7,7 +7,7 @@
 <style>
   a {
     text-decoration: unset;
-    color:unset;
+    color: unset;
   }
 
   .card {
@@ -51,7 +51,7 @@
   }
 </style>
 
-<a href="/boty/{name.replaceAll(" ","-").toLowerCase()}">
+<a href="/boty/{name.replace(/ /g, '-').toLowerCase()}">
   <div class="card" style={`width:${width};height:${height}`}>
     <div class="img">
       <img src="/boty/{photo}" alt={name} style="width:100%" />
