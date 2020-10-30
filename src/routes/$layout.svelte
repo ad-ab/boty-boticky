@@ -15,7 +15,6 @@
   }
 </style>
 
-.
 <main>
   <nav>
     <a href="/">Hlavní</a>
