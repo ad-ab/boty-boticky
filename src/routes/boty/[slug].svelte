@@ -21,7 +21,7 @@
       .filter((x) => x)
       .map((x) => x.split(delimiter).map((x) => x.trim()))
       .map(arrayToObject)
-      .find((x) => x.name.replaceAll(" ", "-").toLowerCase() === slug);
+      .find((x) => x.name.replace(/ /g, "-").toLowerCase() === slug);
 
     return { bota };
   }
