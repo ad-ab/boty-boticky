@@ -1,2 +1,0 @@
-import{G as t}from"./navigation-3a24ea90.js";const e=[],s=(()=>{const{subscribe:s,set:a}=t(e);return{subscribe:s,reset:()=>a(e),load:async({fetch:t})=>{let e=await new Promise(s);if(!e||0===e.length){const s=await t("/boty/boty.csv"),r=await s.text(),[i,...n]=r.split(/\r?\n/),o=i.split("|").map((t=>t.trim()));e=n.filter((t=>t)).map((t=>t.split("|").map((t=>t.trim())))).map((t=>((t,e)=>{const s={};for(let a=0;a<t.length;a++)s[e[a]]=t[a];return s})(t,o))),a(e)}return e},set:a}})();export{s as b};
-//# sourceMappingURL=data-1837b2b2.js.map
