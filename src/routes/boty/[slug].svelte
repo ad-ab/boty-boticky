@@ -2,18 +2,9 @@
   import { boty as botyStore } from "$components/data.js";
 
   export const prerender = true;
-  export async function preload(page, opts) {
+  export async function preload(page) {
     const { slug } = page.params;
-
-    const getData = () =>
-      new Promise((resolve) => {
-        botyStore.subscribe((v) => resolve(v));
-      });
-
-    let result = page.host && (await getData());
-    if (!result || result.length === 0) result = await botyStore.load(this);
-
-    const { boty } = result;
+    let boty = await botyStore.load(this);
 
     const bota = boty.find(
       (x) => x.name.replace(/ /g, "-").toLowerCase() === slug
@@ -27,7 +18,8 @@
   export let bota = {};
   export let boty;
 
-  if (boty) botyStore.set({ boty });
+  // this is to put server side state into the store
+  if (boty) botyStore.set(boty);
 </script>
 
 <style>
@@ -59,6 +51,7 @@
     <div>Sezóna: {bota.season}</div>
   </div>
 </div>
+
 <div>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae

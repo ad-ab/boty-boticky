@@ -29,7 +29,7 @@
   }
 
   .img {
-    padding: 8px;
+    padding: 32px;
     height: 200px;
     display: flex;
     align-items: flex-end;

@@ -1,5 +1,12 @@
 <script context="module">
+  import { boty as botyStore } from "$components/data.js";
+
   export const prerender = true;
+</script>
+
+<script>
+  export let segment;
+  console.log(`Loaded on ${segment || "home"} page`);
 </script>
 
 <style>

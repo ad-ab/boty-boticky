@@ -3,35 +3,40 @@
 
   export const prerender = true;
   export async function preload(page) {
-    const getData = () =>
-      new Promise((resolve) => {
-        botyStore.subscribe((v) => resolve(v));
-      });
-
-    let result = page.host && (await getData());
-    if (!result || result.length === 0) result = await botyStore.load(this);
-
-    const { boty } = result;
-
+    let boty = await botyStore.load(this);
     return { boty };
   }
 </script>
 
 <script>
   import Bota from "$components/Bota.svelte";
-
+  import BrandSelector from "$components/BrandSelector.svelte";
+  import GenderSelector from "$components/GenderSelector.svelte";
+  import SizeSelector from "$components/SizeSelector.svelte";
+  import SeasonSelector from "$components/SeasonSelector.svelte";
   export let boty;
 
-  if (boty) botyStore.set({ boty });
+  // this is to put server side state into the store
+  if (boty) botyStore.set(boty);
 
   // result of all option filters
-  // let filterResults = { boty };
+  let filterResults = { brand: [], gender: [], size: [], season: [] };
+
+  const extractColumnValues = (columnName, data) =>
+    Object.keys(
+      data.reduce((acc, cur) => {
+        const current = cur[columnName];
+        if (acc[current]) return acc;
+        acc[current] = true;
+        return acc;
+      }, {})
+    );
 
   // applies all the filters from filterResults over each other
-  // const applyFilters = (filterResults) => (product) =>
-  //   Object.entries(filterResults)
-  //     .map(([key, value]) => !value || product[key] === value)
-  //     .reduce((acc, cur) => acc && cur, true);
+  const applyFilters = (filterResults) => (product) =>
+    Object.entries(filterResults)
+      .map(([key, value]) => value.length === 0 || value.includes(product[key]))
+      .reduce((acc, cur) => acc && cur, true);
 </script>
 
 <style>
@@ -47,26 +52,28 @@
 
 <h1>Boty</h1>
 
-<!-- <div>
-  {#each Object.keys(options) as optionName}
-    <select bind:value={filterResults[optionName]}>
-      <option value="">žádné</option>
-      {#each options[optionName] as option}
-        <option value={option}>{option}</option>
-      {/each}
-    </select>
-  {/each}
-</div> -->
+<BrandSelector
+  bind:value={filterResults['brand']}
+  options={extractColumnValues('brand', boty)} />
+
+<GenderSelector
+  bind:value={filterResults['gender']}
+  options={extractColumnValues('gender', boty)} />
+
+<SizeSelector
+  bind:value={filterResults['size']}
+  options={extractColumnValues('size', boty)} />
+
+<SeasonSelector
+  bind:value={filterResults['season']}
+  options={extractColumnValues('season', boty)} />
 
 <hr />
 
 <div class="card-list">
-  <!-- {#each boty.filter(applyFilters(filterResults)) as bota} -->
-  {#each boty || $botyStore as bota}
+  {#each boty.filter(applyFilters(filterResults)) as bota}
     <div class="obsah">
-      <Bota width="220px" height="400px" {...bota} />
+      <Bota width="240px" height="430px" {...bota} />
     </div>
   {/each}
-
-  {$botyStore.length}
 </div>

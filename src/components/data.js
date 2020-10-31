@@ -14,36 +14,28 @@ const createBoty = () => {
   const { subscribe, set } = writable(defaultValue);
 
   const load = async ({ fetch }) => {
-    const res = await fetch(`/boty/boty.csv`);
-    const botyFile = await res.text();
+    // check if we have data in store
+    const getData = () => new Promise(subscribe);
+    let boty = await getData();
 
-    const [headerLine, ...botyLines] = botyFile.split(/\r?\n/);
-    const headers = headerLine.split("|").map((x) => x.trim());
+    // if not download, process, set to store
+    if (!boty || boty.length === 0) {
+      const res = await fetch(`/boty/boty.csv`);
+      const botyFile = await res.text();
 
-    const boty = botyLines
-      .filter((x) => x)
-      .map((x) => x.split(delimiter).map((x) => x.trim()))
-      .map((x) => arrayToObject(x, headers));
+      const [headerLine, ...botyLines] = botyFile.split(/\r?\n/);
+      const headers = headerLine.split("|").map((x) => x.trim());
 
-    // const getColumnValues = (columnName) =>
-    //   Object.keys(
-    //     boty.reduce((acc, cur) => {
-    //       const columnValue = cur[columnName];
-    //       if (!acc[columnValue]) acc[columnValue] = true;
-    //       return acc;
-    //     }, [])
-    //   );
+      boty = botyLines
+        .filter((x) => x)
+        .map((x) => x.split(delimiter).map((x) => x.trim()))
+        .map((x) => arrayToObject(x, headers));
 
-    // const options = headers
-    //   .filter((x) => filterColumns.includes(x))
-    //   .reduce((acc, cur) => {
-    //     acc[cur] = getColumnValues(cur);
-    //     return acc;
-    //   }, {});
+      set(boty);
+    }
 
-    const result = { boty };
-    set(result);
-    return { boty };
+    // return back for SSR
+    return boty;
   };
 
   return {
