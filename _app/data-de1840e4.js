@@ -1,2 +1,0 @@
-import{D as t}from"./navigation-2cad8464.js";const s=[],r=(()=>{const{subscribe:r,set:a}=t(s);return{subscribe:r,reset:()=>a(s),load:async({fetch:t})=>{const s=await t("/boty/boty.csv"),r=await s.text(),[e,...o]=r.split(/\r?\n/),i=e.split("|").map((t=>t.trim())),n=o.filter((t=>t)).map((t=>t.split("|").map((t=>t.trim())))).map((t=>((t,s)=>{const r={};for(let a=0;a<t.length;a++)r[s[a]]=t[a];return r})(t,i)));return a({boty:n}),{boty:n}},set:a}})();export{r as b};
-//# sourceMappingURL=data-de1840e4.js.map
