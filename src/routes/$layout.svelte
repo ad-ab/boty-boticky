@@ -1,6 +1,4 @@
 <script context="module">
-  import { boty as botyStore } from "$components/data.js";
-
   export const prerender = true;
 </script>
 

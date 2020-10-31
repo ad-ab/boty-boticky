@@ -14,6 +14,7 @@
   import GenderSelector from "$components/GenderSelector.svelte";
   import SizeSelector from "$components/SizeSelector.svelte";
   import SeasonSelector from "$components/SeasonSelector.svelte";
+
   export let boty;
 
   // this is to put server side state into the store
@@ -72,7 +73,7 @@
 
 <div class="card-list">
   {#each boty.filter(applyFilters(filterResults)) as bota}
-    <div class="obsah">
+    <div key={bota.name} class="obsah">
       <Bota width="240px" height="430px" {...bota} />
     </div>
   {/each}
