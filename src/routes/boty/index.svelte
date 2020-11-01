@@ -42,39 +42,60 @@
 
 <style>
   .card-list {
+    margin-top: 1rem;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    align-content: flex-start;
+    justify-items: center;
+    justify-content: center;
   }
 
   .obsah {
-    padding: 4px;
+    padding: 0.4rem;
+    width: 300px;
+    height: 400px;
+  }
+
+  .row {
+    padding: 0.1rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media only screen and (max-width: 674px) {
+    .obsah {
+      padding: 1rem;
+      width: 100%;
+    }
   }
 </style>
 
 <h1>Boty</h1>
 
-<BrandSelector
-  bind:value={filterResults['brand']}
-  options={extractColumnValues('brand', boty)} />
+<div class="row">
+  <BrandSelector
+    bind:value={filterResults['brand']}
+    options={extractColumnValues('brand', boty)} />
 
-<GenderSelector
-  bind:value={filterResults['gender']}
-  options={extractColumnValues('gender', boty)} />
+  <GenderSelector
+    bind:value={filterResults['gender']}
+    options={extractColumnValues('gender', boty)} />
+</div>
+<div class="row">
+  <SizeSelector
+    bind:value={filterResults['size']}
+    options={extractColumnValues('size', boty)} />
 
-<SizeSelector
-  bind:value={filterResults['size']}
-  options={extractColumnValues('size', boty)} />
-
-<SeasonSelector
-  bind:value={filterResults['season']}
-  options={extractColumnValues('season', boty)} />
-
-<hr />
+  <SeasonSelector
+    bind:value={filterResults['season']}
+    options={extractColumnValues('season', boty)} />
+</div>
 
 <div class="card-list">
   {#each boty.filter(applyFilters(filterResults)) as bota}
     <div key={bota.name} class="obsah">
-      <Bota width="240px" height="430px" {...bota} />
+      <Bota {...bota} />
     </div>
   {/each}
 </div>

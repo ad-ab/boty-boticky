@@ -3,7 +3,9 @@
 </script>
 
 <script>
+  import Nav from "$components/Nav.svelte";
   export let segment;
+
   console.log(`Loaded on ${segment || "home"} page`);
 </script>
 
@@ -21,11 +23,6 @@
 </style>
 
 <main>
-  <nav>
-    <a href="/">Hlavní</a>
-    <a href="/kontakt">Kontakt</a>
-    <a href="/boty">Boty</a>
-  </nav>
-
+  <Nav />
   <slot />
 </main>
