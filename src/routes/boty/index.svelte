@@ -25,18 +25,25 @@
 
   const extractColumnValues = (columnName, data) =>
     Object.keys(
-      data.reduce((acc, cur) => {
-        const current = cur[columnName];
-        if (acc[current]) return acc;
-        acc[current] = true;
-        return acc;
-      }, {})
+      data
+        .filter((x) => x)
+        .reduce((acc, cur) => {
+          const current = cur[columnName];
+          if (acc[current]) return acc;
+          acc[current] = true;
+          return acc;
+        }, {})
     );
 
   // applies all the filters from filterResults over each other
   const applyFilters = (filterResults) => (product) =>
     Object.entries(filterResults)
-      .map(([key, value]) => value.length === 0 || value.includes(product[key]))
+      .map(([key, value]) => {
+        if (value.length === 0) return true;
+        return new RegExp(value.join("|")).test(product[key]);
+
+        // return value.length === 0 || value.includes(product[key]);
+      })
       .reduce((acc, cur) => acc && cur, true);
 </script>
 
@@ -85,11 +92,19 @@
 <div class="row">
   <SizeSelector
     bind:value={filterResults['size']}
-    options={extractColumnValues('size', boty)} />
+    options={extractColumnValues('size', boty)
+      .reduce((acc, cur) => [...acc, ...cur
+            .split(/[,/]/)
+            .map((x) => x.trim())], [])
+      .filter((value, index, self) => self.indexOf(value) === index)} />
 
   <SeasonSelector
     bind:value={filterResults['season']}
-    options={extractColumnValues('season', boty)} />
+    options={extractColumnValues('season', boty)
+      .reduce((acc, cur) => [...acc, ...cur
+            .split(/[,]/)
+            .map((x) => x.trim())], [])
+      .filter((value, index, self) => self.indexOf(value) === index)} />
 </div>
 
 <div class="card-list">

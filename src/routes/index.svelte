@@ -1,5 +1,18 @@
 <script context="module">
+  import { boty as botyStore } from "$components/data.js";
+
   export const prerender = true;
+  export async function preload(page) {
+    let boty = await botyStore.load(this);
+    return { boty };
+  }
+</script>
+
+<script>
+  export let boty;
+
+  // this is to put server side state into the store
+  if (boty) botyStore.set(boty);
 </script>
 
 <style>
