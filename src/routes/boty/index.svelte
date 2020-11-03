@@ -55,14 +55,14 @@
       .reduce((acc, cur) => acc && cur, true);
 
   // this watches the parameters and if anything changes, creates a new queryString into the url
-  // maybe could be moved to onChange on the sizechange editors, but this seems easier :) 
+  // maybe could be moved to onChange on the sizechange editors, but this seems easier :)
   $: {
     if (typeof window !== "undefined") {
       const newQueryString = Object.entries(filterResults)
-        .map(([k, v]) => v.length > 0 ? `${k}=${v.join(",")}` : null)
+        .map(([k, v]) => (v.length > 0 ? `${k}=${v.join(",")}` : null))
         .filter((x) => x);
       if (newQueryString.length > 0) {
-        window.history.pushState(null, "", "/boty?", newQueryString.join("&"));
+        window.history.pushState(null, "", `/boty?${newQueryString.join("&")}`);
       }
     }
   }
