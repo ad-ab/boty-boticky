@@ -3,7 +3,6 @@
 
   export const prerender = true;
   export async function preload(page, a, b) {
-    console.log(a, b);
     let boty = await botyStore.load(this);
     return { boty };
   }
@@ -21,17 +20,16 @@
   // this is to put server side state into the store
   if (boty) botyStore.set(boty);
 
+  // result of all filter selectors
   let filterResults = { brand: [], gender: [], size: [], season: [] };
 
+  // when the page loads, set selectors to their correct values
   if (typeof window !== "undefined") {
     const query = new URLSearchParams(window.location.search);
     for (const [key, value] of query) {
       if (filterResults[key]) filterResults[key] = value.split(",");
     }
   }
-  console.log(filterResults);
-
-  // result of all option filters
 
   const extractColumnValues = (columnName, data) =>
     Object.keys(
@@ -56,12 +54,16 @@
       })
       .reduce((acc, cur) => acc && cur, true);
 
+  // this watches the parameters and if anything changes, creates a new queryString into the url
+  // maybe could be moved to onChange on the sizechange editors, but this seems easier :) 
   $: {
     if (typeof window !== "undefined") {
-      window.history.pushState(null,'', "/boty/?" + Object.entries(filterResults)
-        .map(([key, value]) => value.length > 0 ? `${key}=${value.join(",")}`:null)
-        .filter(x=>x)
-        .join("&"))
+      const newQueryString = Object.entries(filterResults)
+        .map(([k, v]) => v.length > 0 ? `${k}=${v.join(",")}` : null)
+        .filter((x) => x);
+      if (newQueryString.length > 0) {
+        window.history.pushState(null, "", "/boty?", newQueryString.join("&"));
+      }
     }
   }
 </script>
