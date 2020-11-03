@@ -2,7 +2,7 @@
   import { boty as botyStore } from "$components/data.js";
 
   export const prerender = true;
-  export async function preload(page, a, b) {
+  export async function preload(page) {
     let boty = await botyStore.load(this);
     return { boty };
   }
@@ -61,9 +61,12 @@
       const newQueryString = Object.entries(filterResults)
         .map(([k, v]) => (v.length > 0 ? `${k}=${v.join(",")}` : null))
         .filter((x) => x);
-      if (newQueryString.length > 0) {
-        window.history.pushState(null, "", `/boty?${newQueryString.join("&")}`);
-      }
+
+      window.history.pushState(
+        window.location.origin,
+        document.title,
+        `/boty?${newQueryString.join("&")}`
+      );
     }
   }
 </script>
