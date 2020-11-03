@@ -1,25 +1,22 @@
 <script>
-  import { createEventDispatcher } from "svelte";
+  import { createEventDispatcher } from 'svelte'
 
-  export let value = [];
-  export let options = [];
+  export let value = []
+  export let options = []
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher()
 
   const toggle = (name) => {
     if (value.find((item) => item === name)) {
-      value = value.filter((item) => item !== name);
+      value = value.filter((item) => item !== name)
     } else {
-      value = [...value, name];
+      value = [...value, name]
     }
-    dispatch("change");
-  };
+    dispatch('change')
+  }
 
-  const isInList = (name, value) => value.includes(name);
+  const isInList = (name, value) => value.includes(name)
 </script>
-
-<style>
-</style>
 
 <div>
   {#each options as option}
@@ -29,3 +26,6 @@
     </button>
   {/each}
 </div>
+
+<style>
+</style>

@@ -1,63 +1,72 @@
 <script context="module">
-  import { boty as botyStore } from "$components/data.js";
+  import { boty as productStore } from '$components/data.js'
 
-  export const prerender = true;
+  export const prerender = true
   export async function preload(page) {
-    let boty = await botyStore.load(this);
-    return { boty };
+    let products = await productStore.load(this)
+    return { products }
   }
 </script>
 
 <script>
-  import { onDestroy } from "svelte";
+  import { onDestroy } from 'svelte'
   import {
     isClientSide,
     pushState,
     getQuery,
     extractColumnValues,
-  } from "$components/common.js";
-  import Bota from "$components/Bota.svelte";
-  import BrandSelector from "$components/BrandSelector.svelte";
-  import GenderSelector from "$components/GenderSelector.svelte";
-  import SizeSelector from "$components/SizeSelector.svelte";
-  import SeasonSelector from "$components/SeasonSelector.svelte";
+  } from '$components/common.js'
+  import Bota from '$components/Bota.svelte'
+  import Selectors from "$components/Selectors.svelte"
 
-  export let boty;
+  export let products
   // this is to put server side state into the store
-  if (boty) botyStore.set(boty);
+  if (products) productStore.set(products)
 
-  let defaultFilterResults = { brand: [], gender: [], size: [], season: [] };
-  let filterResults = defaultFilterResults;
+  let defaultFilterResults = { brand: [], gender: [], size: [], season: [] }
+  let filterResults = defaultFilterResults
 
   if (isClientSide) {
     // when the page loads, set selectors to their correct values
-    filterResults = getQuery(filterResults);
+    filterResults = getQuery(filterResults)
 
     // make query string work with back button - update filterResults
     window.onpopstate = () => {
-      const query = getQuery();
+      const query = getQuery()
       filterResults = Object.keys(filterResults).reduce((acc, key) => {
-        acc[key] = query[key] || defaultFilterResults[key] || [];
-        return acc;
-      }, {});
-    };
+        acc[key] = query[key] || defaultFilterResults[key] || []
+        return acc
+      }, {})
+    }
 
     // cleanup popstate
     onDestroy(() => {
-      window.onpopstate = undefined;
-    });
+      window.onpopstate = undefined
+    })
   }
 
   // applies all the filters from filterResults over each other
   const applyFilters = (filterResults) => (product) =>
     Object.entries(filterResults)
       .map(
-        ([k, v]) => v.length === 0 || new RegExp(v.join("|")).test(product[k])
+        ([k, v]) => v.length === 0 || new RegExp(v.join('|')).test(product[k])
       )
-      .reduce((acc, cur) => acc && cur, true);
+      .reduce((acc, cur) => acc && cur, true)
 
-  const filtersChanged = () => isClientSide && pushState(filterResults);
+  const filtersChanged = () => isClientSide && pushState(filterResults)
 </script>
+
+<h1>Boty</h1>
+
+<Selectors on:change={filtersChanged} bind:filterResults={filterResults} bind:products={products} />
+
+<div class="card-list">
+  {#each products.filter(applyFilters(filterResults)) as bota (bota.id)}
+    <div key={bota.name} class="obsah">
+      <Bota {...bota} />
+    </div>
+  {/each}
+</div>
 
 <style>
   .card-list {
@@ -71,62 +80,16 @@
   }
 
   .obsah {
-    padding: 0.4rem;
+    padding: 0.5rem;
     width: 300px;
     height: 350px;
   }
 
-  .row {
-    padding: 0.1rem 0;
-    display: flex;
-    justify-content: space-between;
-  }
-
   @media only screen and (max-width: 674px) {
     .obsah {
-      padding: 1rem;
+      padding: 0.4rem 0;
       width: 100%;
+      height:auto;
     }
   }
 </style>
-
-<h1>Boty</h1>
-
-<div class="row">
-  <BrandSelector
-    bind:value={filterResults['brand']}
-    on:change={filtersChanged}
-    options={extractColumnValues(boty)('brand')} />
-
-  <GenderSelector
-    bind:value={filterResults['gender']}
-    on:change={filtersChanged}
-    options={extractColumnValues(boty)('gender')} />
-</div>
-<div class="row">
-  <SizeSelector
-    bind:value={filterResults['size']}
-    on:change={filtersChanged}
-    options={extractColumnValues(boty)('size')
-      .reduce((acc, cur) => [...acc, ...cur
-            .split(/[,/]/)
-            .map((x) => x.trim())], [])
-      .filter((value, index, self) => self.indexOf(value) === index)} />
-
-  <SeasonSelector
-    bind:value={filterResults['season']}
-    on:change={filtersChanged}
-    options={extractColumnValues(boty)('season')
-      .reduce((acc, cur) => [...acc, ...cur
-            .split(/[,]/)
-            .map((x) => x.trim())], [])
-      .filter((value, index, self) => self.indexOf(value) === index)} />
-</div>
-
-<div class="card-list">
-  {#each boty.filter(applyFilters(filterResults)) as bota (bota.id)}
-    <div key={bota.name} class="obsah">
-      <Bota {...bota} />
-    </div>
-  {/each}
-</div>

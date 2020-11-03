@@ -1,18 +1,23 @@
 <script context="module">
-  export const prerender = true;
+  export const prerender = true
 </script>
 
 <script>
-  import Nav from "$components/Nav.svelte";
-  export let segment;
+  import Nav from '$components/Nav.svelte'
+  export let segment
 
-  console.log(`Loaded on ${segment || "home"} page`);
+  console.log(`Loaded on ${segment || 'home'} page`)
 </script>
+
+<main>
+  <Nav />
+  <slot />
+</main>
 
 <style>
   :root {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
   main {
@@ -21,8 +26,3 @@
     margin: 0 auto;
   }
 </style>
-
-<main>
-  <Nav />
-  <slot />
-</main>

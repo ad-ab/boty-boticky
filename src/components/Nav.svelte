@@ -1,3 +1,10 @@
+<nav>
+  <a class="" href="/" rel="prefetch">Boty-Botičky</a>
+  <a class="" href="/boty" rel="prefetch">Boty</a>
+  <a class="" href="/kontakt" rel="prefetch">Kontakt</a>
+  <a class="" href="/about" rel="prefetch">O nás</a>
+</nav>
+
 <style>
   /* .btn {
     background-color: lightgray;
@@ -24,10 +31,3 @@
     padding: 8px 16px;
   } */
 </style>
-
-<nav>
-  <a class="" href="/" rel=prefetch>Boty-Botičky</a>
-  <a class="" href="/boty" rel=prefetch>Boty</a>
-  <a class="" href="/kontakt" rel=prefetch>Kontakt</a>
-  <a class="" href="/about" rel=prefetch>O nás</a>
-</nav>

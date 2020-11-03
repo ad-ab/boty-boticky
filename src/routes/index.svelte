@@ -1,19 +1,24 @@
 <script context="module">
-  import { boty as botyStore } from "$components/data.js";
+  import { boty as botyStore } from '$components/data.js'
 
-  export const prerender = true;
+  export const prerender = true
   export async function preload(page) {
-    let boty = await botyStore.load(this);
-    return { boty };
+    let products = await botyStore.load(this)
+    return { products }
   }
 </script>
 
 <script>
-  export let boty;
+  export let products
 
   // this is to put server side state into the store
-  if (boty) botyStore.set(boty);
+  if (products) botyStore.set(products)
 </script>
+
+<h1>Boty Botičky</h1>
+<p>Vítejte na stránce</p>
+<p>Tady nějaký náhodný boty v akci nebo tak něco?</p>
+<p>Přímé odkazy na nějaké sekce</p>
 
 <style>
   h1 {
@@ -42,11 +47,3 @@
     }
   }
 </style>
-
-<h1>Boty Botičky</h1>
-
-<p>Vítejte na stránce</p>
-
-<p>Tady nějaký náhodný boty v akci nebo tak něco?</p>
-
-<p>Přímé odkazy na nějaké sekce</p>

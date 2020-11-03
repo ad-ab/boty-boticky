@@ -19,7 +19,7 @@ const createBoty = () => {
 
     // if not download, process, set to store
     if (!boty || boty.length === 0) {
-      // const res = await fetch(`https://www.vyprodej-dovoz.cz/boty/produkty.csv`);
+      // const res = await fetch(`https://www.vyprodej-dovoz.cz/boty/produkty.csv`); - this has cors issues
       const res = await fetch(`/boty/boty.csv`);
       const botyFile = await res.text();
 

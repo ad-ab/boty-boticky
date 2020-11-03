@@ -1,26 +1,54 @@
 <script context="module">
-  import { boty as botyStore } from "$components/data.js";
+  import { boty as botyStore } from '$components/data.js'
 
-  export const prerender = true;
+  export const prerender = true
   export async function preload(page) {
-    const { slug } = page.params;
-    let boty = await botyStore.load(this);
+    const { slug } = page.params
+    let products = await botyStore.load(this)
 
-    const bota = boty.find(
-      (x) => x.name.replace(/ /g, "-").toLowerCase() === slug
-    );
+    const product = products.find(
+      (x) => x.name.replace(/ /g, '-').toLowerCase() === slug
+    )
 
-    return { bota, boty };
+    return { product, products }
   }
 </script>
 
 <script>
-  export let bota = {};
-  export let boty;
+  export let product
+  export let products
 
   // this is to put server side state into the store
-  if (boty) botyStore.set(boty);
+  if (products) botyStore.set(products)
 </script>
+
+<div class="content">
+  <div class="card">
+    <div class="img">
+      <img
+        src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/{product.photo}"
+        alt={product.name}
+        style="width:100%" />
+    </div>
+
+    <div class="stats">
+      <h1>Bota {product.name}</h1>
+
+      <div style="text-align:right;margin-bottom:1rem;">
+        <div>Výrobce: {product.brand}</div>
+        <div>Pohlaví: {product.gender}</div>
+        <div>Velikost: {product.size}</div>
+        <div>Sezóna: {product.season}</div>
+      </div>
+      <div style="text-align:justify;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae
+        vehicula tellus. Morbi id tincidunt dui, non fringilla purus. Quisque
+        gravida quis nisl non molestie. Curabitur imperdiet leo enim, viverra
+        semper erat efficitur vel.
+      </div>
+    </div>
+  </div>
+</div>
 
 <style>
   .content {
@@ -66,35 +94,7 @@
   @media only screen and (max-width: 800px) {
     .card {
       flex-direction: column;
-      margin: 1rem;
+      margin: 0rem;
     }
   }
 </style>
-
-<div class="content">
-  <div class="card">
-    <div class="img">
-      <img
-        src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/{bota.photo}"
-        alt={bota.name}
-        style="width:100%" />
-    </div>
-
-    <div class="stats">
-      <h1>Bota {bota.name}</h1>
-
-      <div style="text-align:right;margin-bottom:1rem;">
-        <div>Výrobce: {bota.brand}</div>
-        <div>Pohlaví: {bota.gender}</div>
-        <div>Velikost: {bota.size}</div>
-        <div>Sezóna: {bota.season}</div>
-      </div>
-      <div style="text-align:justify;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae
-        vehicula tellus. Morbi id tincidunt dui, non fringilla purus. Quisque
-        gravida quis nisl non molestie. Curabitur imperdiet leo enim, viverra
-        semper erat efficitur vel.
-      </div>
-    </div>
-  </div>
-</div>
