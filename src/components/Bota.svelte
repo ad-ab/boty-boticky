@@ -63,7 +63,11 @@
   .row {
     grid-row: 3;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+  }
+
+  h4 {
+    margin-bottom:0;
   }
 </style>
 
@@ -79,14 +83,14 @@
       <h4><b>{name}</b></h4>
       <div>
         <div class="row">
+          <div>Velikosti: {size}</div>
+        </div>
+        <div class="row">
           <div>Pohlaví: {gender}</div>
           <div>Značka: {brand}</div>
         </div>
         <div class="row">
           <div>Sezóna: {season}</div>
-        </div>
-        <div class="row">
-          <div>Velikosti: {size}</div>
         </div>
       </div>
     </div>

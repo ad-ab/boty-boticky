@@ -3,12 +3,11 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte dev",
-    "build": "svelte build",
-    "generate": "./scripts/generate.sh build"
+    "build": "svelte build"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "0.0.12",
-    "@sveltejs/kit": "0.0.24",
+    "@sveltejs/adapter-node": "0.0.14",
+    "@sveltejs/kit": "0.0.25",
     "@sveltejs/snowpack-config": "^0.0.5",
     "svelte": "^3.29.4"
   }

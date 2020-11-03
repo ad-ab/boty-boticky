@@ -2,7 +2,8 @@
   import { boty as botyStore } from "$components/data.js";
 
   export const prerender = true;
-  export async function preload(page) {
+  export async function preload(page, a, b) {
+    console.log(a, b);
     let boty = await botyStore.load(this);
     return { boty };
   }
@@ -20,8 +21,17 @@
   // this is to put server side state into the store
   if (boty) botyStore.set(boty);
 
-  // result of all option filters
   let filterResults = { brand: [], gender: [], size: [], season: [] };
+
+  if (typeof window !== "undefined") {
+    const query = new URLSearchParams(window.location.search);
+    for (const [key, value] of query) {
+      if (filterResults[key]) filterResults[key] = value.split(",");
+    }
+  }
+  console.log(filterResults);
+
+  // result of all option filters
 
   const extractColumnValues = (columnName, data) =>
     Object.keys(
@@ -45,6 +55,15 @@
         // return value.length === 0 || value.includes(product[key]);
       })
       .reduce((acc, cur) => acc && cur, true);
+
+  $: {
+    if (typeof window !== "undefined") {
+      window.history.pushState(null,'', "/boty/?" + Object.entries(filterResults)
+        .map(([key, value]) => value.length > 0 ? `${key}=${value.join(",")}`:null)
+        .filter(x=>x)
+        .join("&"))
+    }
+  }
 </script>
 
 <style>
@@ -61,7 +80,7 @@
   .obsah {
     padding: 0.4rem;
     width: 300px;
-    height: 400px;
+    height: 350px;
   }
 
   .row {
@@ -108,7 +127,7 @@
 </div>
 
 <div class="card-list">
-  {#each boty.filter(applyFilters(filterResults)) as bota}
+  {#each boty.filter(applyFilters(filterResults)) as bota (bota.id)}
     <div key={bota.name} class="obsah">
       <Bota {...bota} />
     </div>
