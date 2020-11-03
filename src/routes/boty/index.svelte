@@ -9,6 +9,13 @@
 </script>
 
 <script>
+  import { onDestroy } from "svelte";
+  import {
+    isClientSide,
+    pushState,
+    getQuery,
+    extractColumnValues,
+  } from "$components/common.js";
   import Bota from "$components/Bota.svelte";
   import BrandSelector from "$components/BrandSelector.svelte";
   import GenderSelector from "$components/GenderSelector.svelte";
@@ -16,59 +23,40 @@
   import SeasonSelector from "$components/SeasonSelector.svelte";
 
   export let boty;
-
   // this is to put server side state into the store
   if (boty) botyStore.set(boty);
 
-  // result of all filter selectors
-  let filterResults = { brand: [], gender: [], size: [], season: [] };
+  let defaultFilterResults = { brand: [], gender: [], size: [], season: [] };
+  let filterResults = defaultFilterResults;
 
-  // when the page loads, set selectors to their correct values
-  if (typeof window !== "undefined") {
-    const query = new URLSearchParams(window.location.search);
-    for (const [key, value] of query) {
-      if (filterResults[key]) filterResults[key] = value.split(",");
-    }
+  if (isClientSide) {
+    // when the page loads, set selectors to their correct values
+    filterResults = getQuery(filterResults);
+
+    // make query string work with back button - update filterResults
+    window.onpopstate = () => {
+      const query = getQuery();
+      filterResults = Object.keys(filterResults).reduce((acc, key) => {
+        acc[key] = query[key] || defaultFilterResults[key] || [];
+        return acc;
+      }, {});
+    };
+
+    // cleanup popstate
+    onDestroy(() => {
+      window.onpopstate = undefined;
+    });
   }
-
-  const extractColumnValues = (columnName, data) =>
-    Object.keys(
-      data
-        .filter((x) => x)
-        .reduce((acc, cur) => {
-          const current = cur[columnName];
-          if (acc[current]) return acc;
-          acc[current] = true;
-          return acc;
-        }, {})
-    );
 
   // applies all the filters from filterResults over each other
   const applyFilters = (filterResults) => (product) =>
     Object.entries(filterResults)
-      .map(([key, value]) => {
-        if (value.length === 0) return true;
-        return new RegExp(value.join("|")).test(product[key]);
-
-        // return value.length === 0 || value.includes(product[key]);
-      })
+      .map(
+        ([k, v]) => v.length === 0 || new RegExp(v.join("|")).test(product[k])
+      )
       .reduce((acc, cur) => acc && cur, true);
 
-  // this watches the parameters and if anything changes, creates a new queryString into the url
-  // maybe could be moved to onChange on the sizechange editors, but this seems easier :)
-  $: {
-    if (typeof window !== "undefined") {
-      const newQueryString = Object.entries(filterResults)
-        .map(([k, v]) => (v.length > 0 ? `${k}=${v.join(",")}` : null))
-        .filter((x) => x);
-
-      window.history.pushState(
-        window.location.origin,
-        document.title,
-        `/boty?${newQueryString.join("&")}`
-      );
-    }
-  }
+  const filtersChanged = () => isClientSide && pushState(filterResults);
 </script>
 
 <style>
@@ -107,16 +95,19 @@
 <div class="row">
   <BrandSelector
     bind:value={filterResults['brand']}
-    options={extractColumnValues('brand', boty)} />
+    on:change={filtersChanged}
+    options={extractColumnValues(boty)('brand')} />
 
   <GenderSelector
     bind:value={filterResults['gender']}
-    options={extractColumnValues('gender', boty)} />
+    on:change={filtersChanged}
+    options={extractColumnValues(boty)('gender')} />
 </div>
 <div class="row">
   <SizeSelector
     bind:value={filterResults['size']}
-    options={extractColumnValues('size', boty)
+    on:change={filtersChanged}
+    options={extractColumnValues(boty)('size')
       .reduce((acc, cur) => [...acc, ...cur
             .split(/[,/]/)
             .map((x) => x.trim())], [])
@@ -124,7 +115,8 @@
 
   <SeasonSelector
     bind:value={filterResults['season']}
-    options={extractColumnValues('season', boty)
+    on:change={filtersChanged}
+    options={extractColumnValues(boty)('season')
       .reduce((acc, cur) => [...acc, ...cur
             .split(/[,]/)
             .map((x) => x.trim())], [])
