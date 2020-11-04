@@ -10,16 +10,12 @@
 
 <script>
   import { onDestroy } from 'svelte'
-  import {
-    isClientSide,
-    pushState,
-    getQuery,
-    extractColumnValues,
-  } from '$components/common.js'
+  import { isClientSide, pushState, getQuery } from '$components/common.js'
   import Bota from '$components/Bota.svelte'
-  import Selectors from "$components/Selectors.svelte"
+  import Selectors from '$components/Selectors.svelte'
 
   export let products
+
   // this is to put server side state into the store
   if (products) productStore.set(products)
 
@@ -45,26 +41,45 @@
     })
   }
 
-  // applies all the filters from filterResults over each other
-  const applyFilters = (filterResults) => (product) =>
-    Object.entries(filterResults)
+  const filtersChanged = () => isClientSide && pushState(filterResults)
+
+  const shouldBeVisible = (product, filterResults) => {
+    // if no stock, dont bother showing
+    const isStock = Object.entries(product.stock).reduce((acc, cur) => {
+      let result = false;
+      const [ size, stock ] = cur
+      if (filterResults['size'] && filterResults['size'].length > 0) {
+        result = new RegExp(filterResults['size'].join('|')).test(size) && stock > 0
+      } else 
+      {
+        result = stock > 0;
+      }
+      return acc || result
+    }, false) 
+    if (!isStock) return false;
+    
+    // check filters
+    const result = Object.entries(filterResults)
       .map(
         ([k, v]) => v.length === 0 || new RegExp(v.join('|')).test(product[k])
       )
       .reduce((acc, cur) => acc && cur, true)
-
-  const filtersChanged = () => isClientSide && pushState(filterResults)
+    return result
+  }
 </script>
 
 <h1>Boty</h1>
 
-<Selectors on:change={filtersChanged} bind:filterResults={filterResults} bind:products={products} />
+<Selectors on:change={filtersChanged} bind:filterResults bind:products />
 
 <div class="card-list">
-  {#each products.filter(applyFilters(filterResults)) as bota (bota.id)}
-    <div key={bota.name} class="obsah">
-      <Bota {...bota} />
-    </div>
+  <!-- New way -->
+  {#each products as product (product.id)}
+    {#if shouldBeVisible(product, filterResults)}
+      <div key={product.name} class="content">
+        <Bota {...product} />
+      </div>
+    {/if}
   {/each}
 </div>
 
@@ -79,17 +94,17 @@
     justify-content: center;
   }
 
-  .obsah {
+  .content {
     padding: 0.5rem;
     width: 300px;
-    height: 350px;
+    height: 400px;
   }
 
   @media only screen and (max-width: 674px) {
-    .obsah {
+    .content {
       padding: 0.4rem 0;
       width: 100%;
-      height:auto;
+      height: auto;
     }
   }
 </style>

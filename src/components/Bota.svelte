@@ -1,5 +1,7 @@
 <script>
-  export let photo, name, gender, size, season, price, brand, id
+  export let photo, name, gender, size, season, price, brand, stock, id
+
+  import Size from "$components/Size.svelte"
 </script>
 
 <a href="/boty/{name.replace(/ /g, '-').toLowerCase()}">
@@ -14,7 +16,11 @@
       <h4><b>{name}</b></h4>
       <div>
         <div class="row">
-          <div>Velikosti: {size}</div>
+          <div>Velikosti: 
+            {#each size.split(",").map(x=>x.trim()) as s}
+              <Size strike={!stock[s]} size={s} />
+            {/each}
+          </div>
         </div>
         <div class="row">
           <div>Pohlaví: {gender}</div>
@@ -35,6 +41,8 @@
     text-decoration: unset;
     color: unset;
   }
+
+
 
   .card {
     width: 100%;
