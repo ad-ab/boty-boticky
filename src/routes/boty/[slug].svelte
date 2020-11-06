@@ -39,6 +39,7 @@
       <div style="text-align:right;margin-bottom:1rem;">
         <div>Výrobce: {product.brand}</div>
         <div>Pohlaví: {product.gender}</div>
+        <div>Sezóna: {product.season}</div>
         <div>Velikost: 
           <div>Velikosti: 
             {#each product.size.split(",").map(x=>x.trim()) as s}
@@ -46,7 +47,6 @@
             {/each}
           </div>
         </div>
-        <div>Sezóna: {product.season}</div>
       </div>
       <div style="text-align:justify;">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae
