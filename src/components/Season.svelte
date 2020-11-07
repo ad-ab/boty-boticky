@@ -23,8 +23,8 @@
 
 <style>
   div {
-    height: 44px;
-    width: 44px;
+    height: 2rem;
+    width: 2rem;
     min-height: 1rem;
     min-width: 1rem;
     background-repeat: no-repeat;

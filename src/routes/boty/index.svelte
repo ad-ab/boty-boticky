@@ -97,7 +97,7 @@
   .content {
     padding: 0.5rem;
     width: 300px;
-    height: 340px;
+    height: 380px;
   }
 
   @media only screen and (max-width: 674px) {

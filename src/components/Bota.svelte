@@ -18,18 +18,8 @@
         src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/{photo}"
         alt={name} />
       <div class="brand">{brand}</div>
-      <div class="gender">
-        {#if ['Chlapecké', 'Uni'].includes(gender)}
-          <div class="male">
-            <Male />
-          </div>
-        {/if}
-        {#if ['Dívčí', 'Uni'].includes(gender)}
-          <div class="female">
-            <Female />
-          </div>
-        {/if}
-      </div>
+    </div>
+    <div class="props">
       <div class="season">
         {#each obdobi as o (o)}
           <Season
@@ -40,6 +30,15 @@
               .includes(o)} />
         {/each}
       </div>
+      <div class="gender">
+          <div class="male" class:fade={!gender.includes('Chlapecké') && !gender.includes('Uni')}>
+            <Male />
+          </div>
+          <div class="female" class:fade={!gender.includes('Dívčí') && !gender.includes('Uni')}>
+            <Female />
+          </div>
+        </div>
+      
     </div>
 
     <div class="container">
@@ -62,66 +61,24 @@
     color: unset;
   }
 
-  .brand {
-    top: 0.5rem;
-    right: 1rem;
-    position: absolute;
-    font-weight: 600;
-    font-variant: small-caps;
-    text-shadow: 2px 2px 4px darkgray;
-  }
-
-  .gender {
-    display: flex;
-    flex-direction: column;
-    bottom: 0.5rem;
-    right: 1rem;
-    position: absolute;
-  }
-
-  .gender > div {
-    height: 2rem;
-  }
-
-  .male {
-    fill: blue;
-    filter: drop-shadow(0px 0px 2px darkgray);
-  }
-
-  .female {
-    fill: magenta;
-    filter: drop-shadow(0px 0px 2px darkgray);
-  }
-
-  .season {
-    position: absolute;
-
-    left: 16px;
-    top: 16px;
-    bottom: 0px;
-    width: 46px;
-    display: flex;
-    flex-direction: column;
-  }
-
   .card {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 60% 1fr 2.5rem;
+    grid-template-rows: 50% 2.8rem 1fr 2.5rem;
     align-items: stretch;
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
     transition: 0.1s;
   }
 
   /* On mouse-over, add a deeper shadow */
   .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.3);
     /* transform: scale(1.005); */
     cursor: pointer;
   }
-
+  
   .img {
     grid-row: 1;
     position: relative;
@@ -135,8 +92,58 @@
     height: auto;
   }
 
-  .container {
+  .brand {
+    top: 0.5rem;
+    right: 1rem;
+    position: absolute;
+    font-weight: 600;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 4px darkgray;
+  }
+
+  .props {
     grid-row: 2;
+    height:100%;
+    height:2rem;
+    display:flex;
+    justify-content: space-between;
+    padding:0 16px;
+  }
+
+  .gender {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .gender > div {
+    height: 1.8rem;
+    margin-left: 4px;
+  }
+
+  .fade {
+    opacity: 0.1;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+
+  .male {
+    fill: blue;
+    filter: drop-shadow(0px 0px 2px darkgray);
+  }
+
+  .female {
+    fill: magenta;
+    filter: drop-shadow(0px 0px 2px darkgray);
+  }
+
+  .season {
+    height: 1.2rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container {
+    grid-row: 3;
     background: #f8f8f8;
     padding: 0 1rem;
     height: 100%;
@@ -146,7 +153,7 @@
   }
 
   .footer {
-    grid-row: 3;
+    grid-row: 4;
     background: #f8f8f8;
     display: flex;
     flex-direction: column;
