@@ -19,5 +19,9 @@
 </svg>
 
 <style>
-	
+	  svg {
+    fill: blue;
+  }
+
+  
 </style>

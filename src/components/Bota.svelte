@@ -3,12 +3,19 @@
 
   import Size from '$components/Size.svelte'
 
-  import Male from '$components/icons/Male.svelte'
-  import Female from '$components/icons/Female.svelte'
-
   import Season from '$components/Season.svelte'
+  import Gender from '$components/Gender.svelte'
 
-  let obdobi = ['jaro', 'léto', 'podzim', 'zima']
+  let seasonList = ['jaro', 'léto', 'podzim', 'zima']
+  let genderList = ['Chlapecké', 'Dívčí']
+
+  $: shouldFadeGender = (string) =>
+    !gender.includes(string) && !gender.includes('Uni')
+  $: shouldFadeSeason = (o) =>
+    !season
+      .split(',')
+      .map((x) => x.trim())
+      .includes(o)
 </script>
 
 <a href="/boty/{name.replace(/ /g, '-').toLowerCase()}">
@@ -21,32 +28,29 @@
     </div>
     <div class="props">
       <div class="season">
-        {#each obdobi as o (o)}
-          <Season
-            type={o}
-            fade={!season
-              .split(',')
-              .map((x) => x.trim())
-              .includes(o)} />
+        {#each seasonList as s (s)}
+          <Season type={s} fade={shouldFadeSeason(s)} />
         {/each}
       </div>
       <div class="gender">
-          <div class="male" class:fade={!gender.includes('Chlapecké') && !gender.includes('Uni')}>
-            <Male />
-          </div>
-          <div class="female" class:fade={!gender.includes('Dívčí') && !gender.includes('Uni')}>
-            <Female />
-          </div>
-        </div>
-      
+        {#each genderList as g (g)}
+          <Gender type={g} fade={shouldFadeGender(g)} />
+        {/each}
+      </div>
     </div>
 
     <div class="container">
       <h4><b>{name}</b></h4>
       <div class="row">
-        Velikosti:
         {#each size.split(',').map((x) => x.trim()) as s}
-          <Size strike={!stock[s]} size={s} />
+          <Size
+            strike={!stock[s]}
+            size={s}
+            on:selected={(e) => {
+              window.location = `/boty/${name
+                .replace(/ /g, '-')
+                .toLowerCase()}?size=${s}`
+            }} />
         {/each}
       </div>
     </div>
@@ -78,7 +82,7 @@
     /* transform: scale(1.005); */
     cursor: pointer;
   }
-  
+
   .img {
     grid-row: 1;
     position: relative;
@@ -103,37 +107,16 @@
 
   .props {
     grid-row: 2;
-    height:100%;
-    height:2rem;
-    display:flex;
+    height: 100%;
+    height: 2rem;
+    display: flex;
     justify-content: space-between;
-    padding:0 16px;
+    padding: 0 16px;
   }
 
   .gender {
     display: flex;
     flex-direction: row;
-  }
-
-  .gender > div {
-    height: 1.8rem;
-    margin-left: 4px;
-  }
-
-  .fade {
-    opacity: 0.1;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-  }
-
-  .male {
-    fill: blue;
-    filter: drop-shadow(0px 0px 2px darkgray);
-  }
-
-  .female {
-    fill: magenta;
-    filter: drop-shadow(0px 0px 2px darkgray);
   }
 
   .season {
@@ -165,7 +148,9 @@
 
   .row {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
   }
 
   h4 {
@@ -178,7 +163,7 @@
   @media only screen and (max-width: 674px) {
     .card {
       height: auto;
-      grid-template-rows: auto auto 2.5rem;
+      grid-template-rows: auto auto auto 2.5rem;
     }
 
     h4 {

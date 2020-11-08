@@ -1,24 +1,24 @@
 <script>
-  export let type, fade
+  export let type, fade, large
 </script>
 
-<div style="position:relative">
-
+<div style="position:relative" class:large>
   <div
-  class="background"
-  class:fall={type === 'podzim'}
-  class:summer={type === 'léto'}
-  class:spring={type === 'jaro'}
-  class:winter={type === 'zima'} 
-  class:fade/>
-  <div
-  title={type}
+    class="background"
+    class:large
     class:fall={type === 'podzim'}
     class:summer={type === 'léto'}
     class:spring={type === 'jaro'}
     class:winter={type === 'zima'}
     class:fade />
-
+  <div
+    title={type}
+    class:large
+    class:fall={type === 'podzim'}
+    class:summer={type === 'léto'}
+    class:spring={type === 'jaro'}
+    class:winter={type === 'zima'}
+    class:fade />
 </div>
 
 <style>
@@ -28,9 +28,14 @@
     min-height: 1rem;
     min-width: 1rem;
     background-repeat: no-repeat;
-    position:absolute;
+    position: absolute;
 
     background-size: contain;
+  }
+
+  div.large {
+    height: 4rem;
+    width: 4rem;
   }
 
   .background {
@@ -59,5 +64,25 @@
 
   .winter {
     background-image: url('/seasons/winter_small.png');
+  }
+
+  
+  .fall.large {
+    background-image: url('/seasons/fall.png');
+  }
+
+  
+  .spring.large {
+    background-image: url('/seasons/spring.png');
+  }
+
+  
+  .summer.large {
+    background-image: url('/seasons/summer.png');
+  }
+
+  
+  .winter.large {
+    background-image: url('/seasons/winter.png');
   }
 </style>

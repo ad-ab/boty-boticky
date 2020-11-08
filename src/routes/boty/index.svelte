@@ -43,8 +43,8 @@
 
   const filtersChanged = () => isClientSide && pushState(filterResults)
 
-  const shouldBeVisible = (product, filterResults) => {
-    // if no stock, dont bother showing
+  const shouldCardBeVisible = (filterResults) => product => {
+    // stock vs size filter
     const isStock = Object.entries(product.stock).reduce((acc, cur) => {
       let result = false;
       const [ size, stock ] = cur
@@ -66,20 +66,20 @@
       .reduce((acc, cur) => acc && cur, true)
     return result
   }
+  
+  $: filteredProducts = products.filter(shouldCardBeVisible(filterResults))
 </script>
+
 
 <h1>Boty</h1>
 
 <Selectors on:change={filtersChanged} bind:filterResults bind:products />
 
 <div class="card-list">
-  <!-- New way -->
-  {#each products as product (product.id)}
-    {#if shouldBeVisible(product, filterResults)}
+  {#each filteredProducts as product (product.id)}
       <div key={product.name} class="content">
         <Bota {...product} />
       </div>
-    {/if}
   {/each}
 </div>
 

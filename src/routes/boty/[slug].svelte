@@ -15,7 +15,9 @@
 </script>
 
 <script>
-  import Size from "$components/Size.svelte"
+  import Size from '$components/Size.svelte'
+  import Season from '$components/Season.svelte'
+  import Gender from '$components/Gender.svelte'
 
   export let product
   export let products
@@ -34,34 +36,74 @@
     </div>
 
     <div class="stats">
-      <h1>Bota {product.name}</h1>
+      <div class="title">
+        <h1>{product.name}</h1>
+        <div class="brand">{product.brand}</div>
+      </div>
 
-      <div style="text-align:right;margin-bottom:1rem;">
-        <div>Výrobce: {product.brand}</div>
-        <div>Pohlaví: {product.gender}</div>
-        <div>Sezóna: {product.season}</div>
-        <div>Velikost: 
-          <div>Velikosti: 
-            {#each product.size.split(",").map(x=>x.trim()) as s}
-              <Size strike={!product.stock[s]} size={s} />
-            {/each}
-          </div>
+      <div class="pictures">
+        <div style="text-align:right">
+          {#each product.gender.split(',').map((x) => x.trim()) as gender}
+            <Gender type={gender} large />
+          {/each}
+        </div>
+
+        <div class="season">
+          {#each product.season.split(',').map((x) => x.trim()) as season}
+            <Season type={season} large />
+          {/each}
         </div>
       </div>
+
+      <div>
+        {#each product.size.split(',').map((x) => x.trim()) as s}
+          <Size strike={!product.stock[s]} size={s} />
+        {/each}
+      </div>
+
       <div style="text-align:justify;">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae
-        vehicula tellus. Morbi id tincidunt dui, non fringilla purus. Quisque
-        gravida quis nisl non molestie. Curabitur imperdiet leo enim, viverra
-        semper erat efficitur vel.
+        vehicula tellus. Morbi id tincidunt dui, non fringilla purus.
       </div>
     </div>
   </div>
 </div>
 
 <style>
+  h1 {
+    margin-bottom: 0;
+    text-shadow: 1px 1px 4px darkgray;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  .pictures {
+    height:4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .brand {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 4px darkgray;
+  }
+
   .content {
     display: flex;
     justify-content: center;
+  }
+
+  .season {
+    display: flex;
+    height: 2rem;
   }
 
   .card {
@@ -92,7 +134,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    justify-items: center;
   }
 
   h1 {
