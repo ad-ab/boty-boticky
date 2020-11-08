@@ -55,7 +55,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="sizes">
         {#each product.size.split(',').map((x) => x.trim()) as s}
           <Size strike={!product.stock[s]} size={s} />
         {/each}
@@ -82,7 +82,7 @@
   }
 
   .pictures {
-    height:4rem;
+    height: 4rem;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -146,6 +146,13 @@
     .card {
       flex-direction: column;
       margin: 0rem;
+    }
+
+    .sizes {
+      padding-bottom: 1rem;
+    }
+    .pictures {
+      padding: 1rem;
     }
   }
 </style>

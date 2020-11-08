@@ -163,11 +163,20 @@
   @media only screen and (max-width: 674px) {
     .card {
       height: auto;
-      grid-template-rows: auto auto auto 2.5rem;
+      grid-template-rows: auto auto auto 3rem;
     }
 
     h4 {
       margin-bottom: 1rem;
+    }
+
+    .props {
+      padding:1rem;
+      justify-content: space-evenly;
+    }
+
+    .footer {
+      padding:1rem;
     }
   }
 </style>
