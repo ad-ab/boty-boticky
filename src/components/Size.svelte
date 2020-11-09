@@ -1,14 +1,25 @@
 <script>
   import { createEventDispatcher } from 'svelte'
 
-  export let size, strike
+  export let size,
+    strike,
+    selectedSize = undefined
 
   const dispatch = createEventDispatcher()
 
-  const onClick = () => { dispatch('selected', { size } )}
+  const onClick = () => {
+    dispatch('click', { size })
+  }
 </script>
 
-<div class="size-box" class:strike class:clickable={!strike} on:click={onClick}>{size}</div>
+<div
+  class="size-box"
+  class:strike
+  class:clickable={!strike}
+  class:selected={selectedSize && !strike}
+  on:click={onClick}>
+  {size}
+</div>
 
 <style>
   .size-box {
@@ -26,15 +37,16 @@
   }
 
   .clickable {
-    user-select:none;
+    user-select: none;
   }
 
+  .selected,
   .clickable:hover {
-    cursor:pointer;
+    cursor: pointer;
     /* color: white;
     background:black; */
 
     /* color: white; */
-    background:lightgray;
+    background: lightgray;
   }
 </style>

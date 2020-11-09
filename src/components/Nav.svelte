@@ -1,8 +1,15 @@
+<script>
+  import basketStore from '$components/basket.js'
+</script>
+
 <nav>
   <a class="" href="/" rel="prefetch">Boty-Botičky</a>
   <a class="" href="/boty" rel="prefetch">Boty</a>
   <a class="" href="/kontakt" rel="prefetch">Kontakt</a>
   <a class="" href="/about" rel="prefetch">O nás</a>
+
+  Košík ({$basketStore.length}) celkem
+  {$basketStore.map(x=>x.price).reduce((a,c)=>Number(a)+Number(c),0)}Kč
 </nav>
 
 <style>

@@ -16,7 +16,7 @@ export const createQuery = (object) =>
     .join("&");
 
 export const pushState = (object, pathName = location.pathname) => {
-  let pushPath = pathName.split("?")[0].replace(/[\/]*$/, "");
+  let pushPath = pathName.split("?")[0].replace(/[/]*$/, "");
 
   const newQueryString = createQuery(object);
   if (window.location.search === newQueryString) return;

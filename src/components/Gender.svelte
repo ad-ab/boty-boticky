@@ -1,5 +1,7 @@
 <script>
-  export let type, fade, large
+  export let type,
+    fade = false,
+    large = false
 
   import Male from '$components/icons/Male.svelte'
   import Female from '$components/icons/Female.svelte'
@@ -10,7 +12,7 @@
   }
 </script>
 
-<div style="position:relative" class:fade title={type} >
+<div style="position:relative" class:large class:fade title={type}>
   <div class="inner" class:large>
     <svelte:component this={mapping[type]} />
   </div>
@@ -29,8 +31,8 @@
   }
 
   div.large {
-    height:4rem;
-    width:4rem;
+    height: 4rem;
+    width: 4rem;
   }
 
   .background {

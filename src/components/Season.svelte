@@ -1,5 +1,7 @@
 <script>
-  export let type, fade, large
+  export let type,
+    fade = false,
+    large = false
 </script>
 
 <div style="position:relative" class:large>
@@ -66,22 +68,18 @@
     background-image: url('/seasons/winter_small.png');
   }
 
-  
   .fall.large {
     background-image: url('/seasons/fall.png');
   }
 
-  
   .spring.large {
     background-image: url('/seasons/spring.png');
   }
 
-  
   .summer.large {
     background-image: url('/seasons/summer.png');
   }
 
-  
   .winter.large {
     background-image: url('/seasons/winter.png');
   }

@@ -16,9 +16,10 @@
       .split(',')
       .map((x) => x.trim())
       .includes(o)
+  $: link = `/boty/${name.replace(/ /g, '-').toLowerCase()}`
 </script>
 
-<a href="/boty/{name.replace(/ /g, '-').toLowerCase()}">
+<a href={link}>
   <div class="card">
     <div class="img">
       <img
@@ -43,14 +44,11 @@
       <h4><b>{name}</b></h4>
       <div class="row">
         {#each size.split(',').map((x) => x.trim()) as s}
+          <a href={`${link}?size=${s}`}>
           <Size
             strike={!stock[s]}
-            size={s}
-            on:selected={(e) => {
-              window.location = `/boty/${name
-                .replace(/ /g, '-')
-                .toLowerCase()}?size=${s}`
-            }} />
+            size={s} />
+          </a>
         {/each}
       </div>
     </div>
@@ -171,12 +169,12 @@
     }
 
     .props {
-      padding:1rem;
+      padding: 1rem;
       justify-content: space-evenly;
     }
 
     .footer {
-      padding:1rem;
+      padding: 1rem;
     }
   }
 </style>

@@ -15,6 +15,9 @@
 </script>
 
 <script>
+  import { isClientSide, getQuery } from '$components/common.js'
+  import basketStore from '$components/basket.js'
+
   import Size from '$components/Size.svelte'
   import Season from '$components/Season.svelte'
   import Gender from '$components/Gender.svelte'
@@ -24,6 +27,11 @@
 
   // this is to put server side state into the store
   if (products) botyStore.set(products)
+
+  let selectedSize
+  if (isClientSide) {
+    selectedSize = getQuery()['size']
+  }
 </script>
 
 <div class="content">
@@ -42,10 +50,14 @@
       </div>
 
       <div class="pictures">
-        <div style="text-align:right">
-          {#each product.gender.split(',').map((x) => x.trim()) as gender}
-            <Gender type={gender} large />
-          {/each}
+        <div class="genders">
+          {#if product.gender.includes('Dívčí') || product.gender.includes('Uni')}
+            <Gender type="Dívčí" large />
+          {/if}
+          {#if product.gender.includes('Chlapecké') || product.gender.includes('Uni')}
+            <Gender type="Chlapecké" large />
+          {/if}
+
         </div>
 
         <div class="season">
@@ -54,11 +66,26 @@
           {/each}
         </div>
       </div>
-
       <div class="sizes">
         {#each product.size.split(',').map((x) => x.trim()) as s}
-          <Size strike={!product.stock[s]} size={s} />
+          <Size
+            strike={!product.stock[s]}
+            size={s}
+            selectedSize={selectedSize && s == selectedSize[0]}
+            on:click={() => {
+              selectedSize = [s]
+            }} />
         {/each}
+      </div>
+      <div class="btn">
+        {#if selectedSize && product.stock[selectedSize]}
+          <button on:click={()=> basketStore.add(product)}>Přidat do košíku</button>
+        {:else}
+          <div
+            style="padding:8px 16px;border: 1px solid white;font-size:13.3333px">
+            Vyberte si velikost
+          </div>
+        {/if}
       </div>
 
       <div style="text-align:justify;">
@@ -70,6 +97,10 @@
 </div>
 
 <style>
+  button { 
+    padding:8px 16px
+  }
+
   h1 {
     margin-bottom: 0;
     text-shadow: 1px 1px 4px darkgray;
@@ -136,6 +167,10 @@
     justify-content: space-between;
     align-items: center;
     justify-items: center;
+  }
+
+  .genders {
+    display:flex;
   }
 
   h1 {
