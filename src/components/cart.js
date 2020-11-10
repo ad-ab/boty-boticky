@@ -2,10 +2,10 @@ import { writable } from "svelte/store";
 
 const defaultValue = [];
 const { subscribe, set } = writable(defaultValue);
-let basket
+let cart
 
 subscribe(value => {
-  basket = value;
+  cart = value;
 });
 
 
@@ -14,6 +14,6 @@ export default {
     reset: () => set(defaultValue),
     set,
     add: (product) => 
-      set([...basket, product])
+      set([...cart, product])
     
   };

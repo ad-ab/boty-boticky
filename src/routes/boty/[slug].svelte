@@ -16,7 +16,7 @@
 
 <script>
   import { isClientSide, getQuery } from '$components/common.js'
-  import basketStore from '$components/basket.js'
+  import cartStore from '$components/cart.js'
 
   import Size from '$components/Size.svelte'
   import Season from '$components/Season.svelte'
@@ -79,7 +79,7 @@
       </div>
       <div class="btn">
         {#if selectedSize && product.stock[selectedSize]}
-          <button on:click={()=> basketStore.add(product)}>Přidat do košíku</button>
+          <button on:click={()=> cartStore.add({...product, size:selectedSize})}>Přidat do košíku</button>
         {:else}
           <div
             style="padding:8px 16px;border: 1px solid white;font-size:13.3333px">

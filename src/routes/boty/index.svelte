@@ -2,7 +2,7 @@
   import { boty as productStore } from '$components/data.js'
 
   export const prerender = true
-  export async function preload(page) {
+  export async function preload() {
     let products = await productStore.load(this)
     return { products }
   }
