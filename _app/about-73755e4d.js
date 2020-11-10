@@ -1,0 +1,2 @@
+import{S as a,i as s,s as n,e as o,t as r,a as t,c,b as f,d as i,f as e,g as l,j as u,k as d,n as p}from"./navigation-78f79cd8.js";function h(a){let s,n,h,j,k;return{c(){s=o("h1"),n=r("O nás"),h=t(),j=o("p"),k=r("nějaké info")},l(a){s=c(a,"H1",{});var o=f(s);n=i(o,"O nás"),o.forEach(e),h=l(a),j=c(a,"P",{});var r=f(j);k=i(r,"nějaké info"),r.forEach(e)},m(a,o){u(a,s,o),d(s,n),u(a,h,o),u(a,j,o),d(j,k)},p:p,i:p,o:p,d(a){a&&e(s),a&&e(h),a&&e(j)}}}export default class extends a{constructor(a){super(),s(this,a,null,h,n,{})}}
+//# sourceMappingURL=about-73755e4d.js.map
