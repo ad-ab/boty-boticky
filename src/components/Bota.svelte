@@ -2,9 +2,10 @@
   export let photo, name, gender, size, season, price, brand, stock, id
 
   import Size from '$components/Size.svelte'
-
   import Season from '$components/Season.svelte'
   import Gender from '$components/Gender.svelte'
+
+  import { format, fixUrl } from '$components/common.js'
 
   let seasonList = ['jaro', 'léto', 'podzim', 'zima']
   let genderList = ['Chlapecké', 'Dívčí']
@@ -16,13 +17,14 @@
       .split(',')
       .map((x) => x.trim())
       .includes(o)
-  $: link = `/boty/${name.replace(/ /g, '-').toLowerCase()}`
+  $: link = `/boty/${fixUrl(name)}`
 </script>
 
 <a href={link}>
   <div class="card">
     <div class="img">
       <img
+        loading="auto"
         src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/{photo}"
         alt={name} />
       <div class="brand">{brand}</div>
@@ -41,19 +43,17 @@
     </div>
 
     <div class="container">
-      <h4><b>{name}</b></h4>
+      <h2><b>{name}</b></h2>
       <div class="row">
         {#each size.split(',').map((x) => x.trim()) as s}
           <a href={`${link}?size=${s}`}>
-          <Size
-            strike={!stock[s]}
-            size={s} />
+            <Size strike={!stock[s]} size={s} />
           </a>
         {/each}
       </div>
     </div>
 
-    <div class="footer">{price} Kč</div>
+    <div class="footer">{format(price)}</div>
   </div>
 </a>
 
@@ -151,7 +151,7 @@
     justify-content: center;
   }
 
-  h4 {
+  h2 {
     margin-top: 0.5rem;
     font-size: 1.2rem;
     margin-bottom: 0;
@@ -164,7 +164,7 @@
       grid-template-rows: auto auto auto 3rem;
     }
 
-    h4 {
+    h2 {
       margin-bottom: 1rem;
     }
 

@@ -70,6 +70,10 @@
   $: filteredProducts = products.filter(shouldCardBeVisible(filterResults))
 </script>
 
+<svelte:head>
+  <title>Boty | Boty Botičky - Prodej dětských bot</title>
+  <meta name="description" content="Přehled všech bot a botiček, které jsou momentálně k dispozici k prodeji">
+</svelte:head>
 
 <h1>Boty</h1>
 

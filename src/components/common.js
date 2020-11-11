@@ -37,3 +37,11 @@ export const extractColumnValues = (data) => (column) =>
         return acc;
       }, {})
   );
+
+export const format = (number) =>
+  new Intl.NumberFormat('cs-CZ', {
+    style: 'currency',
+    currency: 'CZK',
+  }).format(Number(number));
+
+  export const fixUrl = str => str.replace(/ /g, '-').toLowerCase();

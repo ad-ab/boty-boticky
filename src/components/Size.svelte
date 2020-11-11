@@ -32,7 +32,7 @@
   }
 
   .strike {
-    opacity: 0.2;
+    /* opacity: 0.4; */
     text-decoration: line-through;
   }
 

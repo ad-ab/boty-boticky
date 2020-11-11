@@ -34,6 +34,11 @@
   }
 </script>
 
+<svelte:head>
+  <title>{product.name} | Boty Botičky - Prodej dětských bot</title>
+  <meta name="description" content="Detaily o produktu {product.name}">
+</svelte:head>
+
 <div class="content">
   <div class="card">
     <div class="img">

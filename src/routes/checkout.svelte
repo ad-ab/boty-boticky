@@ -8,6 +8,11 @@
     }).format(Number(number))
 </script>
 
+<svelte:head>
+  <title>Košík | Boty Botičky - Prodej dětských bot</title>
+  <meta name="description" content="Přehled položek v košíku. Zde si můžete projít boty a botičky v košíku, dříve než vyplníte a odešlete objednávku.">
+</svelte:head>
+
 <h1>Košík</h1>
 
 <div class="checkout">
@@ -36,7 +41,7 @@
       </div>
     </div>
   {:else}
-    <h4>Nemáte žádné položky v košíku</h4>
+    <h2>Nemáte žádné položky v košíku</h2>
     Vyberte si něco
     <a href="/boty">zde</a>
   {/if}

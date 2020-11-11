@@ -15,6 +15,11 @@
   if (products) botyStore.set(products)
 </script>
 
+<svelte:head>
+  <title>Boty Botičky - Prodej dětských bot</title>
+  <meta name="description" content="Hlavní stránka prodeje bot. Zde najdete spoustu krásných bot a botiček pro vaše děti a ratolesti">
+</svelte:head>
+
 <h1>Boty Botičky</h1>
 <p>Vítejte na stránce</p>
 <p>Tady nějaký náhodný boty v akci nebo tak něco?</p>
