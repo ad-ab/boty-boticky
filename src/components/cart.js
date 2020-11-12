@@ -1,19 +1,30 @@
 import { writable } from "svelte/store";
+import { isClientSide } from "$components/common.js";
 
 const defaultValue = [];
 const { subscribe, set } = writable(defaultValue);
-let cart
+if (isClientSide) {
+  const storageValue = JSON.parse(sessionStorage.getItem('cart'));
+  if (storageValue) set(storageValue);
+}
+
+let cart;
 
 subscribe(value => {
   cart = value;
 });
 
+const store = (value) => {
+  sessionStorage.setItem('cart', JSON.stringify(value));
+  set(value);
+}
+
 
 export default {
-    subscribe,
-    reset: () => set(defaultValue),
-    set,
-    add: (product) => 
-      set([...cart, product])
-    
-  };
+  subscribe,
+  reset: () => store(defaultValue),
+  set: store,
+  add: (product) =>
+    store([...cart, product])
+
+};
