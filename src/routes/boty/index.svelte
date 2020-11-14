@@ -96,6 +96,7 @@
     align-content: flex-start;
     justify-items: center;
     justify-content: center;
+    max-width:1600px;
   }
 
   .content {
@@ -107,6 +108,7 @@
   @media only screen and (max-width: 674px) {
     .content {
       padding: 0.4rem 0;
+      max-width:400px;
       width: 100%;
       height: auto;
     }
