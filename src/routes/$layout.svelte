@@ -1,10 +1,20 @@
 <script context="module">
+  import productStore from '$components/data.js'
+
   export const prerender = true
+  export async function preload(page) {
+    let products = await productStore.load(this)
+    return { products }
+  }
 </script>
 
 <script>
   import Nav from '$components/Nav.svelte'
   export let segment
+  export let products
+
+  // this is to put server side state into the store
+  if (products) productStore.set(products)
 
   console.log(`Loaded on ${segment || 'home'} page`)
 </script>
