@@ -3,10 +3,10 @@
 </script>
 
 <nav>
-  <a class="" href="/" rel="prefetch">Boty-Botičky</a>
-  <a class="" href="/boty" rel="prefetch">Boty</a>
-  <a class="" href="/kontakt" rel="prefetch">Kontakt</a>
-  <a class="" href="/about" rel="prefetch">O nás</a>
+  <a class="" href="/" rel="preload">Boty-Botičky</a>
+  <a class="" href="/boty" rel="preload">Boty</a>
+  <a class="" href="/kontakt" rel="preload">Kontakt</a>
+  <a class="" href="/about" rel="preload">O nás</a>
 
   <a class="" href="/checkout">
     Košík

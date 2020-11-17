@@ -1,5 +1,5 @@
 <script context="module">
-  import { boty as productStore } from '$components/data.js'
+  import productStore from '$components/data.js'
 
   export const prerender = true
   export async function preload() {
@@ -15,9 +15,6 @@
   import Selectors from '$components/Selectors.svelte'
 
   export let products
-
-  // this is to put server side state into the store
-  if (products) productStore.set(products)
 
   let defaultFilterResults = { brand: [], gender: [], size: [], season: [] }
   let filterResults = defaultFilterResults
@@ -89,6 +86,8 @@
 
 <style>
   .card-list {
+    margin-left:auto;
+    margin-right:auto;
     margin-top: 1rem;
     display: flex;
     flex-direction: row;
@@ -96,6 +95,7 @@
     align-content: flex-start;
     justify-items: center;
     justify-content: center;
+    max-width:1600px;
   }
 
   .content {
@@ -107,6 +107,7 @@
   @media only screen and (max-width: 674px) {
     .content {
       padding: 0.4rem 0;
+      max-width:400px;
       width: 100%;
       height: auto;
     }

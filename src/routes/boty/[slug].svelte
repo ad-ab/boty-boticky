@@ -1,16 +1,16 @@
 <script context="module">
-  import { boty as botyStore } from '$components/data.js'
+  import productStore from '$components/data.js'
 
   export const prerender = true
   export async function preload(page) {
     const { slug } = page.params
-    let products = await botyStore.load(this)
+    let products = await productStore.load(this)
 
     const product = products.find(
       (x) => x.name.replace(/ /g, '-').toLowerCase() === slug
     )
 
-    return { product, products }
+    return { product }
   }
 </script>
 
@@ -23,10 +23,6 @@
   import Gender from '$components/Gender.svelte'
 
   export let product
-  export let products
-
-  // this is to put server side state into the store
-  if (products) botyStore.set(products)
 
   let selectedSize
   if (isClientSide) {
