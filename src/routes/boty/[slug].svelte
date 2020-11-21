@@ -139,6 +139,7 @@
   }
 
   .card {
+    background-color:white;
     max-width: 1000px;
     display: flex;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

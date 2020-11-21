@@ -10,6 +10,8 @@
 
 <script>
   import Nav from '$components/Nav.svelte'
+  import Footer from '$components/Footer.svelte'
+
   export let segment
   export let products
 
@@ -19,10 +21,11 @@
   console.log(`Loaded on ${segment || 'home'} page`)
 </script>
 
+<Nav />
 <main>
-  <Nav />
   <slot />
 </main>
+<Footer />
 
 <style>
   :root {
@@ -30,9 +33,33 @@
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
+  :global(body),
+  :global(html) {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+  }
+
   main {
+    position: relative;
     text-align: center;
-    padding: 1em;
     margin: 0 auto;
+    max-width: 1400px;
+    min-height: 100;
+    height: 100%;
+  }
+
+  @media only screen and (max-width: 674px) {
+    main {
+      max-width: 100%;
+    }
+
+    :root {
+      font-size: 20px;
+    }
+
+    :global(body) {
+      height: auto;
+    }
   }
 </style>

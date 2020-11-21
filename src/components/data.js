@@ -15,9 +15,9 @@ const load = async ({ fetch }) => {
   // check if we have data in store
   const getData = () => new Promise(subscribe);
   let products = await getData();
-
   // if not download, process, set to store
   if (!products || products.length === 0) {
+    console.log(products.length, "fetching data")
     // const res = await fetch(`https://www.vyprodej-dovoz.cz/boty/produkty.csv`); - this has cors issues
     const productsRes = await fetch(`/boty/products.csv`);
     const productsFile = await productsRes.text();

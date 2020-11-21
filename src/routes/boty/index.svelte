@@ -72,8 +72,6 @@
   <meta name="description" content="Přehled všech bot a botiček, které jsou momentálně k dispozici k prodeji">
 </svelte:head>
 
-<h1>Boty</h1>
-
 <Selectors on:change={filtersChanged} bind:filterResults bind:products />
 
 <div class="card-list">
@@ -95,7 +93,7 @@
     align-content: flex-start;
     justify-items: center;
     justify-content: center;
-    max-width:1600px;
+    
   }
 
   .content {
