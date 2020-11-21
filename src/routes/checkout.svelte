@@ -1,16 +1,18 @@
 <script>
   import cartStore from '$components/cart.js'
+  import { format } from '$components/common.js'
 
-  const format = (number) =>
-    new Intl.NumberFormat('cs-CZ', {
-      style: 'currency',
-      currency: 'CZK',
-    }).format(Number(number))
+  import Order from '$components/Order.svelte'
+
+  const removeItemByIndex = (i) =>
+    cartStore.set([...$cartStore.filter((_, index) => index !== i)])
 </script>
 
 <svelte:head>
   <title>Košík | Boty Botičky - Prodej dětských bot</title>
-  <meta name="description" content="Přehled položek v košíku. Zde si můžete projít boty a botičky v košíku, dříve než vyplníte a odešlete objednávku.">
+  <meta
+    name="description"
+    content="Přehled položek v košíku. Zde si můžete projít boty a botičky v košíku, dříve než vyplníte a odešlete objednávku." />
 </svelte:head>
 
 <h1>Košík</h1>
@@ -25,9 +27,7 @@
           {format(item.price)}
           <button
             title="Odebrat"
-            on:click={() => cartStore.set([
-                ...$cartStore.filter((_,index)=> index!==i ),
-              ])}>-</button>
+            on:click={() => removeItemByIndex(i)}>-</button>
         </div>
       </div>
     {/each}
@@ -40,6 +40,8 @@
             .reduce((a, c) => Number(a) + Number(c), 0))}
       </div>
     </div>
+
+    <Order cart={$cartStore} />
   {:else}
     <h2>Nemáte žádné položky v košíku</h2>
     Vyberte si něco
@@ -71,5 +73,4 @@
   .top {
     border-top: 1px solid lightgray;
   }
-
 </style>
