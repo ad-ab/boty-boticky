@@ -12,13 +12,9 @@
 </svelte:head>
 
 <section class="first">
-  <h1>
-    Boty Botičky
-  </h1>
+  <h1>Boty Botičky</h1>
 
-  <div class="bottom-row"> 
-
-  </div>
+  <div class="bottom-row" />
 </section>
 
 <section>
@@ -29,19 +25,18 @@
 
 <style>
   .bottom-row {
-    position:absolute;
-    left:5rem;
-    right:5rem;
-    /* Question, should it not be grid? */
-    display:flex ;
+    position: absolute;
+    left: 5rem;
+    right: 5rem;
+    display: flex;
     bottom: 3rem;
     justify-content: space-evenly;
-    height:10rem;
-    background-color:rgba(255,255,255,.2);
+    height: 10rem;
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   section {
-    position:relative;
+    position: relative;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -54,7 +49,6 @@
     background-image: url('/backgrounds/kidsshoes1600.jpg');
     background-size: cover;
     background-position: center;
-
   }
 
   h1 {
@@ -62,27 +56,27 @@
     font-size: 4rem;
     font-weight: 800;
     line-height: 1.1;
-    /* margin: 4rem auto; */
-    max-width: 14rem;
-
-    -webkit-filter: drop-shadow(0.2rem 0.2rem 5px rgba(0, 0, 0, 0.7));
     filter: drop-shadow(0.2rem 0.2rem 5px rgba(0, 0, 0, 0.7));
-
   }
 
   p {
-    max-width: 14rem;
     margin: 2rem auto;
     line-height: 1.35;
   }
 
-  @media (min-width: 480px) {
+  @media (max-width: 674px) {
     h1 {
       max-width: none;
     }
 
     p {
       max-width: none;
+    }
+
+    .bottom-row {
+      left: 1rem;
+      right: 1rem;
+      bottom: 2rem;
     }
   }
 </style>

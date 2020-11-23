@@ -44,7 +44,7 @@
   }
 
   .logo {
-    justify-self: stretch;
+    justify-self: start;
     text-align: left;
   }
 
@@ -53,7 +53,7 @@
   }
 
   .cart {
-    justify-self: stretch;
+    justify-self: right;
     text-align: right;
   }
 
