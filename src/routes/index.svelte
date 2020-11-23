@@ -51,7 +51,7 @@
   .first {
     height: 100vh;
 
-    background-image: url('/backgrounds/kidsshoes1.jpg');
+    background-image: url('/backgrounds/kidsshoes1600.jpg');
     background-size: cover;
     background-position: center;
 
