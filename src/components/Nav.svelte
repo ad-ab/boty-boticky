@@ -1,16 +1,18 @@
 <script>
   import cartStore from '$components/cart.js'
+
+  import Footprint from '$components/icons/Footprint.svelte'
 </script>
 
 <header>
   <div class="inner">
     <div class="logo">
-      <a href="/" rel="preload">Boty Botičky</a>
-      <a href="/" rel="preload">BB</a>
+      <a href="/" class="icon" rel="preload">
+        <Footprint small />&nbsp;Boty&nbsp;Botičky
+      </a>
+      <a href="/" rel="preload"><Footprint small/>&nbsp;BB</a>
     </div>
-    <nav>
-      <a class="" href="/boty" rel="preload">Boty</a>
-    </nav>
+    <nav><a class="" href="/boty" rel="preload">Boty</a></nav>
 
     <a class="cart" href="/checkout">
       Košík
@@ -28,26 +30,22 @@
 
 <style>
   header {
-    position:sticky;
-    top:0;
-    right:0;
-    left:0;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
     padding: 1rem 10rem;
     background-color: #1f0e13;
     color: lightgray;
     font-weight: 800;
     font-size: 1.2rem;
-    z-index:1;
-  }
-
-  @media only screen and (max-width: 1200px) {
-    header {
-      padding: 1rem 2rem;
-    }
+    z-index: 1;
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.6);
   }
 
   .logo {
-    justify-self: left;
+    justify-self: stretch;
+    text-align: left;
   }
 
   nav {
@@ -55,7 +53,8 @@
   }
 
   .cart {
-    justify-self: end;
+    justify-self: stretch;
+    text-align: right;
   }
 
   .logo a:first-child {
@@ -66,9 +65,37 @@
     display: none;
   }
 
+  .inner {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  a {
+    color: white;
+    stroke: white;
+    fill: white;
+    stroke-linecap: butt;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: lightgray;
+    stroke: lightgray;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    header {
+      padding: 1rem 2rem;
+    }
+  }
+
   @media only screen and (max-width: 674px) {
     header {
       padding: 1rem 1rem;
+    }
+
+    .logo {
+      justify-self: left;
     }
 
     .logo a:first-child {
@@ -78,19 +105,5 @@
     .logo a:last-child {
       display: block;
     }
-  }
-
-  .inner {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-  }
-
-  a {
-    color: white;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: lightgray;
   }
 </style>

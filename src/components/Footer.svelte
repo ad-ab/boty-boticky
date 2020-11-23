@@ -1,7 +1,3 @@
-<script>
-  import cartStore from '$components/cart.js'
-</script>
-
 <footer>
   <div class="inner">
     <nav>
@@ -14,6 +10,7 @@
 
 <style>
   footer {
+    
     padding: 2rem 10rem;
     background-color: #1f0e13;
     color: lightgray;

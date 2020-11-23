@@ -39,7 +39,6 @@
     },
     validationSchema: schema,
     onSubmit: async (values) => {
-      console.log(JSON.stringify({ ...values, cart }))
       isSending = true
       try {
         const result = await fetch(

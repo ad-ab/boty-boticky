@@ -21,11 +21,13 @@
   console.log(`Loaded on ${segment || 'home'} page`)
 </script>
 
-<Nav />
-<main>
-  <slot />
-</main>
-<Footer />
+<div class="grid">
+  <Nav />
+  <main class="second">
+    <slot />
+  </main>
+  <Footer />
+</div>
 
 <style>
   :root {
@@ -41,25 +43,19 @@
   }
 
   main {
-    position: relative;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 1400px;
-    min-height: 100;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+    min-height: 100vh;
   }
 
   @media only screen and (max-width: 674px) {
-    main {
-      max-width: 100%;
-    }
-
     :root {
       font-size: 20px;
-    }
-
-    :global(body) {
-      height: auto;
     }
   }
 </style>
