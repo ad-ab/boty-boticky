@@ -42,6 +42,19 @@
     background-color: lightgray;
   }
 
+  :global(button) {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+
+  :global(.button-selected) {
+    background-color: rgb(150, 150, 150);
+  }
+
   main {
     display: flex;
     flex-direction: column;

@@ -13,6 +13,7 @@
   import { isClientSide, pushState, getQuery } from '$components/common.js'
   import Bota from '$components/Bota.svelte'
   import Selectors from '$components/Selectors.svelte'
+  import Padded from '$components/Padded.svelte'
 
   export let products
 
@@ -40,21 +41,21 @@
 
   const filtersChanged = () => isClientSide && pushState(filterResults)
 
-  const shouldCardBeVisible = (filterResults) => product => {
+  const shouldCardBeVisible = (filterResults) => (product) => {
     // stock vs size filter
     const isStock = Object.entries(product.stock).reduce((acc, cur) => {
-      let result = false;
-      const [ size, stock ] = cur
+      let result = false
+      const [size, stock] = cur
       if (filterResults['size'] && filterResults['size'].length > 0) {
-        result = new RegExp(filterResults['size'].join('|')).test(size) && stock > 0
-      } else 
-      {
-        result = stock > 0;
+        result =
+          new RegExp(filterResults['size'].join('|')).test(size) && stock > 0
+      } else {
+        result = stock > 0
       }
       return acc || result
-    }, false) 
-    if (!isStock) return false;
-    
+    }, false)
+    if (!isStock) return false
+
     // check filters
     const result = Object.entries(filterResults)
       .map(
@@ -63,29 +64,34 @@
       .reduce((acc, cur) => acc && cur, true)
     return result
   }
-  
+
   $: filteredProducts = products.filter(shouldCardBeVisible(filterResults))
 </script>
 
 <svelte:head>
   <title>Boty | Boty Botičky - Prodej dětských bot</title>
-  <meta name="description" content="Přehled všech bot a botiček, které jsou momentálně k dispozici k prodeji">
+  <meta
+    name="description"
+    content="Přehled všech bot a botiček, které jsou momentálně k dispozici k prodeji" />
 </svelte:head>
 
-<Selectors on:change={filtersChanged} bind:filterResults bind:products />
+<Padded>
+  <Selectors on:change={filtersChanged} bind:filterResults bind:products />
+</Padded>
 
 <div class="card-list">
   {#each filteredProducts as product (product.id)}
-      <div key={product.name} class="content">
-        <Bota {...product} />
-      </div>
+    <div key={product.name} class="content">
+      <Bota {...product} />
+    </div>
   {/each}
 </div>
 
 <style>
   .card-list {
-    margin-left:auto;
-    margin-right:auto;
+    max-width:1400px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 1rem;
     display: flex;
     flex-direction: row;
@@ -93,7 +99,6 @@
     align-content: flex-start;
     justify-items: center;
     justify-content: center;
-    
   }
 
   .content {
@@ -105,7 +110,7 @@
   @media only screen and (max-width: 674px) {
     .content {
       padding: 0.4rem 0;
-      max-width:400px;
+      max-width: 400px;
       width: 100%;
       height: auto;
     }

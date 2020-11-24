@@ -21,7 +21,7 @@
 <div>
   {#each options as option}
     <button
-      class="button {isInList(option, value) ? 'button-orange' : ''}"
+      class="button {isInList(option, value) ? 'button-selected' : ''}"
       on:click={() => toggle(option)}>{option}
     </button>
   {/each}
