@@ -3,22 +3,24 @@
     fade = false,
     large = false
 
-  import Male from '$components/icons/Male.svelte'
-  import Female from '$components/icons/Female.svelte'
+  // import Male from '$components/icons/Male.svelte'
+  // import Female from '$components/icons/Female.svelte'
+
+  // const mapping = {
+  //   Chlapecké: Male,
+  //   Dívčí: Female,
+  // }
 
   const mapping = {
-    Chlapecké: Male,
-    Dívčí: Female,
+    Chlapecké: "male",
+    Dívčí: "female",
   }
 </script>
 
 <div style="position:relative" class:large class:fade title={type}>
-  <div class="inner" class:large>
-    <svelte:component this={mapping[type]} />
-  </div>
-  <div class="background inner" class:large>
-    <svelte:component this={mapping[type]} />
-  </div>
+  <div class={mapping[type]} class:large/>
+  <div class="background {mapping[type]}" class:large />
+    
 </div>
 
 <style>

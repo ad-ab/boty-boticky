@@ -1,11 +1,7 @@
-<script>
-  export let small=false
-</script>
-
 <svg
-  class:small
   viewBox="0 0 528 528"
-  alt="Boty Botičky"
+  stroke="white"
+  fill="white"
   xmlns="http://www.w3.org/2000/svg">
   <g>
     <path
@@ -22,20 +18,3 @@
       d="m492.634 83.615-21.327-46.176c-1.831-3.964-5.499-6.732-9.813-7.405-4.313-.673-8.651.845-11.602 4.062l-55.899 60.927c-3.863 4.209-4.561 10.153-1.78 15.143 2.358 4.23 6.613 6.693 11.272 6.693.838 0 1.689-.08 2.544-.243l77.226-14.751c3.963-.757 7.294-3.249 9.138-6.837 1.845-3.59 1.933-7.749.241-11.413zm-83.576 17.161 49.881-54.368 19.031 41.205z" />
   </g>
 </svg>
-
-<style>
-  svg {
-    stroke-width: 14px;
-    display: inline-block;
-    max-height: 100%;
-    max-width: 100%;
-    -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
-    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
-  }
-
-  .small {
-    margin: -1rem 0rem -0.7rem;
-    height: 2.5rem;
-    width: 2.5rem;
-  }
-</style>

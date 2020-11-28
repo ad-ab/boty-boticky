@@ -83,7 +83,7 @@
           <button on:click={()=> cartStore.add({...product, size:selectedSize})}>Přidat do košíku</button>
         {:else}
           <div
-            style="padding:8px 16px;border: 1px solid white;font-size:13.3333px">
+            style="padding:8px 16px;border: 1px solid darkgray;font-size:13.3333px;color: darkgray;">
             Vyberte si velikost
           </div>
         {/if}
@@ -99,7 +99,9 @@
 
 <style>
   button { 
-    padding:8px 16px
+    padding:8px 16px;
+    border: 2px solid darkgray;
+    color: darkgray;
   }
 
   h1 {

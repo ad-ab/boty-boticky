@@ -55,6 +55,15 @@
     background-color: rgb(150, 150, 150);
   }
 
+  :global(button.dark) {
+    border: 2px solid lightgray;
+    background-color: transparent;
+    color: lightgray;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+
   main {
     display: flex;
     flex-direction: column;
