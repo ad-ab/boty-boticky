@@ -56,12 +56,30 @@
   }
 
   :global(button.dark) {
-    border: 2px solid lightgray;
+    border: 2px solid black;
     background-color: transparent;
-    color: lightgray;
+    color: black;
     padding: 0.3rem 0.8rem;
     font-size: 0.8rem;
     cursor: pointer;
+  }
+
+  :global(button:disabled) {
+    border: 2px solid darkgray;
+    color:  darkgray;
+    cursor: not-allowed;
+  }
+
+  :global(section) {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  :global(h1) {
+    font-size:2rem;
   }
 
   main {

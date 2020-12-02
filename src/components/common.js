@@ -44,4 +44,4 @@ export const format = (number) =>
     currency: 'CZK',
   }).format(Number(number));
 
-  export const fixUrl = str => str.replace(/ /g, '-').toLowerCase();
+  export const fixUrl = str => str.replace(/ /g, '-').normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase();

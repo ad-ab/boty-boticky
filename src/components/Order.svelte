@@ -65,8 +65,6 @@
   })
 </script>
 
-<h2>Objednávka</h2>
-
 <form on:submit={handleSubmit}>
   <div>
     <label for="name">Jméno</label>
@@ -140,7 +138,10 @@
     <small>{$errors.code}</small>
   </div>
 
-  <button type="submit" alt="submit">Odeslat</button>
+  <div class="right">
+    <div />
+    <button class="dark" type="submit" alt="submit">Odeslat</button>
+  </div>
 </form>
 
 <style>
@@ -150,20 +151,29 @@
     align-items: center;
   }
 
+  input {
+    padding:0.3rem;
+  }
+
+  .right {
+    grid-column: 2;    
+    
+  }
+
+  .right > button {
+    width:auto;
+  }
+
   form > div {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* justify-content: center; */
-    /* justify-items: baseline; */
-    /* align-items: baseline; */
     align-items: center;
     margin: 0.5rem;
   }
   form > div label {
-    /* background-color: blue; */
     text-align: right;
     margin-right: 16px;
   }

@@ -1,15 +1,14 @@
 <script context="module">
   import productStore from '$components/data.js'
+  import { fixUrl } from '$components/common.js'
 
   export const prerender = true
   export async function preload(page) {
     const { slug } = page.params
+
     let products = await productStore.load(this)
 
-    const product = products.find(
-      (x) => x.name.replace(/ /g, '-').toLowerCase() === slug
-    )
-
+    const product = products.find((x) => fixUrl(x.name) === slug)
     return { product }
   }
 </script>
@@ -32,7 +31,7 @@
 
 <svelte:head>
   <title>{product.name} | Boty Botičky - Prodej dětských bot</title>
-  <meta name="description" content="Detaily o produktu {product.name}">
+  <meta name="description" content="Detaily o produktu {product.name}" />
 </svelte:head>
 
 <div class="content">
@@ -58,7 +57,6 @@
           {#if product.gender.includes('Chlapecké') || product.gender.includes('Uni')}
             <Gender type="Chlapecké" large />
           {/if}
-
         </div>
 
         <div class="season">
@@ -80,12 +78,15 @@
       </div>
       <div class="btn">
         {#if selectedSize && product.stock[selectedSize]}
-          <button on:click={()=> cartStore.add({...product, size:selectedSize})}>Přidat do košíku</button>
+          <button
+            alt="Add to cart"
+            class="dark"
+            on:click={() => cartStore.add({
+                ...product,
+                size: selectedSize,
+              })}>Přidat do košíku</button>
         {:else}
-          <div
-            style="padding:8px 16px;border: 1px solid darkgray;font-size:13.3333px;color: darkgray;">
-            Vyberte si velikost
-          </div>
+          <button class="dark disabled" disabled> Vyberte si velikost </button>
         {/if}
       </div>
 
@@ -98,10 +99,8 @@
 </div>
 
 <style>
-  button { 
-    padding:8px 16px;
-    border: 2px solid darkgray;
-    color: darkgray;
+  button {
+    padding: 0.5rem 1rem;
   }
 
   h1 {
@@ -141,7 +140,7 @@
   }
 
   .card {
-    background-color:white;
+    background-color: white;
     max-width: 1000px;
     display: flex;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -174,7 +173,7 @@
   }
 
   .genders {
-    display:flex;
+    display: flex;
   }
 
   h1 {

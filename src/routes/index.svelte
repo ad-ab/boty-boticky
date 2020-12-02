@@ -35,14 +35,6 @@
     background-color: rgba(255, 255, 255, 0.2);
   }
 
-  section {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    text-align: center;
-  }
-
   .first {
     height: 100vh;
 
