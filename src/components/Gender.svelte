@@ -3,16 +3,8 @@
     fade = false,
     large = false
 
-  // import Male from '$components/icons/Male.svelte'
-  // import Female from '$components/icons/Female.svelte'
-
-  // const mapping = {
-  //   Chlapecké: Male,
-  //   Dívčí: Female,
-  // }
-
   const mapping = {
-    Chlapecké: "male",
+    Chlapecká: "male",
     Dívčí: "female",
   }
 </script>

@@ -28,6 +28,7 @@ const load = async ({ fetch }) => {
     const stockFile = await stockRes.text();
 
     const stockLines = stockFile.split(newline)
+    
     const stock = stockLines
       .filter(x => x)
       .reduce((acc, cur) => {
@@ -39,12 +40,12 @@ const load = async ({ fetch }) => {
         }).filter(x => x))
         return acc
       }, {})
+    
 
     products = productLines
       .filter((x) => x)
       .map((x) => x.split(delimiter).map((x) => x.trim()))
       .map((x) => arrayToObject([...x, stock[x[0]] || {}], [...headers, "stock"]));
-
     set(products);
   }
 

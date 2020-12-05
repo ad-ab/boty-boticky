@@ -8,15 +8,12 @@
   import { format, fixUrl } from '$components/common.js'
 
   let seasonList = ['jaro', 'léto', 'podzim', 'zima']
-  let genderList = ['Chlapecké', 'Dívčí']
+  let genderList = ['Chlapecká', 'Dívčí']
 
   $: shouldFadeGender = (string) =>
     !gender.includes(string) && !gender.includes('Uni')
-  $: shouldFadeSeason = (o) =>
-    !season
-      .split(',')
-      .map((x) => x.trim())
-      .includes(o)
+  $: shouldFadeSeason = (o) => !season.includes('celoroční') &&
+    !season.includes(o)
   $: link = `/boty/${fixUrl(name)}`
 </script>
 

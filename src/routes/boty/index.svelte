@@ -4,6 +4,7 @@
   export const prerender = true
   export async function preload() {
     let products = await productStore.load(this)
+    console.log("products", products.length)
     return { products }
   }
 </script>

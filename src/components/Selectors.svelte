@@ -15,18 +15,10 @@
   const splitAndDistinct = (array) =>
     array
       .reduce(
-        (acc, cur) => [...acc, ...cur.split(/[,/]/).map((x) => x.trim())],
+        (acc, cur) => [...acc, ...cur.split(/[,/]/).map((x) => x.trim()).filter(x=>x)],
         []
       )
       .filter((value, index, self) => self.indexOf(value) === index)
-
-  //  Expand this idea to create a nicer form of creating/adding a selector component
-  //  const selectors = [
-  //    { name: 'brand', component: BrandSelector },
-  //    { name: 'gender', component: GenderSelector },
-  //    { name: 'season', component: SeasonSelector, splitContent: true },
-  //    { name: 'size', component: SizeSelector, splitContent: true },
-  //  ]
 </script>
 
 <div class="row">
