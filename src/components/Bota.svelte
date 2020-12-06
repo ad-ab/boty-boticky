@@ -21,6 +21,8 @@
   <div class="card">
     <div class="img">
       <img
+        height="190"
+        width="190"
         loading="auto"
         src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/{photo}"
         alt={name} />
@@ -86,11 +88,12 @@
     height: 100%;
     width: 100%;
   }
+  
   img {
     max-width: 100%;
+    height:auto;
+    width:auto;
     max-height: 100%;
-    width: auto;
-    height: auto;
   }
 
   .brand {
@@ -145,6 +148,7 @@
 
   .row {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-items: center;
     justify-content: center;

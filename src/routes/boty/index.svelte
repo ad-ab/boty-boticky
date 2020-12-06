@@ -4,7 +4,6 @@
   export const prerender = true
   export async function preload() {
     let products = await productStore.load(this)
-    console.log("products", products.length)
     return { products }
   }
 </script>
@@ -20,6 +19,7 @@
 
   let defaultFilterResults = { brand: [], gender: [], size: [], season: [] }
   let filterResults = defaultFilterResults
+  let showCount = 10
 
   if (isClientSide) {
     // when the page loads, set selectors to their correct values
@@ -40,7 +40,10 @@
     })
   }
 
-  const filtersChanged = () => isClientSide && pushState(filterResults)
+  const filtersChanged = () => {
+    isClientSide && pushState(filterResults)
+    showCount = 10
+  }
 
   const shouldCardBeVisible = (filterResults) => (product) => {
     // stock vs size filter
@@ -81,16 +84,44 @@
 </Padded>
 
 <div class="card-list">
-  {#each filteredProducts as product (product.id)}
-    <div key={product.name} class="content">
-      <Bota {...product} />
-    </div>
+  {#each filteredProducts as product, index (product.id)}
+    {#if index < showCount}
+      <div key={product.id} class="content">
+        <Bota {...product} />
+      </div>
+    {/if}
   {/each}
 </div>
 
+{#if showCount < filteredProducts.length}
+<div class="button-line">
+  <div class="button dark" on:click={() => showCount = showCount + 10}>Načti další...</div>
+</div>
+{/if}
+
 <style>
+
+  .button-line {
+    text-align: center;
+    padding:2rem;
+  }
+
+  .button {
+    display:inline;
+    color:black;
+    border: 3px solid black;
+    font-weight:bold;
+    padding: 1rem 2rem;
+    cursor: pointer;
+  }
+
+  .button:hover {
+
+    background-color: darkgray;
+  }
+
   .card-list {
-    max-width:1400px;
+    max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
@@ -104,8 +135,8 @@
 
   .content {
     padding: 0.5rem;
-    width: 300px;
-    height: 380px;
+    width: 350px;
+    height: 400px;
   }
 
   @media only screen and (max-width: 674px) {

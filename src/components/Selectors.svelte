@@ -19,28 +19,29 @@
         []
       )
       .filter((value, index, self) => self.indexOf(value) === index)
+      .sort((a,b)=>a-b)
 </script>
 
 <div class="row">
-  <div>
+  <div class="center">
     <BrandSelector
       bind:value={filterResults['brand']}
       on:change={filtersChanged}
       options={extractColumnValues(products)('brand')} />
   </div>
-  <div>
+  <div class="center">
     <GenderSelector
       bind:value={filterResults['gender']}
       on:change={filtersChanged}
       options={extractColumnValues(products)('gender')} />
   </div>
-  <div>
+  <div class="center">
     <SizeSelector
       bind:value={filterResults['size']}
       on:change={filtersChanged}
       options={splitAndDistinct(extractColumnValues(products)('size'))} />
   </div>
-  <div>
+  <div class="center">
     <SeasonSelector
       bind:value={filterResults['season']}
       on:change={filtersChanged}
@@ -49,6 +50,16 @@
 </div>
 
 <style>
+  .center {
+    /* text-align: center; */
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;;
+  }
+
   .row {
     margin-left: auto;
     margin-right: auto;

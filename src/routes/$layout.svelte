@@ -51,6 +51,8 @@
     cursor: pointer;
   }
 
+  
+
   :global(.button-selected) {
     background-color: rgb(150, 150, 150);
   }
@@ -62,6 +64,10 @@
     padding: 0.3rem 0.8rem;
     font-size: 0.8rem;
     cursor: pointer;
+  }
+
+  :global(button:hover) {
+    background-color: darkgray;
   }
 
   :global(button:disabled) {
