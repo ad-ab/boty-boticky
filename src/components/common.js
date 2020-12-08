@@ -44,4 +44,27 @@ export const format = (number) =>
     currency: 'CZK',
   }).format(Number(number));
 
-  export const fixUrl = str => str.replace(/ /g, '-').normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase();
+export const fixUrl = str => str.replace(/ /g, '-').normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+export const productDataType = (prod) => ({
+  '@context': 'https://schema.org/',
+  '@type': 'Product',
+  name: prod.name,
+  image: [`https://www.vyprodej-dovoz.cz/boty/boty-fotky/${prod.photo}`],
+  description: undefined,
+  sku: prod.id,
+  mpn: prod.id,
+  brand: {
+    '@type': 'Brand',
+    name: prod.brand,
+  },
+  offers: {
+    '@type': 'Offer',
+    url: `https://www.boty-boticky.com/boty/${fixUrl(prod.name)}`,
+    itemCondition: 'http://schema.org/NewCondition',
+    availability: 'http://schema.org/InStock',
+    price: prod.price,
+    priceCurrency: 'CZK',
+    priceValidUntil: new Date().toISOString().split('T')[0],
+  },
+});

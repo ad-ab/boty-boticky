@@ -2,6 +2,7 @@
   import { createEventDispatcher } from 'svelte'
 
   export let size,
+    large,
     strike,
     selectedSize = undefined
 
@@ -15,6 +16,7 @@
 <div
   class="size-box"
   class:strike
+  class:large
   class:clickable={!strike}
   class:selected={selectedSize && !strike}
   on:click={onClick}>
@@ -29,6 +31,11 @@
     border: 1px solid darkgray;
     font-size: 0.8rem;
     /* border-radius:0.1rem; */
+  }
+
+  .large {
+    padding: 8px 12px;
+    font-size: 1rem;
   }
 
   .strike {

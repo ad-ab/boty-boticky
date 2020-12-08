@@ -1,7 +1,6 @@
 <script context="module">
   import productStore from '$components/data.js'
-  import { fixUrl } from '$components/common.js'
-
+  import { fixUrl, productDataType,format } from '$components/common.js'
   export const prerender = true
   export async function preload(page) {
     const { slug } = page.params
@@ -27,11 +26,14 @@
   if (isClientSide) {
     selectedSize = getQuery()['size']
   }
+
+  
 </script>
 
 <svelte:head>
   <title>{product.name} | Boty Botičky - Prodej dětských bot</title>
   <meta name="description" content="Detaily o produktu {product.name}" />
+  {@html `<script type="application/ld+json">${JSON.stringify(productDataType(product))}</script>`}
 </svelte:head>
 
 <div class="content">
@@ -54,8 +56,8 @@
           {#if product.gender.includes('Dívčí') || product.gender.includes('Uni')}
             <Gender type="Dívčí" large />
           {/if}
-          {#if product.gender.includes('Chlapecké') || product.gender.includes('Uni')}
-            <Gender type="Chlapecké" large />
+          {#if product.gender.includes('Chlapecká') || product.gender.includes('Uni')}
+            <Gender type="Chlapecká" large />
           {/if}
         </div>
 
@@ -68,6 +70,7 @@
       <div class="sizes">
         {#each product.size.split(',').map((x) => x.trim()) as s}
           <Size
+            large
             strike={!product.stock[s]}
             size={s}
             selectedSize={selectedSize && s == selectedSize[0]}
@@ -76,6 +79,7 @@
             }} />
         {/each}
       </div>
+      <div><h2>{format(product.price)}</h2></div>
       <div class="btn">
         {#if selectedSize && product.stock[selectedSize]}
           <button
@@ -89,12 +93,25 @@
           <button class="dark disabled" disabled> Vyberte si velikost </button>
         {/if}
       </div>
-
-      <!-- <div style="text-align:justify;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae
-        vehicula tellus. Morbi id tincidunt dui, non fringilla purus.
-      </div> -->
     </div>
+  </div>
+
+  <div class="card description">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae
+      vehicula tellus. Morbi id tincidunt dui, non fringilla purus.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae
+      vehicula tellus. Morbi id tincidunt dui, non fringilla purus.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae
+      vehicula tellus. Morbi id tincidunt dui, non fringilla purus.
+    </p>
+    
   </div>
 </div>
 
@@ -131,6 +148,8 @@
 
   .content {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
   }
 
@@ -145,6 +164,13 @@
     display: flex;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 2rem;
+  }
+
+  .description {
+    margin-top: -1.9rem;
+    display:block;
+    padding:2rem;
+    height:auto;
   }
 
   .img {
