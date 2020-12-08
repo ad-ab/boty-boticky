@@ -90,10 +90,10 @@
         {/if}
       </div>
 
-      <div style="text-align:justify;">
+      <!-- <div style="text-align:justify;">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae
         vehicula tellus. Morbi id tincidunt dui, non fringilla purus.
-      </div>
+      </div> -->
     </div>
   </div>
 </div>

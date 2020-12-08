@@ -10,7 +10,12 @@
 
 <script>
   import { onDestroy } from 'svelte'
-  import { isClientSide, pushState, getQuery } from '$components/common.js'
+  import {
+    isClientSide,
+    pushState,
+    getQuery,
+    fixUrl,
+  } from '$components/common.js'
   import Bota from '$components/Bota.svelte'
   import Selectors from '$components/Selectors.svelte'
   import Padded from '$components/Padded.svelte'
@@ -89,34 +94,39 @@
       <div key={product.id} class="content">
         <Bota {...product} />
       </div>
+    {:else}
+      <a
+      style="display:none"
+        alt={`${product.name} link`}
+        href={`/boty/${fixUrl(product.name)}`}>{product.name}</a>
     {/if}
   {/each}
 </div>
 
 {#if showCount < filteredProducts.length}
-<div class="button-line">
-  <div class="button dark" on:click={() => showCount = showCount + 10}>Načti další...</div>
-</div>
+  <div class="button-line">
+    <div class="button dark" on:click={() => (showCount = showCount + 10)}>
+      Načti další...
+    </div>
+  </div>
 {/if}
 
 <style>
-
   .button-line {
     text-align: center;
-    padding:2rem;
+    padding: 2rem;
   }
 
   .button {
-    display:inline;
-    color:black;
+    display: inline;
+    color: black;
     border: 3px solid black;
-    font-weight:bold;
+    font-weight: bold;
     padding: 1rem 2rem;
     cursor: pointer;
   }
 
   .button:hover {
-
     background-color: darkgray;
   }
 
