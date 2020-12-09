@@ -59,6 +59,9 @@
             on:click={() => (showOrderInfo = false)}>&#8592;</button>
 
           <h1>Objednávka</h1>
+          <p>
+            *Prosím nezadávejte skutečná data, tato stránka je pouze zkušební
+          </p>
         </div>
         <Order cart={$cartStore} />
       {/if}
@@ -73,7 +76,8 @@
 </section>
 
 <style>
-  h1, .shadow {
+  h1,
+  .shadow {
     filter: drop-shadow(0.1rem 0.1rem 4px rgba(0, 0, 0, 0.7));
     margin-left: 1rem;
   }
