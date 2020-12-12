@@ -140,7 +140,7 @@ id|name|brand|gender|season|size|price|photo
 0139|Demar sněhule Nordic červené|Demar|Dívčí|sněhule, zimní|25/26|425|demar/snehule/0098.jpg
 0140|Demar sněhule Kenny růžové tučňák|Demar|Dívčí|sněhule, zimní|20/21, 22/23, 24/25, 26/27, 28/29|460|demar/snehule/0099.jpg
 0141|Demar sněhule Kenny 2 růžové|Demar|Dívčí|sněhule, zimní|30/31, 32/33, 34/35|499|demar/snehule/0100.jpg
-0142|Demar sněhule Kenny modré tučňák|Demar|Chlapecké|sněhule, zimní|20/21, 22/23, 24/25, 26/27, 28/29|460|demar/snehule/0101.jpg
+0142|Demar sněhule Kenny modré tučňák|Demar|Chlapecká|sněhule, zimní|20/21, 22/23, 24/25, 26/27, 28/29|460|demar/snehule/0101.jpg
 0143|Demar sněhule Kenny 2 modré|Demar|Chlapecká|sněhule, zimní|30/31, 32/33, 34/35|499|demar/snehule/0102.jpg
 0144|Sněhule Demar Doggy modré AKCE|Demar|Chlapecká|zima, sněhule|20/21, 22/23, 24/25, 26/27, 28/29|399|demar/snehule/0103.jpg
 0145|Sněhule Demar Little Lamb|Demar|Dívčí|zima, sněhule|20/21, 22/23, 24/25, 26/27, 28/29|399|demar/snehule/0104.jpg
@@ -184,3 +184,36 @@ id|name|brand|gender|season|size|price|photo
 0183|Befado 707Y402 šipky pantofle|Befado|Chlapecká|celoroční, bačkory|31, 32, 33, 34, 35, 36|265|befado/backory/0142.jpg
 0184|Befado 707Y412 fotbal pantofle|Befado|Chlapecká|celoroční, bačkory|31, 32, 33, 34, 35, 36|265|befado/backory/0143.jpg
 0185|Befado 201Q091 noviny pantofle|Befado|Chlapecká|celoroční, bačkory|37, 38, 39|265|befado/backory/0144.jpg
+0186|Befado 110P360 jednorožec bačkory|Befado|Dívčí|celoroční, bačkory|20, 21, 22, 23, 24, 25, 26|295|befado/backory/0145.jpg
+0187|Befado 110P358 jorkšír bačkory|Befado|Dívčí|celoroční, bačkory|20, 21, 22, 23, 24, 25, 26|295|befado/backory/0146.jpg
+0188|Befado 110P394 liška bačkory|Befado|Dívčí|celoroční, bačkory|18, 19, 20, 21, 22, 23, 24, 25, 26|295|befado/backory/0147.jpg
+0189|Befado 110P394 mýval bačkory|Befado|Dívčí|celoroční, bačkory|18, 19, 20, 21, 22, 23, 24, 25, 26|295|befado/backory/0148.jpg
+0190|Befado 190P092 srdíčka bačkory|Befado|Dívčí|celoroční, bačkory|18, 19, 20, 21, 22, 23, 24, 25, 26|315|befado/backory/0149.jpg
+0191|Befado 190P092 květy bačkory|Befado|Dívčí|celoroční, bačkory|18, 19, 20, 21, 22, 23, 24, 25, 26|315|befado/backory/0150.jpg
+0192|Befado 523P016 jednorožec šedý bačkory|Befado|Dívčí|celoroční, bačkory|18, 19, 20, 21, 22, 23, 24, 25, 26|315|befado/backory/0151.jpg
+0193|Befado 114X392 jednorožci bačkory|Befado|Dívčí|celoroční, bačkory|26, 27, 28, 29|325|befado/backory/0152.jpg
+0194|Befado 114X416 lamy bačkory|Befado|Dívčí|celoroční, bačkory|25, 26, 27, 28, 29, 30|325|befado/backory/0153.jpg
+0195|Befado 114X415 pejsci bačkory|Befado|Dívčí|celoroční, bačkory|25, 26, 27, 28, 29, 30|325|befado/backory/0154.jpg
+0196|Befado 114X414 tm. mod. jednorožec bačkory|Befado|Dívčí|celoroční, bačkory|25, 26, 27, 28, 29, 30|325|befado/backory/0155.jpg
+0197|Befado 116X281 medvídci bačkory|Befado|Dívčí|celoroční, bačkory|25, 26, 27, 28, 29, 30|325|befado/backory/0156.jpg
+0198|Befado 116X280 dino bačkory|Befado|Dívčí|celoroční, bačkory|25, 26, 27, 28, 29, 30|325|befado/backory/0157.jpg
+0199|Befado 560X118 růž. jedn. bačkory|Befado|Dívčí|celoroční, bačkory|27, 28, 29, 30|325|befado/backory/0158.jpg
+0200|Befado 707X371 kočička pantofle|Befado|Dívčí|celoroční, bačkory|26, 27, 28|255|befado/backory/0159.jpg
+0201|Befado 708X003 vybarvovací pantofle|Befado|Dívčí|celoroční, bačkory|26, 27, 28|295|befado/backory/0160.jpg
+
+    
+
+       
+    
+  
+ 
+
+   
+
+
+
+
+
+
+
+
