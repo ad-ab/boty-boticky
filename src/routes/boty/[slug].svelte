@@ -8,8 +8,8 @@
     let products = await productStore.load(this)
 
     const product = products.find((x) => fixUrl(x.name) === slug)
-    if (product) productStore.fetchDescription(this, products, product)
-
+    if (product) await productStore.fetchDescription(this, products, product)
+    console.log(product)
     return { product }
   }
 </script>
