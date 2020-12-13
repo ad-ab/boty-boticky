@@ -28,7 +28,7 @@ const load = async ({ fetch }) => {
     const stockFile = await stockRes.text();
 
     const stockLines = stockFile.split(newline)
-    
+
     const stock = stockLines
       .filter(x => x)
       .reduce((acc, cur) => {
@@ -40,20 +40,36 @@ const load = async ({ fetch }) => {
         }).filter(x => x))
         return acc
       }, {})
-    
+
 
     products = productLines
       .filter((x) => x)
       .map((x) => x.split(delimiter).map((x) => x.trim()))
       .map((x) => arrayToObject([...x, stock[x[0]] || {}], [...headers, "stock"]));
+
     set(products);
   }
 
   return products;
 };
 
+const fetchDescription = async ({ fetch }, products, product) => {
+  try {
+    const result = await fetch(`/boty/popisky/${product.id}.txt`)
+    if (result.ok) {
+      product.description = await result.text();
+      set(products)
+    } else {
+      product.description = "empty" 
+    }
+  } catch (err) {
+    product.description = "empty"    
+  }
+}
+
 
 export default {
+  fetchDescription,
   subscribe,
   reset: () => set(defaultValue),
   load,

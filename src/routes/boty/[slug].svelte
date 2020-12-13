@@ -1,6 +1,6 @@
 <script context="module">
   import productStore from '$components/data.js'
-  import { fixUrl, productDataType,format } from '$components/common.js'
+  import { fixUrl, productDataType, format } from '$components/common.js'
   export const prerender = true
   export async function preload(page) {
     const { slug } = page.params
@@ -8,6 +8,8 @@
     let products = await productStore.load(this)
 
     const product = products.find((x) => fixUrl(x.name) === slug)
+    if (product) productStore.fetchDescription(this, products, product)
+
     return { product }
   }
 </script>
@@ -26,8 +28,6 @@
   if (isClientSide) {
     selectedSize = getQuery()['size']
   }
-
-  
 </script>
 
 <svelte:head>
@@ -79,7 +79,9 @@
             }} />
         {/each}
       </div>
-      <div><h2>{format(product.price)}</h2></div>
+      <div>
+        <h2>{format(product.price)}</h2>
+      </div>
       <div class="btn">
         {#if selectedSize && product.stock[selectedSize]}
           <button
@@ -96,26 +98,40 @@
     </div>
   </div>
 
-  <div class="card description">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae
-      vehicula tellus. Morbi id tincidunt dui, non fringilla purus.
-    </p>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae
-      vehicula tellus. Morbi id tincidunt dui, non fringilla purus.
-    </p>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae
-      vehicula tellus. Morbi id tincidunt dui, non fringilla purus.
-    </p>
-    
-  </div>
+  {#if product.description}
+    <div class="card description">
+      
+      {@html product.description}
+    </div>
+  {/if}
 </div>
 
 <style>
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self:center;
+
+    max-width: 1000px;
+
+  }
+
+  .card {
+    background-color: white;
+    max-width: 1000px;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 2rem;
+  }
+
+  .description {
+    margin-top: -1.8rem; 
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
   button {
     padding: 0.5rem 1rem;
   }
@@ -146,32 +162,12 @@
     text-shadow: 2px 2px 4px darkgray;
   }
 
-  .content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
-
   .season {
     display: flex;
     height: 2rem;
   }
 
-  .card {
-    background-color: white;
-    max-width: 1000px;
-    display: flex;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 2rem;
-  }
 
-  .description {
-    margin-top: -1.9rem;
-    display:block;
-    padding:2rem;
-    height:auto;
-  }
 
   .img {
     flex: 1;
