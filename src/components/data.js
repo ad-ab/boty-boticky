@@ -23,6 +23,7 @@ const load = async ({ fetch }) => {
 
     const [headerLine, ...productLines] = productsFile.split(newline);
     const headers = headerLine.split("|").map((x) => x.trim());
+    const [idHeader, ...restHeaders] = headers
 
     const stockRes = await fetch(`/boty/stock.csv`);
     const stockFile = await stockRes.text();
@@ -45,7 +46,7 @@ const load = async ({ fetch }) => {
     products = productLines
       .filter((x) => x)
       .map((x) => x.split(delimiter).map((x) => x.trim()))
-      .map((x) => arrayToObject([...x, stock[x[0]] || {}], [...headers, "stock"]));
+      .map(([id,...rest]) => arrayToObject([id, stock[id] || {}, ...rest], [idHeader, "stock", ...restHeaders]));
 
     set(products);
   }
@@ -55,15 +56,24 @@ const load = async ({ fetch }) => {
 
 const fetchDescription = async ({ fetch }, products, product) => {
   try {
-    const result = await fetch(`/boty/popisky/${product.id}.txt`)
+    // does product specify desciption
+    // do we have product.id description
+    // do we have producrt.brand description
+
+    let result
+    if (product.descriptionPath) result = await fetch(`/boty/popisky/${product.descriptionPath}`)
+    console.log("descriptionPath",product.descriptionPath,result.ok)
+    if (!result || !result.ok) result = await fetch(`/boty/popisky/${product.id}.txt`)
+    if (!result || !result.ok) result = await fetch(`/boty/popisky/${product.brand}.txt`)
+
     if (result.ok) {
       product.description = await result.text();
       set(products)
     } else {
-      product.description = "empty" 
+      product.description = null
     }
   } catch (err) {
-    product.description = "empty"    
+    product.description = null
   }
 }
 

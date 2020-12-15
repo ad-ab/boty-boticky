@@ -9,7 +9,6 @@
 
     const product = products.find((x) => fixUrl(x.name) === slug)
     if (product) await productStore.fetchDescription(this, products, product)
-    console.log(product)
     return { product }
   }
 </script>
@@ -33,7 +32,7 @@
 <svelte:head>
   <title>{product.name} | Boty Botičky - Prodej dětských bot</title>
   <meta name="description" content="Detaily o produktu {product.name}" />
-  {@html `<script type="application/ld+json">${JSON.stringify(productDataType(product))}</script>`}
+  {@html `<script type="application/ld+json" ✂prettier:content✂="JHtKU09OLnN0cmluZ2lmeShwcm9kdWN0RGF0YVR5cGUocHJvZHVjdCkpfQ==">{}</script>`}
 </svelte:head>
 
 <div class="content">
@@ -100,7 +99,6 @@
 
   {#if product.description}
     <div class="card description">
-      
       {@html product.description}
     </div>
   {/if}
@@ -111,10 +109,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    align-self:center;
+    align-self: center;
 
     max-width: 1000px;
-
   }
 
   .card {
@@ -126,7 +123,7 @@
   }
 
   .description {
-    margin-top: -1.8rem; 
+    margin-top: -1.8rem;
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -166,8 +163,6 @@
     display: flex;
     height: 2rem;
   }
-
-
 
   .img {
     flex: 1;
