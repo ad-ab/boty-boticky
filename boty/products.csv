@@ -34,11 +34,11 @@ id|name|brand|gender|season|size|price|photo|descriptionPath
 0033|Holínky Demar červené vel. 28 - 35|Demar|Dívčí|jaro,podzim|28/29, 30/31, 32/33, 34/35|250|demar/gumaky-klasik/0016.jpg|holinky2.txt
 0034|Holínky Demar modré vel. 28 - 35|Demar|Chlapecká|jaro,podzim|28/29, 30/31, 32/33, 34/35|250|demar/gumaky-klasik/0017.jpg|holinky2.txt
 0035|Holínky Demar modré se zeleným zateplením LUX vel. 20 - 27|Demar|Chlapecká|jaro,podzim|20/21, 22/23, 24/25, 26/27|259|demar/gumaky-lux/0018.jpg|holinky_lux.txt
-0036|Holínky Demar červené se zateplením LUX vel. 20 - 27|Demar|Dívčí|jaro,podzim|20/21, 22/23, 24/25, 26/27|259|demar/gumaky-lux/0019.jpg|holinky_lux.txt
-0037|Holínky Demar šedé se zateplením LUX vel. 20 - 27|Demar|Chlapecká|jaro,podzim|20/21, 22/23, 24/25, 26/27|259|demar/gumaky-lux/0020.jpg|holinky_lux.txt
-0038|Holínky Demar černé se zateplením LUX vel. 20 - 27|Demar|Dívčí|jaro,podzim|20/21, 22/23, 24/25, 26/27|259|demar/gumaky-lux/0021.jpg|holinky_lux.txt
-0039|Holínky Demar růžové se zateplením LUX vel. 20 - 27|Demar|Dívčí|jaro,podzim|20/21, 22/23, 24/25, 26/27|259|demar/gumaky-lux/0022.jpg|holinky_lux.txt
-0040|Holínky Demar modré se zateplením LUX vel. 20 - 27|Demar|Chlapecká|jaro,podzim|20/21, 22/23, 24/25, 26/27|259|demar/gumaky-lux/0023.jpg|holinky_lux.txt
+0036|Holínky Demar červené se zateplením Dino vel. 20 - 27|Demar|Dívčí|jaro,podzim|20/21, 22/23, 24/25, 26/27|259|demar/gumaky-lux/0019.jpg|holinky_dino.txt
+0037|Holínky Demar šedé se zateplením Dino vel. 20 - 27|Demar|Chlapecká|jaro,podzim|20/21, 22/23, 24/25, 26/27|259|demar/gumaky-lux/0020.jpg|holinky_dino.txt
+0038|Holínky Demar černé se zateplením Dino vel. 20 - 27|Demar|Dívčí|jaro,podzim|20/21, 22/23, 24/25, 26/27|259|demar/gumaky-lux/0021.jpg|holinky_dino.txt
+0039|Holínky Demar růžové se zateplením Dino vel. 20 - 27|Demar|Dívčí|jaro,podzim|20/21, 22/23, 24/25, 26/27|259|demar/gumaky-lux/0022.jpg|holinky_dino.txt
+0040|Holínky Demar modré se zateplením Dino vel. 20 - 27|Demar|Chlapecká|jaro,podzim|20/21, 22/23, 24/25, 26/27|259|demar/gumaky-lux/0023.jpg|holinky_dino.txt
 0041|Holínky Demar modrá zebra LUX vel. 20 - 27|Demar|Chlapecká|jaro,podzim|20/21, 22/23, 24/25, 26/27|259|demar/gumaky-lux/0024.jpg|holinky_lux.txt
 0042|Holínky Demar slon LUX vel. 20 - 27|Demar|Uni|jaro,podzim|20/21, 22/23, 24/25, 26/27|259|demar/gumaky-lux/0025.jpg|holinky_lux.txt
 0043|Holínky Demar Iron Man LUX vel. 20 - 27|Demar|Chlapecká|jaro,podzim|20/21, 22/23, 24/25, 26/27|259|demar/gumaky-lux/0026.jpg|holinky_lux.txt
@@ -56,12 +56,11 @@ id|name|brand|gender|season|size|price|photo|descriptionPath
 0055|Holínky Demar zebra LUX vel. 20 - 27|Demar|Uni|jaro,podzim|20/21, 22/23, 24/25, 26/27|259|demar/gumaky-lux/0038.jpg|holinky_lux.txt
 0056|Holínky Demar černé květy LUX vel. 20 - 27|Demar|Dívčí|jaro,podzim|20/21, 22/23, 24/25, 26/27|259|demar/gumaky-lux/0039.jpg|holinky_lux.txt
 0057|Holínky Demar modré moře LUX vel. 20 - 27|Demar|Chlapecká|jaro,podzim|20/21, 22/23, 24/25, 26/27|259|demar/gumaky-lux/0040.jpg|holinky_lux.txt
-0058|Holínky Demar modré se zeleným zateplením LUX vel. 28 - 35|Demar|Chlapecká|jaro,podzim|28/29, 30/31, 32/33, 34/35|320|demar/gumaky-lux/0018.jpg|holinky_lux2.txt
-0059|Holínky Demar červené se zateplením LUX vel. 28 - 35|Demar|Dívčí|jaro,podzim|28/29, 30/31, 32/33, 34/35|320|demar/gumaky-lux/0019.jpg|holinky_lux2.txt
-0060|Holínky Demar šedé se zateplením LUX vel. 28 - 35|Demar|Chlapecká|jaro,podzim|28/29, 30/31, 32/33, 34/35|320|demar/gumaky-lux/0020.jpg|holinky_lux2.txt
-0061|Holínky Demar černé se zateplením LUX vel. 28 - 35|Demar|Dívčí|jaro,podzim|28/29, 30/31, 32/33, 34/35|320|demar/gumaky-lux/0021.jpg|holinky_lux2.txt
-0062|Holínky Demar růžové se zateplením LUX vel. 28 - 35|Demar|Dívčí|jaro,podzim|28/29, 30/31, 32/33, 34/35|320|demar/gumaky-lux/0022.jpg|holinky_lux2.txt
-0063|Holínky Demar modré se zateplením LUX vel. 28 - 35|Demar|Chlapecká|jaro,podzim|28/29, 30/31, 32/33, 34/35|320|demar/gumaky-lux/0023.jpg|holinky_lux2.txt
+0058|Holínky Demar modré se zeleným zateplením vel. 28 - 35|Demar|Chlapecká|jaro,podzim|28/29, 30/31, 32/33, 34/35|320|demar/gumaky-lux/0018.jpg|holinky_lux2.txt
+0060|Holínky Demar Dino šedé se zateplením vel. 28 - 35|Demar|Chlapecká|jaro,podzim|28/29, 30/31, 32/33, 34/35|320|demar/gumaky-lux/0020.jpg|holinky_dino.txt
+0061|Holínky Demar Dino černé se zateplením vel. 28 - 35|Demar|Dívčí|jaro,podzim|28/29, 30/31, 32/33, 34/35|320|demar/gumaky-lux/0021.jpg|holinky_dino.txt
+0062|Holínky Demar Dino Dino růžové se zateplením vel. 28 - 35|Demar|Dívčí|jaro,podzim|28/29, 30/31, 32/33, 34/35|320|demar/gumaky-lux/0022.jpg|holinky_dino.txt
+0063|Holínky Demar Dino modré se zateplením vel. 28 - 35|Demar|Chlapecká|jaro,podzim|28/29, 30/31, 32/33, 34/35|320|demar/gumaky-lux/0023.jpg|holinky_dino.txt
 0064|Holínky Demar modrá zebra LUX vel. 28 - 35|Demar|Chlapecká|jaro,podzim|28/29, 30/31, 32/33, 34/35|320|demar/gumaky-lux/0024.jpg|holinky_lux2.txt
 0065|Holínky Demar slon LUX vel. 28 - 35|Demar|Uni|jaro,podzim|28/29, 30/31, 32/33, 34/35|320|demar/gumaky-lux/0025.jpg|holinky_lux2.txt
 0066|Holínky Demar Iron Man LUX vel. 28 - 35|Demar|Chlapecká|jaro,podzim|28/29, 30/31, 32/33, 34/35|320|demar/gumaky-lux/0026.jpg|holinky_lux2.txt
