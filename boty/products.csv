@@ -79,12 +79,12 @@ id|name|brand|gender|season|size|price|photo|descriptionPath
 0078|Holínky Demar zebra LUX vel. 28 - 35|Demar|Uni|jaro,podzim|28/29, 30/31, 32/33, 34/35|320|demar/gumaky-lux/0038.jpg|holinky_lux2.txt
 0079|Holínky Demar černé květy LUX vel. 28 - 35|Demar|Dívčí|jaro,podzim|28/29, 30/31, 32/33, 34/35|320|demar/gumaky-lux/0039.jpg|holinky_lux2.txt
 0080|Holínky Demar modré moře LUX vel. 28 - 35|Demar|Chlapecká|jaro,podzim|28/29, 30/31, 32/33, 34/35|320|demar/gumaky-lux/0040.jpg|holinky_lux2.txt
-0081|Holínky Demar Mammut růžové|Demar|Dívčí|zima, podzim, sněhule|22/23, 24/25, 26/27, 28/29, 30/31, 32/33, 34/35|345|demar/gumaky-mammut/0041.jpg
-0082|Holínky Demar Mammut tmavě šedé|Demar|Chlapecká|zima, podzim, sněhule|22/23, 24/25, 26/27, 28/29, 30/31, 32/33, 34/35|345|demar/gumaky-mammut/0042.jpg
-0083|Holínky Demar Mammut modré|Demar|Chlapecká|zima, podzim, sněhule|22/23, 24/25, 26/27, 28/29, 30/31, 32/33, 34/35|345|demar/gumaky-mammut/0043.jpg
-0084|Holínky Demar Mammut stříbrné|Demar|Chlapecká|zima, podzim, sněhule|22/23, 24/25, 26/27, 28/29, 30/31, 32/33, 34/35|345|demar/gumaky-mammut/0044.jpg
-0085|Holínky Demar Mammut modro-zelené|Demar|Chlapecká|zima, podzim, sněhule|22/23, 24/25, 26/27, 28/29, 30/31, 32/33, 34/35|345|demar/gumaky-mammut/0045.jpg
-0086|Holínky Demar Mammut červené|Demar|Dívčí|zima, podzim, sněhule|22/23, 24/25, 26/27, 28/29, 30/31, 32/33, 34/35|345|demar/gumaky-mammut/0046.jpg
+0081|Holínky Demar Mammut růžové|Demar|Dívčí|zima, podzim, sněhule|22/23, 24/25, 26/27, 28/29, 30/31, 32/33, 34/35|345|demar/gumaky-mammut/0041.jpg|mammut.txt
+0082|Holínky Demar Mammut tmavě šedé|Demar|Chlapecká|zima, podzim, sněhule|22/23, 24/25, 26/27, 28/29, 30/31, 32/33, 34/35|345|demar/gumaky-mammut/0042.jpg|mammut.txt
+0083|Holínky Demar Mammut modré|Demar|Chlapecká|zima, podzim, sněhule|22/23, 24/25, 26/27, 28/29, 30/31, 32/33, 34/35|345|demar/gumaky-mammut/0043.jpg|mammut.txt
+0084|Holínky Demar Mammut stříbrné|Demar|Chlapecká|zima, podzim, sněhule|22/23, 24/25, 26/27, 28/29, 30/31, 32/33, 34/35|345|demar/gumaky-mammut/0044.jpg|mammut.txt
+0085|Holínky Demar Mammut modro-zelené|Demar|Chlapecká|zima, podzim, sněhule|22/23, 24/25, 26/27, 28/29, 30/31, 32/33, 34/35|345|demar/gumaky-mammut/0045.jpg|mammut.txt
+0086|Holínky Demar Mammut červené|Demar|Dívčí|zima, podzim, sněhule|22/23, 24/25, 26/27, 28/29, 30/31, 32/33, 34/35|345|demar/gumaky-mammut/0046.jpg|mammut.txt
 0087|Sněhule Demar červené šněrování|Demar|Dívčí|zima, sněhule|20/21, 22/23, 24/25, 26/27|429|demar/snehule/0047.jpg
 0088|Sněhule Demar Doggy růžové AKCE|Demar|Dívčí|zima, sněhule|20/21, 22/23, 24/25, 26/27|399|demar/snehule/0048.jpg
 0089|Sněhule Demar Doggy fialové AKCE|Demar|Uni|zima, sněhule|20/21, 22/23, 24/25, 26/27|399|demar/snehule/0049.jpg
