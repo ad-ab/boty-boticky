@@ -6,6 +6,6 @@ Vyrobeno v EU.
 </p>
 <p>
 Velikostní tabulka:<br>
-<img src="https://www.vyprodej-dovoz.cz/boty/tabulka.jpg" alt="tabulka velikosti demar" width="500" height="600">
+<img src="https://www.vyprodej-dovoz.cz/boty/tabulka.jpg" alt="tabulka velikosti demar">
 
 </p>
