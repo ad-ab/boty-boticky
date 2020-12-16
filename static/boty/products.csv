@@ -124,9 +124,9 @@ id|name|brand|gender|season|size|price|photo|descriptionPath
 0124|D.D.Step zimní boty 066-806 royal blue|D.D.Step|Chlapecká|zima, barefoot|21, 22, 23, 24, 25|789|ddstep/zimni/0084.jpg|ddstep_vrtulnik66.txt
 0125|D.D.Step zimní boty 066-806 grey|D.D.Step|Chlapecká|zima, barefoot|21, 22, 23, 24, 25|789|ddstep/zimni/0086.jpg|ddstep_vrtulnik66.txt
 0126|D.D.Step zimní boty 066-806 khaki|D.D.Step|Chlapecká|zima, barefoot|21, 22, 23, 24, 25|789|ddstep/zimni/0085.jpg|ddstep_vrtulnik66.txt
-0127|D.D.Step capáčky pejsek|D.D.Step|Chlapecká|celoroční, barefoot|0-6, 6-12|349|ddstep/celorocni/0086.jpg
-0128|D.D.Step capáčky auto|D.D.Step|Chlapecká|celoroční, barefoot|0-6, 6-12|349|ddstep/celorocni/0087.jpg
-0129|D.D.Step capáčky dortík světlý|D.D.Step|Dívčí|celoroční, barefoot|0-6, 6-12, 12-18, 18-24|349|ddstep/celorocni/0088.jpg
+0127|D.D.Step capáčky pejsek|D.D.Step|Chlapecká|celoroční, barefoot|0-6, 6-12|349|ddstep/celorocni/0086.jpg|ddstep_capacky.txt
+0128|D.D.Step capáčky auto|D.D.Step|Chlapecká|celoroční, barefoot|0-6, 6-12|349|ddstep/celorocni/0087.jpg|ddstep_capacky.txt
+0129|D.D.Step capáčky dortík světlý|D.D.Step|Dívčí|celoroční, barefoot|0-6, 6-12, 12-18, 18-24|349|ddstep/celorocni/0088.jpg|ddstep_capacky.txt
 0131|D.D.Step celoroční F61-553B|D.D.Step|Dívčí|celoroční, barefoot|24, 25, 26, 27, 28, 29|799|ddstep/celorocni/0090.jpg
 0132|D.D.Step celoroční 063-761C|D.D.Step|Dívčí|celoroční, barefoot|31, 32, 33, 34, 35, 36|799|ddstep/celorocni/0091.jpg
 0133|D.D.Step celoroční 023-807A|D.D.Step|Dívčí|celoroční, barefoot|32|799|ddstep/celorocni/0092.jpg
