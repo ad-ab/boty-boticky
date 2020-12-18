@@ -50,7 +50,6 @@
     font-size: 0.8rem;
     cursor: pointer;
   }
-
   
 
   :global(.button-selected) {
@@ -86,6 +85,10 @@
 
   :global(h1) {
     font-size:2rem;
+  }
+
+  :global(.description img) {
+    max-width: 100%;
   }
 
   main {

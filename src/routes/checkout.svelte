@@ -1,8 +1,23 @@
+<script context="module">
+  import shippingStore from '$components/shipping.js'
+
+  export const prerender = true
+  export async function preload() {
+    let shippingOptions = await shippingStore.load(this)
+    return { shippingOptions }
+  }
+</script>
+
 <script>
   import cartStore from '$components/cart.js'
   import { format } from '$components/common.js'
 
   import Order from '$components/Order.svelte'
+
+  export let shippingOptions
+
+  if (shippingOptions) shippingStore.set(shippingOptions)
+
 
   let showOrderInfo = false
 
@@ -35,6 +50,17 @@
             </div>
           </div>
         {/each}
+        <div class="row top">
+          <div>
+            {JSON.stringify(shippingOptions)}
+            <select>
+              <option>a</option>
+              <option>b</option>
+            </select>
+          </div>
+          <div />
+          <div />
+        </div>
         <div class="row top">
           <div>Celková cena</div>
           <div />
