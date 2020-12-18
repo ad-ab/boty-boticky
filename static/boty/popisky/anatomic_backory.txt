@@ -3,9 +3,9 @@ Boty ANATOMIC BAREFOOT UNICORN jsou šité dle kritérií bosého a minimalistic
 
  </p>
  <p>
- <img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/anatomic/0193-1.jpg" alt="tabulka velikosti anatomic stélka" width:50%>
- <img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/anatomic/0193-2.jpg" alt="tabulka velikosti anatomic stélka" width:50%>
- <img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/anatomic/0193-3.jpg" alt="tabulka velikosti anatomic stélka" width:50%>
+ <img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/anatomic/0193-1.jpg" alt="tabulka velikosti anatomic stélka" width:"450">
+ <img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/anatomic/0193-2.jpg" alt="tabulka velikosti anatomic stélka" width:"450">
+ <img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/anatomic/0193-3.jpg" alt="tabulka velikosti anatomic stélka" width: "450">
 </p>
 <p>
 Velikostní tabulka:<br>
