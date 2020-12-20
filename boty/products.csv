@@ -222,8 +222,8 @@ id|name|brand|gender|season|size|price|photo|descriptionPath
 0223|Befado 516X048 tenisky sport černé|Befado|Chlapecká|celoroční, tenisky|25, 26, 27, 28, 29, 30, 31, 32, 33, 34|410|befado/tenisky/0182.jpg|befado_tenisky.txt
 0224|Befado 516X049 tenisky sport collection modro-zelené|Befado|Chlapecká|celoroční, tenisky|27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37|510|befado/tenisky/0183.jpg|befado_tenisky.txt
 0225|Befado 516X053 tenisky sport collection červené|Befado|Dívčí|celoroční, tenisky|27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37|510|befado/tenisky/0184.jpg|befado_tenisky.txt
-0226|Befado 516Y052 tenisky sport collection černé|Befado|Chlapecká|celoroční, tenisky||27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37|510|befado/tenisky/0185.jpg|befado_tenisky.txt
-0227|Befado 516Y051 tenisky sport collection žluté|Befado|Dívčí|celoroční, tenisky||27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37|510|befado/tenisky/0186.jpg|befado_tenisky.txt
+0226|Befado 516Y052 tenisky sport collection černé|Befado|Chlapecká|celoroční, tenisky|27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37|510|befado/tenisky/0185.jpg|befado_tenisky.txt
+0227|Befado 516Y051 tenisky sport collection žluté|Befado|Dívčí|celoroční, tenisky|27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37|510|befado/tenisky/0186.jpg|befado_tenisky.txt
 0228|D.D.Step celoroční boty 018-58A khaki|D.D.Step|Chlapecká|celoroční, barefoot|23|899|ddstep/celorocni/0187.jpg|ddstep_vrtulnik66.txt
 0229|D.D.Step celoroční boty 015-194 khaki|D.D.Step|Chlapecká|celoroční, barefoot|20|899|ddstep/celorocni/0188.jpg|ddstep_vrtulnik66.txt
 0230|D.D.Step celoroční boty 118-599 lavender|D.D.Step|Dívčí|celoroční, barefoot|23, 24|899|ddstep/celorocni/0189.jpg|ddstep_vrtulnik66.txt
@@ -241,5 +241,6 @@ id|name|brand|gender|season|size|price|photo|descriptionPath
 0242|D.D.Step zateplené s membránou F651-912CM|D.D.Step|Dívčí|zimní, celoroční|24, 25|699|ddstep/zimni/0202.jpg
 0243|D.D.Step blikací zimní boty 049-762A|D.D.Step|Dívčí|zimní, celoroční|34|799|ddstep/zimni/0203.jpg
 0244|D.D.Step zimní boty na zip 056-3CM|D.D.Step|Dívčí|zimní|26|799|ddstep/zimni/0204.jpg
-0245|D.D.Step zimní boty 040-401BL|D.D.Step|Dívčí|zimní|36|699|ddstep/zimni/0204.jpg
-0246|D.D.Step zimní kozačky 036-708AM|D.D.Step|Dívčí|zimní|26|699|ddstep/zimni/0204.jpg
+0245|D.D.Step zimní boty 040-401BL|D.D.Step|Dívčí|zimní|36|699|ddstep/zimni/0205.jpg
+0246|D.D.Step zimní kozačky 036-708AM|D.D.Step|Dívčí|zimní|26|699|ddstep/zimni/0206.jpg
+0247|D.D.Step zateplené s membránou F651-905L|D.D.Step|Chlapecká|zimní, celoroční|34|699|ddstep/zimni/0207.jpg
