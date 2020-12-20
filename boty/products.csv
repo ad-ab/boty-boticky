@@ -237,10 +237,10 @@ id|name|brand|gender|season|size|price|photo|descriptionPath
 0238|Anatomic bačkory míče|Anatomic|Chlapecká|celoroční, barefoot|24, 25, 26, 27, 28, 29, 30, 31, 32, 33|359|anatomic/0198.jpg|anatomic_backory6.txt
 0239|Anatomic bačkory vesmír|Anatomic|Chlapecká|celoroční, barefoot|24, 25, 26, 27, 28, 29, 30, 31, 32, 33|359|anatomic/0199.jpg|anatomic_backory7.txt
 0240|Anatomic bačkory dinosauři|Anatomic|Chlapecká|celoroční, barefoot|24, 25, 27, 28, 30, 31, 32, 33|359|anatomic/0200.jpg|anatomic_backory8.txt
-0241|D.D.Step zateplené s membránou F651-912|D.D.Step|Chlapecká|zimní, celoroční|34|699|ddstep/zimni/0201.jpg
-0242|D.D.Step zateplené s membránou F651-912CM|D.D.Step|Dívčí|zimní, celoroční|24, 25|699|ddstep/zimni/0202.jpg
-0243|D.D.Step blikací zimní boty 049-762A|D.D.Step|Dívčí|zimní, celoroční|34|799|ddstep/zimni/0203.jpg
-0244|D.D.Step zimní boty na zip 056-3CM|D.D.Step|Dívčí|zimní|26|799|ddstep/zimni/0204.jpg
-0245|D.D.Step zimní boty 040-401BL|D.D.Step|Dívčí|zimní|36|699|ddstep/zimni/0205.jpg
-0246|D.D.Step zimní kozačky 036-708AM|D.D.Step|Dívčí|zimní|26|699|ddstep/zimni/0206.jpg
-0247|D.D.Step zateplené s membránou F651-905L|D.D.Step|Chlapecká|zimní, celoroční|34|699|ddstep/zimni/0207.jpg
+0241|D.D.Step zateplené s membránou F651-912|D.D.Step|Chlapecká|zimní, celoroční|34|699|ddstep/zimni/0201.jpg|ddstep_vrtulnik66.txt
+0242|D.D.Step zateplené s membránou F651-912CM|D.D.Step|Dívčí|zimní, celoroční|24, 25|699|ddstep/zimni/0202.jpg|ddstep_vrtulnik66.txt
+0243|D.D.Step blikací zimní boty 049-762A|D.D.Step|Dívčí|zimní, celoroční|34|799|ddstep/zimni/0203.jpg|ddstep_vrtulnik66.txt
+0244|D.D.Step zimní boty na zip 056-3CM|D.D.Step|Dívčí|zimní|26|799|ddstep/zimni/0204.jpg|ddstep_vrtulnik66.txt
+0245|D.D.Step zimní boty 040-401BL|D.D.Step|Dívčí|zimní|36|699|ddstep/zimni/0205.jpg|ddstep_vrtulnik66.txt
+0246|D.D.Step zimní kozačky 036-708AM|D.D.Step|Dívčí|zimní|26|699|ddstep/zimni/0206.jpg|ddstep_vrtulnik66.txt
+0247|D.D.Step zateplené s membránou F651-905L|D.D.Step|Chlapecká|zimní, celoroční|34|699|ddstep/zimni/0207.jpg|ddstep_vrtulnik66.txt
