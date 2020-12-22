@@ -12,7 +12,7 @@
 </svelte:head>
 
 <section class="first">
-  <h1>Boty Botičky</h1>
+  <h1></h1>
 
   <div class="bottom-row" />
 </section>
