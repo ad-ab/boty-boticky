@@ -1,7 +1,7 @@
 <footer>
   <div class="inner">
     <nav>
-      <a class="" href="/boty" rel="preload">Boty</a>
+      <a class="" href="/vraceni" rel="preload">Boty</a>
       <a class="" href="/kontakt" rel="preload">Kontakt</a>
       <a class="" href="/about" rel="preload">Doprava</a>
        <a class="" href="/obchod" rel="preload">Obchodní podmínky</a>
