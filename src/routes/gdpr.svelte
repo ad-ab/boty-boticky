@@ -19,11 +19,10 @@ Správcem osobních údajů podle čl. 4 bod 7 nařízení Evropského parlament
 
 Kontaktní údaje správce jsou
 
-adresa: Miřejovice 31, 412 01 Litoměřice
+adresa: Vlčí 93, 440 01 Chlumčany
+email: info@boty-boticky.cz
 
-email: info@boticka.cz
-
-telefon: 721 013 693
+telefon: 608 467 477
 
 Osobními údaji se rozumí veškeré informace o identifikované nebo identifikovatelné fyzické osobě; identifikovatelnou fyzickou osobou je fyzická osoba, kterou lze přímo či nepřímo identifikovat, zejména odkazem na určitý identifikátor, například jméno, identifikační číslo, lokační údaje, síťový identifikátor nebo na jeden či více zvláštních prvků fyzické, fyziologické, genetické, psychické, ekonomické, kulturní nebo společenské identity této fyzické osoby.
 
@@ -87,7 +86,7 @@ Příjemci osobních údajů jsou osoby
 
 podílející se na dodání zboží / služeb / realizaci plateb na základě smlouvy,
 
-zajišťující služby provozování e-shopu (Shoptet) a další služby v souvislosti s provozováním e-shopu,
+zajišťující služby provozování e-shopu a další služby v souvislosti s provozováním e-shopu,
 
 zajišťující marketingové služby na základě smlouvy
 
