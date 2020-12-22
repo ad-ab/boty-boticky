@@ -12,7 +12,7 @@
 </svelte:head>
 
 <section class="first">
-  <h1></h1>
+  <h3>BB</h3>
 
   <div class="bottom-row" />
 </section>
