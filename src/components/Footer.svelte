@@ -1,9 +1,13 @@
 <footer>
   <div class="inner">
     <nav>
-      <a class="" href="/boty" rel="preload">Boty</a>
       <a class="" href="/kontakt" rel="preload">Kontakt</a>
-      <a class="" href="/about" rel="preload">O nás</a>
+      <a class="" href="/about" rel="preload">Doprava</a>
+       <a class="" href="/obchod" rel="preload">Obchodní podmínky</a>
+       <a class="" href="/vraceni" rel="preload">Vrácení zboží</a>
+       <a class="" href="/reklamace" rel="preload">Reklamace zboží</a>
+       <a class="" href="/gdpr" rel="preload">GDPR</a>
+
     </nav>
   </div>
 </footer>

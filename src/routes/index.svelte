@@ -12,7 +12,7 @@
 </svelte:head>
 
 <section class="first">
-  <h3>Boty botičky</h3>
+  <h3>Boty botičky - prodej zdravé dětské obuvi</h3>
 
   <div class="bottom-row" />
 </section>
