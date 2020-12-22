@@ -89,7 +89,7 @@
 </Padded>
 
 <div class="card-list">
-  {#each filteredProducts.reverse() as product, index (product.id)}
+  {#each filteredProducts as product, index (product.id)}
     {#if index < showCount}
       <div key={product.id} class="content">
         <Bota {...product} />

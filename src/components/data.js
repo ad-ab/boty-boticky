@@ -46,7 +46,8 @@ const load = async ({ fetch }) => {
     products = productLines
       .filter((x) => x)
       .map((x) => x.split(delimiter).map((x) => x.trim()))
-      .map(([id,...rest]) => arrayToObject([id, stock[id] || {}, ...rest], [idHeader, "stock", ...restHeaders]));
+      .map(([id,...rest]) => arrayToObject([id, stock[id] || {}, ...rest], [idHeader, "stock", ...restHeaders]))
+      .reverse();
 
     set(products);
   }
