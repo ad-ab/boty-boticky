@@ -6,17 +6,14 @@
 <h1>Obchodní podmínky</h1>
 
 <p>OBCHODNÍ PODMÍNKY
-obchodní společnost: Marie Eisová, Dětská obuv Botička
+obchodní společnost: Ing. Helena Tylová, www.boty-boticky.cz
+se sídlem: Vlčí 93, 440 01 Chlumčany
 
-se sídlem: Miřejovice 31, 412 01 Litoměřice
+identifikační číslo: 868 45 268
 
-identifikační číslo: 737 738 32, DIČ: CZ7661064521
-
-spisová značka: 320602 - Městský úřad Kralupy nad Vltavou
-
-zapsán v Živnostenském rejstříku Úřad příslušný podle § 71 odst. 2 živnostenského zákona MěÚ Kralupy nad Vltavou
-
-pro prodej zboží prostřednictvím on-line obchodu umístěného na internetové adrese www.boticka.cz
+zapsán v Živnostenském rejstříku Úřad příslušný podle § 71 odst. 2 živnostenského zákona MěÚ Louny
+  
+pro prodej zboží prostřednictvím on-line obchodu umístěného na internetové adrese www.boty-boticky.cz
 
 1. ÚVODNÍ USTANOVENÍ
 1.1. Tyto obchodní podmínky (dále jen „obchodní podmínky“) obchodní společnosti , se sídlem , identifikační číslo: , zapsané v obchodním rejstříku vedeném , oddíl , vložka (dále jen „prodávající“) upravují v souladu s ustanovením § 1751 odst. 1 zákona č. 89/2012 Sb., občanský zákoník (dále jen „občanský zákoník“) vzájemná práva a povinnosti smluvních stran vzniklé v souvislosti nebo na základě kupní smlouvy (dále jen „kupní smlouva“) uzavírané mezi prodávajícím a jinou fyzickou osobou (dále jen „kupující“) prostřednictvím internetového obchodu prodávajícího. Internetový obchod je prodávajícím provozován na webové stránce umístněné na internetové adrese (dále jen „webová stránka“), a to prostřednictvím rozhraní webové stránky (dále jen „webové rozhraní obchodu“).
@@ -77,8 +74,8 @@ pro prodej zboží prostřednictvím on-line obchodu umístěného na internetov
 
 4.1.1. v hotovosti v provozovně prodávajícího na adrese;
 4.1.2. v hotovosti na dobírku v místě určeném kupujícím v objednávce;
-4.1.3. bezhotovostně převodem na účet prodávajícího č. 2801339791/2010 vedený u společnosti Fio banka (dále jen „účet prodávajícího“);
-          nebo v případě platby v EUR účet  IBAN: CZ4520100000002601865199   BIC/SWIFT: FIOBCZPPXXX
+4.1.3. bezhotovostně převodem na účet prodávajícího č. 2401073453/2010 vedený u společnosti Fio banka (dále jen „účet prodávajícího“);
+          nebo v případě platby v EUR účet  IBAN: CZ4520100000002401073453   BIC/SWIFT: FIOBCZPPXXX
 4.1.4. bezhotovostně prostřednictvím platebního systému;
 4.1.5. bezhotovostně platební kartou;
 4.1.6. prostřednictvím úvěru poskytnutého třetí osobou.
@@ -165,16 +162,14 @@ pro prodej zboží prostřednictvím on-line obchodu umístěného na internetov
 
 Identifikační a kontaktní údaje správce
 
-Společnost/Jméno a příjmení: Marie Eisová
+Společnost/Jméno a příjmení: Ing. Helena Tylová
 
-Sídlo/Bydliště: Miřejovice 31, 412 01 Litoměřice
-IČO: 73773832
-DIČ: 7661064521
-Zapsaná: zapsán v Živnostenském rejstříku Úřad příslušný podle § 71 odst. 2 živnostenského zákona MěÚ Kralupy nad Vltavou
-Telefon: +420 721 013 693
-Email: info@boticka.cz
-Kontaktní adresa: Marie Eisová, Masarykova 12, 412 01 Litoměřice
-
+Sídlo/Bydliště: Vlčí 93, 440 01 Chlumčany
+IČO: 86845268
+Zapsaná: zapsán v Živnostenském rejstříku Úřad příslušný podle § 71 odst. 2 živnostenského zákona MěÚ Louny
+Telefon: +420 608 467 477
+Email: info@boty-boticky.cz
+Kontaktní adresa: Ing. Helena Tylová, VLčí 93, 440 01 Chlumčany
 9.2. Účel zpracování, rozsah osobních údajů a právní základ pro zpracování
 
 Kupující bere na vědomí, že pro účely uzavření kupní smlouvy, její následné plnění (zpracování objednávky, zajištění vyskladnění a doručení zboží) a případného řešení práv z vadného plnění (reklamací) správce zpracuje a uchová v souladu s nařízením Evropského parlamentu a Rady (EU) 2016/679, obecné nařízení o ochraně osobních údajů (dále jen GDPR), jeho osobní údaje v následujícím rozsahu: jméno, příjmení, adresa, e-mail a telefonní číslo, historii objednávek.
