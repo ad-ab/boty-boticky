@@ -4,7 +4,7 @@
 </svelte:head>
 
 <h1>Reklamace</h1>
-
+<p>
 ZÁRUČNÍ LHŮTA A REKLAMAČNÍ ŘÁD
 V případě, že zboží, které jste od nás obdrželi, je vadné či poškozené, oznamte zjištěné vady co nejdříve prodávajícímu emailem na adresu info@boty-detske.cz. Případně telefonicky nebo písemně na adresu uvedenou v kontaktech.
 
@@ -61,3 +61,4 @@ b/ Zboží zašlete jako doporučený balík na naši adresu.
 c/ Do zásilky uveďte důvod reklamace a variabilní symbol Vaší objednávky.
 
 Vaši reklamaci vyřídíme co nejrychleji, nejpozději však do 30 dnů od jejího vzniku. Záruční lhůta a reklamační řád se řídí obecně platnými právními předpisy.
+  <p>
