@@ -3,7 +3,9 @@
     <nav>
       <a class="" href="/boty" rel="preload">Boty</a>
       <a class="" href="/kontakt" rel="preload">Kontakt</a>
-      <a class="" href="/about" rel="preload">O nás</a>
+      <a class="" href="/about" rel="preload">Doprava</a>
+       <a class="" href="/about" rel="preload">Obchodní podmínky</a>
+
     </nav>
   </div>
 </footer>
