@@ -229,14 +229,14 @@ id|name|brand|gender|season|size|price|photo|descriptionPath
 0230|D.D.Step celoroční boty 118-599 lavender|D.D.Step|Dívčí|celoroční, barefoot|23, 24|899|ddstep/celorocni/0189.jpg|ddstep_vrtulnik66.txt
 0231|D.D.Step celoroční boty 018-45 pink|D.D.Step|Dívčí|celoroční, barefoot|24|899|ddstep/celorocni/0190.jpg|ddstep_vrtulnik66.txt
 0232|D.D.Step zimní boty 043-515L Lavender|D.D.Step|Dívčí|celoroční, barefoot|35|899|ddstep/zimni/0191.jpg|ddstep_vrtulnik66.txt
-0233|Anatomic bačkory jednorožci|Anatomic|Dívčí|celoroční, barefoot|23, 27, 28, 29|359|anatomic/0193.jpg|anatomic_backory.txt
-0234|Anatomic bačkory modré květy|Anatomic|Dívčí|celoroční, barefoot|24, 26, 27, 28, 29, 30, 32, 33|359|anatomic/0194.jpg|anatomic_backory2.txt
-0235|Anatomic bačkory modré puntík|Anatomic|Dívčí|celoroční, barefoot|24, 25, 26, 27, 28, 29, 30, 32, 33|359|anatomic/0195.jpg|anatomic_backory3.txt
-0236|Anatomic bačkory ružové puntík|Anatomic|Dívčí|celoroční, barefoot|28, 29|359|anatomic/0196.jpg|anatomic_backory4.txt
-0237|Anatomic bačkory fotbal|Anatomic|Chlapecká|celoroční, barefoot|26, 27, 28, 29, 30, 31, 32, 33|359|anatomic/0197.jpg|anatomic_backory5.txt
-0238|Anatomic bačkory míče|Anatomic|Chlapecká|celoroční, barefoot|24, 25, 26, 27, 28, 29, 30, 31, 32, 33|359|anatomic/0198.jpg|anatomic_backory6.txt
-0239|Anatomic bačkory vesmír|Anatomic|Chlapecká|celoroční, barefoot|24, 25, 26, 27, 28, 29, 30, 31, 32, 33|359|anatomic/0199.jpg|anatomic_backory7.txt
-0240|Anatomic bačkory dinosauři|Anatomic|Chlapecká|celoroční, barefoot|24, 25, 27, 28, 30, 31, 32, 33|359|anatomic/0200.jpg|anatomic_backory8.txt
+0233|Anatomic bačkory jednorožci|Anatomic|Dívčí|celoroční, barefoot, bačkory|23, 27, 28, 29|359|anatomic/0193.jpg|anatomic_backory.txt
+0234|Anatomic bačkory modré květy|Anatomic|Dívčí|celoroční, barefoot, bačkory|24, 26, 27, 28, 29, 30, 32, 33|359|anatomic/0194.jpg|anatomic_backory2.txt
+0235|Anatomic bačkory modré puntík|Anatomic|Dívčí|celoroční, barefoot, bačkory|24, 25, 26, 27, 28, 29, 30, 32, 33|359|anatomic/0195.jpg|anatomic_backory3.txt
+0236|Anatomic bačkory ružové puntík|Anatomic|Dívčí|celoroční, barefoot, bačkory|28, 29|359|anatomic/0196.jpg|anatomic_backory4.txt
+0237|Anatomic bačkory fotbal|Anatomic|Chlapecká|celoroční, barefoot, bačkory|26, 27, 28, 29, 30, 31, 32, 33|359|anatomic/0197.jpg|anatomic_backory5.txt
+0238|Anatomic bačkory míče|Anatomic|Chlapecká|celoroční, barefoot, bačkory|24, 25, 26, 27, 28, 29, 30, 31, 32, 33|359|anatomic/0198.jpg|anatomic_backory6.txt
+0239|Anatomic bačkory vesmír|Anatomic|Chlapecká|celoroční, barefoot, bačkory|24, 25, 26, 27, 28, 29, 30, 31, 32, 33|359|anatomic/0199.jpg|anatomic_backory7.txt
+0240|Anatomic bačkory dinosauři|Anatomic|Chlapecká|celoroční, barefoot, bačkory|24, 25, 27, 28, 30, 31, 32, 33|359|anatomic/0200.jpg|anatomic_backory8.txt
 0241|D.D.Step zateplené s membránou F651-912|D.D.Step|Chlapecká|zima, celoroční|34|699|ddstep/zimni/0201.jpg|ddstep_vrtulnik66.txt
 0242|D.D.Step zateplené s membránou F651-912CM|D.D.Step|Dívčí|zima, celoroční|24, 25|699|ddstep/zimni/0202.jpg|ddstep_vrtulnik66.txt
 0243|D.D.Step blikací zimní boty 049-762A|D.D.Step|Dívčí|zima, celoroční|34|799|ddstep/zimni/0203.jpg|ddstep_vrtulnik66.txt
@@ -274,3 +274,5 @@ id|name|brand|gender|season|size|price|photo|descriptionPath
 0275|D.D.Step celoroční 040-168A modré - neon zelené|D.D.Step|Dívčí|celoroční, barefoot|25, 26, 27, 28, 29, 30|999|ddstep/celorocni/0238.jpg|ddstep_vrtulnik66.txt
 0276|D.D.Step celoroční 063-916 jednorožec růžové|D.D.Step|Dívčí|celoroční, barefoot|25, 26, 27, 28, 29, 30|999|ddstep/celorocni/0239.jpg|ddstep_vrtulnik66.txt
 0277|D.D.Step celoroční C066-488A měnící se obrázky květy|D.D.Step|Dívčí|celoroční, tenisky|23,24|999|ddstep/celorocni/0240.jpg|ddstep_vrtulnik66.txt
+0278|Okaa Spain zimní růžové celokožené|Okaa Spain|Dívčí|zima, barefoot|28, 30, 32|699|okaa/0241.jpg|okaa_zima.txt
+0279|D.D.Step celoroční C066-488A měnící se obrázky květy|D.D.Step|Dívčí|celoroční, tenisky|23,24|999|ddstep/celorocni/0240.jpg|ddstep_vrtulnik66.txt
