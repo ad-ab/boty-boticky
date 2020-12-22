@@ -3,8 +3,8 @@
 
   export const prerender = true
   export async function preload() {
-    let shippingOptions = await shippingStore.load(this)
-    return { shippingOptions }
+    let shipping = await shippingStore.load(this)
+    return { shipping }
   }
 </script>
 
@@ -14,15 +14,25 @@
 
   import Order from '$components/Order.svelte'
 
-  export let shippingOptions
-
-  if (shippingOptions) shippingStore.set(shippingOptions)
-
+  export let shipping
+  if (shipping) shippingStore.set(shipping)
+  const options = shipping.zasilkovnaShippingOptions || []
 
   let showOrderInfo = false
+  let selectedShipping = shipping.shippingOptions[0]
 
   const removeItemByIndex = (i) =>
     cartStore.set([...$cartStore.filter((_, index) => index !== i)])
+
+  $: checkoutTotal =
+    shipping.shippingOptions[selectedShipping] +
+    $cartStore.map((x) => x.price).reduce((a, c) => Number(a) + Number(c), 0)
+
+  $: totalShipping =
+    checkoutTotal >= shipping.freeShippingLimit
+      ? 0
+      : shipping.shippingOptions[selectedShipping]
+  $: totalShippingText = totalShipping ? `${totalShipping} Kč` : 'Zdarma'
 </script>
 
 <svelte:head>
@@ -34,76 +44,75 @@
 
 <section>
   <div class="checkout">
-    {#if $cartStore.length > 0}
-      {#if !showOrderInfo}
-        <h1>Košík</h1>
-        {#each $cartStore as item, i (i)}
-          <div class="row">
-            <div>{item.name}</div>
-            <div>{item.size}</div>
-            <div>{format(item.price)}</div>
-            <div>
-              <button
-                class="dark"
-                title="Odebrat"
-                on:click={() => removeItemByIndex(i)}>-</button>
-            </div>
-          </div>
-        {/each}
-        <div class="row top">
+    <div class:hidden={!$cartStore.length && showOrderInfo}>
+      <h1>Košík</h1>
+      {#each $cartStore as item, i (i)}
+        <div class="row">
+          <div>{item.name}</div>
+          <div>{item.size}</div>
+          <div>{format(item.price)}</div>
           <div>
-            {JSON.stringify(shippingOptions)}
-            <select>
-              <option>a</option>
-              <option>b</option>
-            </select>
+            <button
+              class="dark"
+              title="Odebrat"
+              on:click={() => removeItemByIndex(i)}>-</button>
           </div>
-          <div />
-          <div />
         </div>
-        <div class="row top">
-          <div>Celková cena</div>
-          <div />
-          <div>
-            {format($cartStore
-                .map((x) => x.price)
-                .reduce((a, c) => Number(a) + Number(c), 0))}
-          </div>
-          <div />
-        </div>
-        <div>
-          <button
-            on:click={() => (showOrderInfo = true)}
-            class="dark"
-            alt="objednat">Objednat</button>
-        </div>
-      {:else}
-        <div class="title">
-          <button
-            class="dark shadow"
-            alt="back"
-            on:click={() => (showOrderInfo = false)}>&#8592;</button>
+      {/each}
+      <div class="row top">
+        <div>Doprava</div>
+        <select
+          bind:value={selectedShipping}
+          style="width:200px; padding:0.3rem">
+          {#each Object.keys(shipping.shippingOptions) as x}
+            <option value={x} key={x}>{x} ({totalShippingText})</option>
+          {/each}
+        </select>
+        <div>{totalShippingText}</div>
+      </div>
+      <div class="row top">
+        <div>Celková cena</div>
+        <div />
+        <div>{format(checkoutTotal)}</div>
+        <div />
+      </div>
+      <div>
+        <button
+          on:click={() => (showOrderInfo = true)}
+          class="dark"
+          alt="pokračovat">Pokračovat</button>
+      </div>
+    </div>
 
-          <h1>Objednávka</h1>
-          <p>
-            *Prosím nezadávejte skutečná data, tato stránka je pouze zkušební
-          </p>
-        </div>
-        <Order cart={$cartStore} />
-      {/if}
-    {:else}
+    <div class:hidden={$cartStore.length}>
       <div class="box">
         <h1>Nemáte žádné položky v košíku</h1>
         Pokračujte v nákupu
         <a href="/boty">zde</a>
       </div>
-    {/if}
+    </div>
+  </div>
+
+  <div class:hidden={!$cartStore.length || !showOrderInfo}>
+    <div class="title">
+      <!-- <button
+        class="dark shadow"
+        alt="back"
+        on:click={() => (showOrderInfo = false)}>&#8592;</button> -->
+
+      <h1>Objednávka</h1>
+    </div>
+    <p>*Prosím nezadávejte skutečná data, tato stránka je pouze zkušební</p>
+    <Order
+      cart={$cartStore}
+      shipping={selectedShipping}
+      {totalShipping}
+      {options} />
   </div>
 </section>
 
 <style>
-  h1,
-  .shadow {
+  h1 {
     filter: drop-shadow(0.1rem 0.1rem 4px rgba(0, 0, 0, 0.7));
     margin-left: 1rem;
   }
@@ -114,6 +123,10 @@
     align-items: center;
     /* align-content: center; */
     /* justify-items: center; */
+  }
+
+  .hidden {
+    display: none;
   }
 
   .box {

@@ -1,5 +1,8 @@
 <script>
   export let cart
+  export let shipping
+  export let totalShipping
+  export let options
 
   import { createForm } from 'svelte-forms-lib'
   import { string, object } from 'yup'
@@ -46,7 +49,14 @@
           {
             method: 'POST',
             headers: { 'Content-type': 'application/json' },
-            body: JSON.stringify({ ...values, cart }),
+            body: JSON.stringify({
+              ...values,
+              cart,
+              shipping: {
+                selected: shipping,
+                totalShipping,
+              },
+            }),
           }
         )
         if (!result.ok) {
@@ -138,6 +148,21 @@
     <small>{$errors.code}</small>
   </div>
 
+  {#if shipping && shipping.includes('Zásilkovna')}
+    <div>
+      <label> Vyber výdejnu </label>
+      <select
+        id="vydejna"
+        name="vydejna"
+        alt="výdejna"
+        style="max-width:212px; padding:0.3rem;">
+        {#each options as x}
+          <option value={x.id} key={x.id}>{x.name}</option>
+        {/each}
+      </select>
+    </div>
+  {/if} 
+
   <div class="right">
     <div />
     <button class="dark" type="submit" alt="submit">Odeslat</button>
@@ -152,16 +177,15 @@
   }
 
   input {
-    padding:0.3rem;
+    padding: 0.3rem;
   }
 
   .right {
-    grid-column: 2;    
-    
+    grid-column: 2;
   }
 
   .right > button {
-    width:auto;
+    width: auto;
   }
 
   form > div {
