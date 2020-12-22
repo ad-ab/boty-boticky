@@ -12,7 +12,7 @@
 </svelte:head>
 
 <section class="first">
-  <h3>BB</h3>
+  <h3>Boty botičky</h3>
 
   <div class="bottom-row" />
 </section>
@@ -45,6 +45,7 @@
 
   h1 {
     text-transform: uppercase;
+    font-family: "Verdana", Verdana, serif;
     font-size: 4rem;
     font-weight: 800;
     line-height: 1.1;
