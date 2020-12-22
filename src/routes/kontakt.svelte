@@ -5,6 +5,6 @@
 
 <h1>Kontakt</h1>
 
-<p>Prodjena je tam</p>
-<p>Adresa je tady</p>
-<p>Volejte mi sem</p>
+<p>Výdejna a zkušebna bot je na adrese: Pražská 79, 440 01 Louny</p>
+<p>Ing. Helena Tylová, www.boty-boticky.cz, Vlčí 93, 440 01 Chlumčany, IČO 868 45 268</p>
+<p>Telefon je 608 467 477, pro rezervaci termínu ke zkoušení nebo vyzvednutí pište info@boty-boticky.cz</p>
