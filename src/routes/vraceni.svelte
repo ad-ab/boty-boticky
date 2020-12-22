@@ -25,9 +25,7 @@ Formulář ke vrácení najdete zde: Vrácení zboží(2).pdf
 Vkládejte formulář, prosím, vždy do krabice s vrácenou obuví- nelepte ho na balík apod.,díky za pochopení.
 
 
-Botatex
-nám.Msgr. Šrámka 1826
-Ostrava 70200
+Ing. Helena Tylová, Vlčí 93, 440 01 Chlumčany
 
 Jedná-li se o slovenského zákazníka zboží posílejte jen přes Zásilkovnu a touto cestou můžou vracet zboží samozřejmě i zákazníci z ČR - postup, jak na to je zde níže:
 Vrátit zboží můžete také přes Zásilkovnu. Stačí vyplnit kdo/co vrací (níže je k vytištění formulář k vrácení, ten Vám ve zmenšené podobě dorazí také v balíčku) a nezapoměňte na číslo účtu, kam náslevně vrátíme platbu. Snadná a levná cesta, jak zboží poslat zpět k nám je prostřednictvím Zásilkovny- za tuto službu Vám následně odečteme 2 Euro z vráceného zboží, obsluze stačí nadiktovat kód 97853076 a oni vše vyřídí za Vás. Seznam poboček, kde můžete balík odeslat najdete na www.zasilkovna.cz/pobocky. Zásilkovnu můžete využít, i pokud k Vám balík putoval jiným přepravcem.
@@ -61,9 +59,8 @@ Vkládejte formulář, prosím, vždy do krabice s vrácenou obuví- nelepte ho 
 
 Doručovací adresa :
 
-Botatex
-nám. Msgr. Šrámka 1826
-Ostrava 70200
+Ing. Helena Tylová, Vlčí 93, 440 01 Chlumčany
+
 
 Reklamaci můžete poslat i přes Zásilkovnu- platí pro zákazníky z ČR i SK. Stačí vyplnit kdo/co vrací a nezapoměňte na číslo účtu. Snadná a levná cesta zboží zpět k nám je prostřednictvím Zásilkovny, obsluze stačí nadiktovat kód 97853076 a oni vše vyřídí za Vás. Seznam poboček, kde můžete balík odeslat najdete na www.zasilkovna.cz/pobocky. Zásilkovnu můžete využít, i pokud k Vám balík putoval jiným přepravcem.
  
@@ -81,9 +78,8 @@ Balík pošlete jako doporučený balík (záleží na Vás, zda kurýrem nebo p
  
 
 Doručovací adresa :
-Botatex
-nám. Msgr.Šrámka 1826
-Ostrava 70200
+Ing. Helena Tylová, Vlčí 93, 440 01 Chlumčany
+
 
 
 Vrátit zboží můžete také přes Zásilkovnu- platí pro zákazníky z ČR i SK. Stačí vyplnit kdo/co vrací (níže je k vytištění formulář k vrácení) a nezapoměňte na číslo účtu. Snadná a levná cesta, jak zboží poslat zpět k nám prostřednictvím Zásilkovny- za tuto službu Vám následně odečteme 60 Kč z vráceného zboží, obsluze stačí nadiktovat kód 97853076 a oni vše vyřídí za Vás. Seznam poboček, kde můžete balík odeslat najdete na www.zasilkovna.cz/pobocky. Zásilkovnu můžete využít, i pokud k Vám balík putoval jiným přepravcem.
