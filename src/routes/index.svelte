@@ -15,9 +15,15 @@
   <h3>Boty botičky - prodej zdravé dětské obuvi</h3>
   
 <section>
+  <nav>
+      
+  
   <p>Vítejte na stránce</p>
   <p>Tady nějaký náhodný boty v akci nebo tak něco?</p>
+      </nav>
+    <nav>
   <p>Přímé odkazy na nějaké sekce</p>
+       </nav>
 </section>
   
   <div class="bottom-row" />
