@@ -10,7 +10,7 @@ export const getZasilkovnaShippingData = async ({ fetch }) => {
   const result = await response.json();
   const filteredResult = result;
 
-  return filteredResult;
+  return filteredResult.sort((a,b) => (a.name).localeCompare(b.name));
 };
 
 export const load = async ({ fetch }) => {
