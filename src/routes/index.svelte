@@ -13,15 +13,17 @@
 
 <section class="first">
   <h3>Boty botičky - prodej zdravé dětské obuvi</h3>
-
-  <div class="bottom-row" />
-</section>
-
+  
 <section>
   <p>Vítejte na stránce</p>
   <p>Tady nějaký náhodný boty v akci nebo tak něco?</p>
   <p>Přímé odkazy na nějaké sekce</p>
 </section>
+  
+  <div class="bottom-row" />
+</section>
+
+
 
 <style>
   .bottom-row {
