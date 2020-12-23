@@ -21,9 +21,12 @@
       
     <h2>Dívčí obuv</h2> 
     
-      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky.jpg" alt="holinky">
-      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky.jpg" alt="holinky">
-      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky.jpg" alt="holinky">
+      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky_holka.jpg" alt="holinky">
+      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/backory_holka.jpg" alt="holinky">
+      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/celorocni_holka.jpg" alt="holinky">
+      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/tenisky_holka.jpg" alt="holinky">
+      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/zimni_holka.jpg" alt="holinky">
+      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/letni_holka.jpg" alt="holinky">
 
 <a>
       
