@@ -25,8 +25,6 @@ Formulář ke vrácení najdete zde přikládáme do každého balíku.
 
 Vkládejte formulář, prosím, vždy do krabice s vrácenou obuví- nelepte ho na balík apod.,díky za pochopení.
 </p>
-
-Ing. Helena Tylová, Vlčí 93, 440 01 Chlumčany
 <p>
 Prosíme o strpení- balíčky na pobočce Zásilkovny vyzvedáváme 1x týdně (většinou ve čtvrtek) a následně je postupně rozbalujeme a vracíme platby. Ze zákona máme na vrácení platby 14 dní od převzetí balíčku, buďte tedy prosím, trpěliví, moc děkujeme:-)
 </p>
@@ -53,7 +51,7 @@ Vkládejte formulář, prosím, vždy do krabice s vrácenou obuví- nelepte ho 
 <p>
 Doručovací adresa :<br>
 
-Ing. Helena Tylová, Vlčí 93, 440 01 Chlumčany
+Ing. Helena Tylová, Vlčí 93, 440 01 Chlumčany<br>
 
 
 Reklamaci můžete poslat i přes Zásilkovnu- platí pro zákazníky z ČR i SK. Stačí vyplnit kdo/co vrací a nezapoměňte na číslo účtu. Snadná a levná cesta zboží zpět k nám je prostřednictvím Zásilkovny, obsluze stačí nadiktovat kód 97853076 a oni vše vyřídí za Vás. Seznam poboček, kde můžete balík odeslat najdete na www.zasilkovna.cz/pobocky. Zásilkovnu můžete využít, i pokud k Vám balík putoval jiným přepravcem.
@@ -65,6 +63,7 @@ Reklamaci můžete poslat i přes Zásilkovnu- platí pro zákazníky z ČR i SK
 Kupující má právo podle §53 ods. 7 občanského zákoníku odstoupit od smlouvy do 14 dnů od převzetí zásilky. Na vrácení zboží ve lhůtě 14 dní bez udání důvodu má zákazník právo vždy, pokud kupuje věc přes internet. Vrátit bez udání důvodu lze nové zboží, které bylo jen vyzkoušené. Zboží zasílá odběratel na vlastní náklady doporučeně na adresu dodavatele. Poté jsou mu vráceny peníze za zboží a při vrácení celé objednávky, také za poštovné (doběrečné proplaceno nebude)- vrátíte- li jen část objednávky, pak poštovné nebude uhrazeno. A pokud bude vrácením části objednávky porušena podmínka pro poštovné zdarma, které je jen u objednávky nad 5000 Kč, tak Vám budou náklady na něj odečteny z vráceného zboží. Děkujeme za pochopení.
 
 </p>
+<p>
 Formulář pro odstoupení od smlouvy si můžete stáhnout zde : Vrácení zboží(2).pdf
 <br>
 Vkládejte formulář, prosím, vždy do krabice s vrácenou obuví- nelepte ho na balík apod.,díky za pochopení.<br>
