@@ -3,7 +3,7 @@
   <meta name="description" content="Stránka s obchodními podmínkami boty-boticky.cz. Zde najdete kontakty kam se obrátit v případě problémů.">
 </svelte:head>
 
-<H1>OBCHODNÍ PODMÍNKY</h1>
+<h1>OBCHODNÍ PODMÍNKY</h1>
 <p>
 Obchodní společnost: Ing. Helena Tylová, www.boty-boticky.cz
 se sídlem: Vlčí 93, 440 01 Chlumčany, 
@@ -13,7 +13,7 @@ identifikační číslo: 868 45 268,
 zapsán v Živnostenském rejstříku Úřad příslušný podle § 71 odst. 2 živnostenského zákona MěÚ Louny, 
 pro prodej zboží prostřednictvím on-line obchodu umístěného na internetové adrese www.boty-boticky.cz
 </p>
-<H3>1. ÚVODNÍ USTANOVENÍ</h3>
+<h3>1. ÚVODNÍ USTANOVENÍ</h3>
   <p>
 1.1. Tyto obchodní podmínky (dále jen „obchodní podmínky“) obchodní společnosti , se sídlem , identifikační číslo: , zapsané v obchodním rejstříku vedeném , oddíl , vložka (dále jen „prodávající“) upravují v souladu s ustanovením § 1751 odst. 1 zákona č. 89/2012 Sb., občanský zákoník (dále jen „občanský zákoník“) vzájemná práva a povinnosti smluvních stran vzniklé v souvislosti nebo na základě kupní smlouvy (dále jen „kupní smlouva“) uzavírané mezi prodávajícím a jinou fyzickou osobou (dále jen „kupující“) prostřednictvím internetového obchodu prodávajícího. Internetový obchod je prodávajícím provozován na webové stránce umístněné na internetové adrese (dále jen „webová stránka“), a to prostřednictvím rozhraní webové stránky (dále jen „webové rozhraní obchodu“).
 <br>
@@ -77,7 +77,7 @@ pro prodej zboží prostřednictvím on-line obchodu umístěného na internetov
 3.13. Kupující souhlasí s použitím komunikačních prostředků na dálku při uzavírání kupní smlouvy. Náklady vzniklé kupujícímu při použití komunikačních prostředků na dálku v souvislosti s uzavřením kupní smlouvy (náklady na internetové připojení, náklady na telefonní hovory) si hradí kupující sám, přičemž tyto náklady se neliší od základní sazby.
 <br>
    </p>
- <H2>4. CENA ZBOŽÍ A PLATEBNÍ PODMÍNKY</H2>
+ <h2>4. CENA ZBOŽÍ A PLATEBNÍ PODMÍNKY</h2>
  <p>
 4.1. Cenu zboží a případné náklady spojené s dodáním zboží dle kupní smlouvy může kupující uhradit prodávajícímu následujícími způsoby:
 <br>
@@ -104,7 +104,7 @@ pro prodej zboží prostřednictvím on-line obchodu umístěného na internetov
 <br>
    </p>
 
-<H2>5. ODSTOUPENÍ OD KUPNÍ SMLOUVY</H2>
+<h2>5. ODSTOUPENÍ OD KUPNÍ SMLOUVY</h2>
 <p>
 5.1. Kupující bere na vědomí, že dle ustanovení § 1837 občanského zákoníku, nelze mimo jiné odstoupit od kupní smlouvy:
 <br>
@@ -131,7 +131,7 @@ pro prodej zboží prostřednictvím on-line obchodu umístěného na internetov
 5.8. Je-li společně se zbožím poskytnut kupujícímu dárek, je darovací smlouva mezi prodávajícím a kupujícím uzavřena s rozvazovací podmínkou, že dojde-li k odstoupení od kupní smlouvy kupujícím, pozbývá darovací smlouva ohledně takového dárku účinnosti a kupující je povinen spolu se zbožím prodávajícímu vrátit i poskytnutý dárek.
 <br>
   </p>
-<H2>6. PŘEPRAVA A DODÁNÍ ZBOŽÍ</H2>
+<h2>6. PŘEPRAVA A DODÁNÍ ZBOŽÍ</h2>
 <p>
 6.1. V případě, že je způsob dopravy smluven na základě zvláštního požadavku kupujícího, nese kupující riziko a případné dodatečné náklady spojené s tímto způsobem dopravy.
 <br>
@@ -143,7 +143,7 @@ pro prodej zboží prostřednictvím on-line obchodu umístěného na internetov
 <br>
   </p>
 
-<H2>7. PRÁVA Z VADNÉHO PLNĚNÍ</H2>
+<h2>7. PRÁVA Z VADNÉHO PLNĚNÍ</h2>
 <p>
 7.1. Práva a povinnosti smluvních stran ohledně práv z vadného plnění se řídí příslušnými obecně závaznými předpisy (zejména ustanoveními § 1914 až 1925, § 2099 až 2117 a § 2161 až 2174 občanského zákoníku).
 <br>
@@ -163,7 +163,7 @@ pro prodej zboží prostřednictvím on-line obchodu umístěného na internetov
 7.6. Další práva a povinnosti stran související s odpovědností prodávajícího za vady může upravit reklamační řád prodávajícího.
 <br>
   </p>
-<H2>8. DALŠÍ PRÁVA A POVINNOSTI SMLUVNÍCH STRAN</H2>
+<h2>8. DALŠÍ PRÁVA A POVINNOSTI SMLUVNÍCH STRAN</h2>
 <p>
 8.1. Kupující nabývá vlastnictví ke zboží zaplacením celé kupní ceny zboží
 <br>
@@ -176,7 +176,7 @@ pro prodej zboží prostřednictvím on-line obchodu umístěného na internetov
 8.5. Kupující tímto přebírá na sebe nebezpečí změny okolností ve smyslu § 1765 odst. 2 občanského zákoníku.
 <br>
   </p>
-<H2>9. OCHRANA OSOBNÍCH ÚDAJŮ</H2>
+<h2>9. OCHRANA OSOBNÍCH ÚDAJŮ</h2>
 <p>
 9.1. Správcem osobních údajů poskytnutých za účelem plnění předmětu smlouvy je prodávající.
 <br><br>
@@ -192,7 +192,7 @@ Email: info@boty-boticky.cz<br>
 Kontaktní adresa: Ing. Helena Tylová, VLčí 93, 440 01 Chlumčany<br>
   </p>
 
-<H2>9.2. Účel zpracování, rozsah osobních údajů a právní základ pro zpracování</H2>
+<h2>9.2. Účel zpracování, rozsah osobních údajů a právní základ pro zpracování</h2>
 <p>
 Kupující bere na vědomí, že pro účely uzavření kupní smlouvy, její následné plnění (zpracování objednávky, zajištění vyskladnění a doručení zboží) a případného řešení práv z vadného plnění (reklamací) správce zpracuje a uchová v souladu s nařízením Evropského parlamentu a Rady (EU) 2016/679, obecné nařízení o ochraně osobních údajů (dále jen GDPR), jeho osobní údaje v následujícím rozsahu: jméno, příjmení, adresa, e-mail a telefonní číslo, historii objednávek.
 <br>
@@ -207,7 +207,7 @@ smluvnímu dopravci, kterého si kupující zvolí v objednávkovém formuláři
 provozovateli portálu Heureka.cz za účelem generování a zasílání dotazníků spokojenosti s nákupem v rámci programu Ověřeno zákazníky, do něhož je internetový obchod zapojen. Právním základem pro zpracování je v tomto případě v souladu s článkem 6 odst. 1 písm. f) GDPR oprávněný zájem správce, který spočívá ve zjišťování spokojenosti kupujícího s nákupem u správce. Zasílání dotazníků se týká všech kupujících, kteří neodmítli zasílání obchodních sdělení ve smyslu § 7 odst. 3 zákona o některých službách informační společnosti (č. 480/2004 Sb.), a je prováděno po každém nákupu na internetovém obchodu. Provozovatel portálu Heureka.cz je oprávněn předanou e-mailovou adresu použít výhradně za účelem vygenerování a zaslání dotazníku spokojenosti ve smyslu Podmínek programu Ověřeno zákazníky dostupných zde: sluzby.heureka.cz/napoveda/podminky-a-dulezite-dokumenty/. Proti zasílání e-mailových dotazníků v rámci programu Ověřeno zákazníky může kupující kdykoli vyjádřit námitku odmítnutím dalších dotazníků pomocí odkazu v e-mailu s dotazníkem. V případě námitky nebude dotazník kupujícímu dále zasílán.
 <br>
   </p>
-<H2>9.3. Doba uložení</H2>
+<h2>9.3. Doba uložení</h2>
  <p>
 Osobní údaje budou správcem uloženy po dobu nutnou ke splnění smlouvy (zpracování objednávky, vyskladnění a doručení zboží) a dále po dobu zákonné záruky (24 měsíců od převzetí zboží) či po dobu poskytnuté záruky smluvní.
 <br>
@@ -241,13 +241,13 @@ Prodávající umožní nákup bez registrace, přičemž údaje neregistrovaný
 HEUREKA - OVĚŘENO ZÁKAZNÍKY  Vaši spokojenost s nákupem zjišťujeme prostřednictvím e-mailových dotazníků v rámci programu Ověřeno zákazníky, do něhož je náš e-shop zapojen. Ty vám zasíláme pokaždé, když u nás nakoupíte, pokud ve smyslu § 7 odst. 3 zákona č. 480/2004 Sb. o některých službách informační společnosti jejich zasílání neodmítnete. Zpracování osobních údajů pro účely zaslání dotazníků v rámci programu Ověřeno zákazníky provádíme na základě našeho oprávněného zájmu, který spočívá ve zjišťování vaší spokojenosti s nákupem u nás. Pro zasílání dotazníků, vyhodnocování vaší zpětné vazby a analýz našeho tržního postavení využíváme zpracovatele, kterým je provozovatel portálu Heureka.cz; tomu pro tyto účely můžeme předávat informace o zakoupeném zboží a vaši e-mailovou adresu. Vaše osobní údaje nejsou při zasílání e-mailových dotazníků předány žádné třetí straně pro její vlastní účely. Proti zasílání e-mailových dotazníků v rámci programu Ověřeno zákazníky můžete kdykoli vyjádřit námitku odmítnutím dalších dotazníků pomocí odkazu v e-mailu s dotazníkem. V případě vaší námitky vám dotazník nebudeme dále zasílat.“
 <br>
    </p>
-<H2>10. UKLÁDÁNÍ COOKIES</H2>
+<h2>10. UKLÁDÁNÍ COOKIES</h2>
 <p>
 10.1. Kupující souhlasí s ukládáním tzv. cookies na jeho počítač. V případě, že je nákup na webové stránce možné provést a závazky prodávajícího z kupní smlouvy plnit, aniž by docházelo k ukládání tzv. cookies na počítač kupujícího, může kupující souhlas podle předchozí věty kdykoliv odvolat.
 <br>
  </p>
 
-<H2>11. DORUČOVÁNÍ</H2>
+<h2>11. DORUČOVÁNÍ</h2>
 <p>
 11.1. Oznámení týkající se vztahů prodávajícího a kupujícího, zejména týkající odstoupení od kupní smlouvy, musí být doručena poštou formou doporučeného dopisu, není-li v kupní smlouvě stanoveno jinak. Oznámení se doručují na příslušnou kontaktní adresu druhé strany a považují se za doručené a účinné okamžikem jejich dodání prostřednictvím pošty, s výjimkou oznámení o odstoupení od smlouvy učiněného kupujícím, kdy je odstoupení účinné, pokud je oznámení kupujícím ve lhůtě pro odstoupení odesláno.
 <br>
@@ -256,7 +256,7 @@ HEUREKA - OVĚŘENO ZÁKAZNÍKY  Vaši spokojenost s nákupem zjišťujeme prost
 11.3. Smluvní strany můžou běžnou korespondenci vzájemně doručovat prostřednictvím elektronické pošty, a to na adresu elektronické pošty uvedenou v uživatelském účtu kupujícího či uvedenou kupujícím v objednávce, resp. na adresu uvedenou na webové stránce prodávajícího.
 <br>
  </p> 
-<H2>12. ZÁVĚREČNÁ USTANOVENÍ</H2>
+<h2>12. ZÁVĚREČNÁ USTANOVENÍ</h2>
 <p>
 12.1. Pokud vztah založený kupní smlouvou obsahuje mezinárodní (zahraniční) prvek, pak strany sjednávají, že vztah se řídí českým právem. Tímto nejsou dotčena práva spotřebitele vyplývající z obecně závazných právních předpisů.
 <br>
