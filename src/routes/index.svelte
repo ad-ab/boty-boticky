@@ -20,11 +20,21 @@
   <nav>
       
     <h2>Dívčí obuv</h2>
-      </nav>
-    <nav>
+    
+      <img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky.jpg" alt="holinky demar" width:"450">
+      <img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky.jpg" alt="holinky demar" width:"450">
+      <img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky.jpg" alt="holinky demar" width:"450">
+      <img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky.jpg" alt="holinky demar" width:"450">
+      <img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky.jpg" alt="holinky demar" width:"450">
+      <img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky.jpg" alt="holinky demar" width:"450">
+
+    
+    
+  </nav>
+  <nav>
   <h2>Chlapecká obuv</h2>
        </nav>
- 
+
        </div>
 </section>
   
