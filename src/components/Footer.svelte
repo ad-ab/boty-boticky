@@ -3,18 +3,21 @@
     <nav>
       <a class="" href="/kontakt" rel="preload">Kontakt</a>
       <a class="" href="/about" rel="preload">Doprava</a>
-       <a class="" href="/obchod" rel="preload">Obchodní podmínky</a>
-       <a class="" href="/vraceni" rel="preload">Vrácení zboží</a>
-       <a class="" href="/reklamace" rel="preload">Reklamace zboží</a>
-       <a class="" href="/gdpr" rel="preload">GDPR</a>
-
+    </nav>
+    <nav>
+      <a class="" href="/vraceni" rel="preload">Vrácení zboží</a>
+      <a class="" href="/reklamace" rel="preload">Reklamace zboží</a>
+      <a class="" href="/gdpr" rel="preload">GDPR</a>
+    </nav>
+    <nav>
+      <a class="" href="/obchod" rel="preload">Obchodní podmínky</a>
+      <a class="" href="/gdpr" rel="preload">GDPR</a>
     </nav>
   </div>
 </footer>
 
 <style>
   footer {
-    
     padding: 2rem 10rem;
     background-color: #1f0e13;
     color: lightgray;
