@@ -42,7 +42,7 @@
     height: 10rem;
     background-color: rgba(255, 255, 255, 0.2);
   }
-
+  
   .first {
     height: 100vh;
 
@@ -59,7 +59,13 @@
     line-height: 1.1;
     filter: drop-shadow(0.2rem 0.2rem 5px rgba(0, 0, 0, 0.7));
   }
-
+  
+ nav {
+    justify-self: center;
+    display:flex;
+    flex-direction: column;
+  }
+  
   p {
     margin: 2rem auto;
     line-height: 1.35;
