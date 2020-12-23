@@ -7,7 +7,6 @@
     <nav>
       <a class="" href="/vraceni" rel="preload">Vrácení zboží</a>
       <a class="" href="/reklamace" rel="preload">Reklamace zboží</a>
-      <a class="" href="/gdpr" rel="preload">GDPR</a>
     </nav>
     <nav>
       <a class="" href="/obchod" rel="preload">Obchodní podmínky</a>
