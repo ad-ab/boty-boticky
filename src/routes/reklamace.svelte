@@ -5,18 +5,33 @@
 
 <h1>Reklamace</h1>
 <p>
-  ZÁRUČNÍ LHŮTA A REKLAMAČNÍ ŘÁD V případě, že zboží, které jste od nás
+  <h2>ZÁRUČNÍ LHŮTA A REKLAMAČNÍ ŘÁD </h2>
+  <p>
+    V případě, že zboží, které jste od nás
   obdrželi, je vadné či poškozené, oznamte zjištěné vady co nejdříve
   prodávajícímu emailem na adresu info@boty-boticky.cz. Případně telefonicky
-  nebo písemně na adresu uvedenou v kontaktech. a/Vadné nebo poškozené zboží
+  nebo písemně na adresu uvedenou v kontaktech. <br><br>
+    
+  Vadné nebo poškozené zboží
   bude vyměněno po vzájemné dohodě a po zaslání reklamovaného zboží na naši
-  adresu na náklady prodávajícího. b/ Zboží musí být dodáno kompletně, tak jak
-  bylo převzato od prodávajícího. c/ Prodávající nepřebírá odpovědnost za škody
+  adresu na náklady prodávajícího. <br><br>
+  
+  Zboží musí být dodáno kompletně, tak jak
+  bylo převzato od prodávajícího. <br><br>
+    
+  Prodávající nepřebírá odpovědnost za škody
   vyplývající z nesprávného nakládání se zbožím, nesprávného ošetření a
   jakýchkoli zásahů, ani za škody způsobené vnějšími událostmi. Na vady tohoto
-  původu se nevztahuje ani poskytovaná záruka. d/ Zboží je z hygienických důvodů
-  k reklamaci přijímáno pouze čisté. e/ Na zboží poskytujeme záruční dobu danou
-  zákonem – 24 měsíců. f/ Reklamační lhůta začíná běžet ode dne doručení zboží
+  původu se nevztahuje ani poskytovaná záruka. <br><br>
+    
+  Zboží je z hygienických důvodů
+  k reklamaci přijímáno pouze čisté.<br><br>
+  
+  Na zboží poskytujeme záruční dobu danou
+  zákonem – 24 měsíců. 
+     </p>  
+     <p>  
+  Reklamační lhůta začíná běžet ode dne doručení zboží
   prodávajícímu. Pokud má převzaté zboží nedostatky (např. nemá sjednané nebo
   oprávněně očekávané vlastnosti, nehodí se k obvyklému nebo sjednanému účelu,
   není kompletní, neodpovídá jeho množství, míra, hmotnost, nebo jakost
@@ -53,9 +68,16 @@
   vady současně), může kupující uplatnit právo na slevu z kupní ceny, výměnu
   zboží nebo odstoupit od smlouvy. Prodávající neodpovídá za vady vzniklé v
   důsledku běžného opotřebení nebo nedodržení návodu k použití. Reklamační
-  postup je uveden níže ve druhé – vlastní části podmínek prodeje. POSTUP PŘI
-  REKLAMACI a/ Informujte nás o reklamaci telefonicky nebo emailem. b/ Zboží
-  zašlete jako doporučený balík na naši adresu. c/ Do zásilky uveďte důvod
+  postup je uveden níže ve druhé – vlastní části podmínek prodeje. 
+    </p>
+  <h3>POSTUP PŘI REKLAMACI </h3>
+  <p>   
+  Informujte nás o reklamaci telefonicky nebo emailem. 
+    
+  Zboží zašlete jako doporučený balík na naši adresu. 
+    </p>
+<p>  
+  Do zásilky uveďte důvod
   reklamace a variabilní symbol Vaší objednávky. Vaši reklamaci vyřídíme co
   nejrychleji, nejpozději však do 30 dnů od jejího vzniku. Záruční lhůta a
   reklamační řád se řídí obecně platnými právními předpisy.
