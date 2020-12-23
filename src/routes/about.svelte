@@ -3,7 +3,7 @@
   <meta name="description" content="Více informací o webu boty-boticky.cz.">
 </svelte:head>
 
-<h1>Doprava</h1>
+Doprava
 
 <p>
 CENÍK DOPRAVY<br><br>
