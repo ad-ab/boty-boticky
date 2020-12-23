@@ -2,10 +2,10 @@
   <title>Doprava | Boty Botičky - Prodej dětských bot</title>
   <meta name="description" content="Více informací o webu boty-boticky.cz.">
 </svelte:head>
-
+<p>
 Doprava
 
-<p>
+
 CENÍK DOPRAVY<br><br>
 
 Zásilkovna:
