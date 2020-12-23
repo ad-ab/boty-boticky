@@ -81,8 +81,9 @@
           on:click={() => (showOrderInfo = true)}
           class="dark"
           alt="pokračovat">Pokračovat</button>
+        <div>Při objednávce nad 1500 Kč poštovné ZDARMA.</div>
       </div>
-      <div>Při objednávce nad 1500 Kč poštovné ZDARMA.</div>
+      
     </div>
 
     <div class:hidden={$cartStore.length}>
