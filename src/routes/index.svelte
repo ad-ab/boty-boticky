@@ -19,9 +19,9 @@
 
   <nav>
       
-    <h2>Dívčí obuv</h2>
+    <h2>Dívčí obuv</h2> 
     
-      <img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky.jpg" alt="holinky demar" width:"450">
+      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky.jpg" alt="holinky demar" width:"450"><a>
       <img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky.jpg" alt="holinky demar" width:"450">
       <img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky.jpg" alt="holinky demar" width:"450">
       <img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky.jpg" alt="holinky demar" width:"450">
