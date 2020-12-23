@@ -267,9 +267,9 @@ HEUREKA - OVĚŘENO ZÁKAZNÍKY  Vaši spokojenost s nákupem zjišťujeme prost
 12.4. Přílohu obchodních podmínek tvoří vzorový formulář pro odstoupení od kupní smlouvy.
 <br>
 12.5. Kontaktní údaje prodávajícího: adresa pro doručování , adresa elektronické pošty , telefon.
-</p> 
---------------------------------------------------------------------------------------------------------------------------------
 
+--------------------------------------------------------------------------------------------------------------------------------
+</p> 
  <p>
 
 Formulář pro odstoupení od kupní smlouvy<br><br>
