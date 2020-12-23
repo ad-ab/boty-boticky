@@ -29,6 +29,8 @@
         (val) => val.replace(' ', '').length === 5
       )
       .required('PSČ je povinné'),
+     phone: string().required ('Telefonní číslo je povinné'),
+
   })
 
   const { form, errors, handleChange, handleSubmit, handleReset } = createForm({
@@ -39,6 +41,8 @@
       adress: '',
       city: '',
       code: '',
+      phone: '',
+
     },
     validationSchema: schema,
     onSubmit: async (values) => {
@@ -146,6 +150,17 @@
       on:blur={handleChange}
       bind:value={$form.code} />
     <small>{$errors.code}</small>
+  </div>
+    <div>
+    <label for="phone">Telefonní číslo</label>
+    <input
+      id="phone"
+      alt="phone"
+      name="phone"
+      on:change={handleChange}
+      on:blur={handleChange}
+      bind:value={$form.phone} />
+    <small>{$errors.phone}</small>
   </div>
 
   {#if shipping && shipping.includes('Zásilkovna')}
