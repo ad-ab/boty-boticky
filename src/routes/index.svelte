@@ -15,6 +15,8 @@
   <h3>Boty botičky - prodej zdravé dětské obuvi</h3>
   
 <section>
+    <div class="inner">
+
   <nav>
       
   
@@ -24,6 +26,10 @@
     <nav>
   <p>Přímé odkazy na nějaké sekce</p>
        </nav>
+  <nav>
+  <p>AAA</p>
+       </nav>
+       </div>
 </section>
   
   <div class="bottom-row" />
@@ -49,6 +55,10 @@
     background-image: url('/backgrounds/kidsshoes1600.jpg');
     background-size: cover;
     background-position: center;
+  }
+  .inner {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   h1 {
