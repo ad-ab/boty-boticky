@@ -75,6 +75,8 @@
         <div />
         <div>{format(checkoutTotal)}</div>
         <div />
+                <div>Při objednávce nad 1500 Kč poštovné ZDARMA.</div>
+
       </div>
       <div>
         <button
