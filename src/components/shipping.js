@@ -4,11 +4,11 @@ const { subscribe, set } = writable(undefined);
 
 // download and filter this during the build process
 export const getZasilkovnaShippingData = async ({ fetch }) => {
-  const response = await fetch("https://www.zasilkovna.cz/api/v4/41494564a70d6de6/branch.json");
+  const response = await fetch("/shipping/zasilkovna_cz.json");
   if (!response.ok) return [];
 
   const result = await response.json();
-  const filteredResult = Object.values(result.data).filter(x=>x.country==="cz").map((x) => ({ id: x.id, name: x.name }))
+  const filteredResult = result;
 
   return filteredResult;
 };
@@ -28,7 +28,7 @@ export const load = async ({ fetch }) => {
   return result;
 };
 
-export default { 
+export default {
   load,
   subscribe,
   set
