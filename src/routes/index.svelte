@@ -19,16 +19,12 @@
 
   <nav>
       
-  
-  <p>Vítejte na stránce</p>
-  <p>Tady nějaký náhodný boty v akci nebo tak něco?</p>
+    <h2>Dívčí obuv</h2>
       </nav>
     <nav>
-  <p>Přímé odkazy na nějaké sekce</p>
+  <h2>Chlapecká obuv</h2>
        </nav>
-  <nav>
-  <p>AAA</p>
-       </nav>
+ 
        </div>
 </section>
   
@@ -58,7 +54,7 @@
   }
   .inner {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   h1 {
