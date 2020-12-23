@@ -273,6 +273,6 @@ HEUREKA - OVĚŘENO ZÁKAZNÍKY  Vaši spokojenost s nákupem zjišťujeme prost
  <p>
 
 Formulář pro odstoupení od kupní smlouvy<br><br>
-<img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/formular.jpg" alt="tabulka velikosti formular reklamace, vrácení stélka" width:"450">
+<img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/formular.jpg" alt="tabulka velikosti formular reklamace, vrácení stélka">
 
 </p>
