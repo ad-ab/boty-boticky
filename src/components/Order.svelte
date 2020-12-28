@@ -29,8 +29,8 @@
         (val) => val.replace(' ', '').length === 5
       )
       .required('PSČ je povinné'),
-     phone: string().required ('Telefonní číslo je povinné'),
-
+    phone: string().required('Telefonní číslo je povinné'),
+    note: string(),
   })
 
   const { form, errors, handleChange, handleSubmit, handleReset } = createForm({
@@ -42,7 +42,7 @@
       city: '',
       code: '',
       phone: '',
-
+      note: '',
     },
     validationSchema: schema,
     onSubmit: async (values) => {
@@ -55,7 +55,7 @@
             headers: { 'Content-type': 'application/json' },
             body: JSON.stringify({
               ...values,
-              cart,
+              cart: cart.map(x=> ({id:x.id, name:x.name, size: x.size, price: x.price, stock: x.stock })),
               shipping: {
                 selected: shipping,
                 totalShipping,
@@ -151,7 +151,7 @@
       bind:value={$form.code} />
     <small>{$errors.code}</small>
   </div>
-    <div>
+  <div>
     <label for="phone">Telefonní číslo</label>
     <input
       id="phone"
@@ -161,6 +161,17 @@
       on:blur={handleChange}
       bind:value={$form.phone} />
     <small>{$errors.phone}</small>
+  </div>
+  <div>
+    <label for="note">Poznámka</label>
+    <input
+      id="note"
+      alt="note"
+      name="note"
+      on:change={handleChange}
+      on:blur={handleChange}
+      bind:value={$form.note} />
+    <small>{$errors.note}</small>
   </div>
 
   {#if shipping && shipping.includes('Zásilkovna')}
@@ -176,7 +187,7 @@
         {/each}
       </select>
     </div>
-  {/if} 
+  {/if}
 
   <div class="right">
     <div />

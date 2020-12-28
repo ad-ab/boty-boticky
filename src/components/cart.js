@@ -4,7 +4,7 @@ import { isClientSide } from "$components/common.js";
 const defaultValue = [];
 const { subscribe, set } = writable(defaultValue);
 if (isClientSide) {
-  const storageValue = JSON.parse(sessionStorage.getItem('cart'));
+  const storageValue = JSON.parse(localStorage.getItem('cart'));
   if (storageValue) set(storageValue);
 }
 
@@ -15,7 +15,7 @@ subscribe(value => {
 });
 
 const store = (value) => {
-  sessionStorage.setItem('cart', JSON.stringify(value));
+  localStorage.setItem('cart', JSON.stringify(value));
   set(value);
 }
 
