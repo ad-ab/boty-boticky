@@ -11,9 +11,7 @@
     content="Hlavní stránka prodeje bot. Zde najdete spoustu krásných bot a botiček pro vaše děti a ratolesti" />
 </svelte:head>
 
-<section class="first">
-  <h3>Boty botičky - prodej zdravé dětské obuvi</h3>
-  
+<section class="first">  
 <section>
     <div class="inner">
       <nav>
