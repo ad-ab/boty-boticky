@@ -27,12 +27,12 @@
   </nav>    
   <nav>  
   <h2>Chlapecká obuv</h2>
-          <a href="https://www.boty-boticky.cz/boty?season=podzim,jaro&gender=D%C3%ADv%C4%8D%C3%AD"><img src="kluk_backory2.png" alt="holinky"> 
-      <a href="https://www.boty-boticky.cz/boty?season=ba%C4%8Dkory&gender=D%C3%ADv%C4%8D%C3%AD"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/celorocni_kluk.jpg" alt="holinky"><br><br>
-        <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/celorocni_kluk.jpg" alt="holinky">
-      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/celorocni_kluk.jpg" alt="holinky"><br><br>
-      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/celorocni_kluk.jpg" alt="holinky">
-      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/celorocni_kluk.jpg" alt="holinky">
+          <a href="https://www.boty-boticky.cz/boty?season=ba%C4%8Dkory&gender=Chlapeck%C3%A1"><img src="backory_kluk.png" alt="holinky"> 
+      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim&gender=Chlapeck%C3%A1"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/gumaky_kluk.png" alt="holinky"><br><br>
+        <a href="https://www.boty-boticky.cz/boty?season=celoro%C4%8Dn%C3%AD&gender=Chlapeck%C3%A1"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/celorocni_kluk.png" alt="holinky">
+      <a href="https://www.boty-boticky.cz/boty?season=sn%C4%9Bhule,zima&gender=Chlapeck%C3%A1"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/snehule_kluk.png" alt="holinky"><br><br>
+      <a href="https://www.boty-boticky.cz/boty?season=tenisky&gender=Chlapeck%C3%A1"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/tenisky_kluk.jpg" alt="holinky">
+      <a href="https://www.boty-boticky.cz/boty?season=leto&gender=Chlapeck%C3%A1"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/letni_kluk.jpg" alt="holinky">
     </nav>  
 
        </div>
