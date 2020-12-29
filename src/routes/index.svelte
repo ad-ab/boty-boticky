@@ -27,12 +27,12 @@
   </nav>    
   <nav>  
   <h2>Chlapecká obuv</h2>
-          <a href="https://www.boty-boticky.cz/boty?season=ba%C4%8Dkory&gender=Chlapeck%C3%A1"><img src="backory_kluk.png" alt="holinky"> 
+          <a href="https://www.boty-boticky.cz/boty?season=ba%C4%8Dkory&gender=Chlapeck%C3%A1"><img src="backory_kluk.png" alt="backory"> 
       <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim&gender=Chlapeck%C3%A1"><img src="gumaky_kluk.png" alt="holinky"><br><br>
-        <a href="https://www.boty-boticky.cz/boty?season=celoro%C4%8Dn%C3%AD&gender=Chlapeck%C3%A1"><img src="celorocni_kluk.png" alt="holinky">
-      <a href="https://www.boty-boticky.cz/boty?season=sn%C4%9Bhule,zima&gender=Chlapeck%C3%A1"><img src="snehule_kluk.png" alt="holinky"><br><br>
-      <a href="https://www.boty-boticky.cz/boty?season=tenisky&gender=Chlapeck%C3%A1"><img src="tenisky_kluk.jpg" alt="holinky">
-      <a href="https://www.boty-boticky.cz/boty?season=leto&gender=Chlapeck%C3%A1"><img src="letni_kluk.jpg" alt="holinky">
+        <a href="https://www.boty-boticky.cz/boty?season=celoro%C4%8Dn%C3%AD&gender=Chlapeck%C3%A1"><img src="celorocni_kluk.png" alt="celorocni">
+      <a href="https://www.boty-boticky.cz/boty?season=sn%C4%9Bhule,zima&gender=Chlapeck%C3%A1"><img src="snehule_kluk.png" alt="snehule"><br><br>
+      <a href="https://www.boty-boticky.cz/boty?season=tenisky&gender=Chlapeck%C3%A1"><img src="tenisky_kluk.jpg" alt="tenisky">
+      <a href="https://www.boty-boticky.cz/boty?season=leto&gender=Chlapeck%C3%A1"><img src="letni_kluk.jpg" alt="sandaly">
     </nav>  
 
        </div>
