@@ -14,8 +14,7 @@
 <p>
   Správcem osobních údajů podle čl. 4 bod 7 nařízení Evropského parlamentu a
   Rady (EU) 2016/679 o ochraně fyzických osob v souvislosti se zpracováním
-  osobních údajů a o volném pohybu těchto údajů (dále jen: „GDPR”) je Marie
-  Eisová IČO 73773832 se sídlem Staré Ouholice 64, 277 52 Nová Ves (dále jen:
+  osobních údajů a o volném pohybu těchto údajů (dále jen: „GDPR”) je Ing. Helena Tylová IČO 86845268 se sídlem Vlčí 93, 440 01 Chlumčany (dále jen:
   „správce“).
 </p>
 <p>Kontaktní údaje správce jsou<br />
