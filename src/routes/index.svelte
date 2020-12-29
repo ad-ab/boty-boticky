@@ -19,12 +19,12 @@
       <nav>
  
     <h2>Dívčí obuv</h2> 
-      <a href="https://www.boty-boticky.cz/boty?season=podzim,jaro&gender=D%C3%ADv%C4%8D%C3%AD"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky_holka2.jpg" alt="holinky"> 
-      <a href="https://www.boty-boticky.cz/boty?season=ba%C4%8Dkory&gender=D%C3%ADv%C4%8D%C3%AD"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky_holka2.jpg" alt="holinky"><br><br>
-        <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky_holka2.jpg" alt="holinky">
-      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky_holka2.jpg" alt="holinky"><br><br>
-      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky_holka2.jpg" alt="holinky">
-      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky_holka2.jpg" alt="holinky">
+      <a href="https://www.boty-boticky.cz/boty?season=podzim,jaro&gender=D%C3%ADv%C4%8D%C3%AD"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/dom_holka.jpg" alt="holinky"> 
+      <a href="https://www.boty-boticky.cz/boty?season=ba%C4%8Dkory&gender=D%C3%ADv%C4%8D%C3%AD"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/holinky_holka.jpg" alt="holinky"><br><br>
+        <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/celorocni_holka.jpg" alt="holinky">
+      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/divci_snehule.jpg" alt="holinky"><br><br>
+      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/divci_tenisky.jpg" alt="holinky">
+      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim"><img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/letni_holka.jpg" alt="holinky">
 
   </nav>    
   <nav>  
