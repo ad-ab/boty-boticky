@@ -26,7 +26,7 @@
         <ImageLink
           link="https://www.boty-boticky.cz/boty?season=podzim,jaro&gender=D%C3%ADv%C4%8D%C3%AD"
           src="/uvod/holinky_holka2.png"
-          alt="holinky" />
+          alt="holínky" />
         <ImageLink
           link="https://www.boty-boticky.cz/boty?season=celoro%C4%8Dn%C3%AD&gender=D%C3%ADv%C4%8D%C3%AD"
           src="/uvod/celorocni_holka.png"
@@ -57,7 +57,7 @@
         <ImageLink
           link="/boty?season=jaro,podzim&gender=Chlapeck%C3%A1"
           src="/uvod/gumaky_kluk.png"
-          alt="holinky" />
+          alt="holínky" />
         <ImageLink
           link="/boty?season=celoro%C4%8Dn%C3%AD&gender=Chlapeck%C3%A1"
           src="/uvod/celorocni_kluk.png"
@@ -73,7 +73,7 @@
         <ImageLink
           link="/boty?season=leto&gender=Chlapeck%C3%A1"
           src="/uvod/letni_kluk.png"
-          alt="sandály" />
+          alt="letní" />
       </nav>
     </div>
   </div>
