@@ -12,82 +12,80 @@
     content="Hlavní stránka prodeje bot. Zde najdete spoustu krásných bot a botiček pro vaše děti a ratolesti" />
 </svelte:head>
 
-<div class="body" /> 
-
+<div class="body" />
 
 <section class="first">
   <div class="inner">
     <div class="column">
       <h2>Dívčí obuv</h2>
       <nav>
-      <ImageLink
-        link="https://www.boty-boticky.cz/boty?season=ba%C4%8Dkory&gender=D%C3%ADv%C4%8D%C3%AD"
-        src="/uvod/domaci_holka2.png"
-        alt="bačkory" />
-      <ImageLink
-        href="https://www.boty-boticky.cz/boty?season=podzim,jaro&gender=D%C3%ADv%C4%8D%C3%AD"
-        src="/uvod/holinky_holka2.png"
-        alt="holinky" />
-      <ImageLink
-        href="https://www.boty-boticky.cz/boty?season=celoro%C4%8Dn%C3%AD&gender=D%C3%ADv%C4%8D%C3%AD"
-        src="/uvod/celorocni_holka.png"
-        alt="celoroční" />
+        <ImageLink
+          link="https://www.boty-boticky.cz/boty?season=ba%C4%8Dkory&gender=D%C3%ADv%C4%8D%C3%AD"
+          src="/uvod/domaci_holka2.png"
+          alt="bačkory" />
+        <ImageLink
+          link="https://www.boty-boticky.cz/boty?season=podzim,jaro&gender=D%C3%ADv%C4%8D%C3%AD"
+          src="/uvod/holinky_holka2.png"
+          alt="holinky" />
+        <ImageLink
+          link="https://www.boty-boticky.cz/boty?season=celoro%C4%8Dn%C3%AD&gender=D%C3%ADv%C4%8D%C3%AD"
+          src="/uvod/celorocni_holka.png"
+          alt="celoroční" />
 
-      <ImageLink
-        href="https://www.boty-boticky.cz/boty?season=sn%C4%9Bhule&gender=D%C3%ADv%C4%8D%C3%AD"
-        src="/uvod/divci_snehule2.png"
-        alt="sněhule" />
-      <ImageLink
-        href="https://www.boty-boticky.cz/boty?season=tenisky&gender=D%C3%ADv%C4%8D%C3%AD"
-        src="/uvod/divci_tenisky2.png"
-        alt="tenisky" />
+        <ImageLink
+          link="https://www.boty-boticky.cz/boty?season=sn%C4%9Bhule&gender=D%C3%ADv%C4%8D%C3%AD"
+          src="/uvod/divci_snehule2.png"
+          alt="sněhule" />
+        <ImageLink
+          link="https://www.boty-boticky.cz/boty?season=tenisky&gender=D%C3%ADv%C4%8D%C3%AD"
+          src="/uvod/divci_tenisky2.png"
+          alt="tenisky" />
 
-      <ImageLink
-        href="https://www.boty-boticky.cz/boty?season=leto&gender=D%C3%ADv%C4%8D%C3%AD"
-        src="/uvod/letni_holka2.png"
-        alt="letní" />
+        <ImageLink
+          link="https://www.boty-boticky.cz/boty?season=leto&gender=D%C3%ADv%C4%8D%C3%AD"
+          src="/uvod/letni_holka2.png"
+          alt="letní" />
       </nav>
     </div>
     <div class="column">
       <h2>Chlapecká obuv</h2>
       <nav>
-      <ImageLink
-        link="/boty?season=ba%C4%8Dkory&gender=Chlapeck%C3%A1"
-        src="/uvod/backory_kluk.png"
-        alt="bačkory" />
-      <ImageLink
-        link="/boty?season=jaro,podzim&gender=Chlapeck%C3%A1"
-        src="/uvod/gumaky_kluk.png"
-        alt="holinky" />
-      <ImageLink
-        link="/boty?season=celoro%C4%8Dn%C3%AD&gender=Chlapeck%C3%A1"
-        src="/uvod/celorocni_kluk.png"
-        alt="celoroční" />
-      <ImageLink
-        link="/boty?season=sn%C4%9Bhule,zima&gender=Chlapeck%C3%A1"
-        src="/uvod/snehule_kluk.png"
-        alt="sněhule" />
-      <ImageLink
-        link="/boty?season=tenisky&gender=Chlapeck%C3%A1"
-        src="/uvod/tenisky_kluk.png"
-        alt="tenisky" />
-      <ImageLink
-        link="/boty?season=leto&gender=Chlapeck%C3%A1"
-        src="/uvod/letni_kluk.png"
-        alt="sandály" />
+        <ImageLink
+          link="/boty?season=ba%C4%8Dkory&gender=Chlapeck%C3%A1"
+          src="/uvod/backory_kluk.png"
+          alt="bačkory" />
+        <ImageLink
+          link="/boty?season=jaro,podzim&gender=Chlapeck%C3%A1"
+          src="/uvod/gumaky_kluk.png"
+          alt="holinky" />
+        <ImageLink
+          link="/boty?season=celoro%C4%8Dn%C3%AD&gender=Chlapeck%C3%A1"
+          src="/uvod/celorocni_kluk.png"
+          alt="celoroční" />
+        <ImageLink
+          link="/boty?season=sn%C4%9Bhule,zima&gender=Chlapeck%C3%A1"
+          src="/uvod/snehule_kluk.png"
+          alt="sněhule" />
+        <ImageLink
+          link="/boty?season=tenisky&gender=Chlapeck%C3%A1"
+          src="/uvod/tenisky_kluk.png"
+          alt="tenisky" />
+        <ImageLink
+          link="/boty?season=leto&gender=Chlapeck%C3%A1"
+          src="/uvod/letni_kluk.png"
+          alt="sandály" />
       </nav>
     </div>
   </div>
 </section>
 
-
 <style>
   .body {
-    position:fixed;
-    width:100%;
-    height:100%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('/backgrounds/kidsshoes1600.jpg');
+      url('/backgrounds/kidsshoes1600.jpg');
     background-size: cover;
     background-position: center;
   }
@@ -137,10 +135,10 @@
 
   nav {
     justify-content: center;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
-    margin-bottom:3rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
   }
 
   p {
