@@ -8,18 +8,18 @@
   <div
     class="background"
     class:large
-    class:fall={type === 'podzim'}
-    class:summer={type === 'léto'}
-    class:spring={type === 'jaro'}
-    class:winter={type === 'zima'}
+    class:fall={type === 'holinky'}
+    class:summer={type === 'letní'}
+    class:spring={type === 'celoroční'}
+    class:winter={type === 'zimní'}
     class:fade />
   <div
     title={type}
     class:large
-    class:fall={type === 'podzim'}
-    class:summer={type === 'léto'}
-    class:spring={type === 'jaro'}
-    class:winter={type === 'zima'}
+    class:fall={type === 'holinky'}
+    class:summer={type === 'letní'}
+    class:spring={type === 'celoroční'}
+    class:winter={type === 'zimní'}
     class:fade />
 </div>
 
