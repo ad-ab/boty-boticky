@@ -17,6 +17,8 @@
 
 <style>
   footer {
+    /* remove z-index once we add more content to main page..and put back in the background of the section */
+    z-index: 1; 
     padding: 2rem 10rem;
     background-color: #1f0e13;
     color: lightgray;

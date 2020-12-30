@@ -1,5 +1,6 @@
 <script context="module">
   import Footprint from '$components/icons/Footprint.svelte'
+  import ImageLink from '$components/LinkWithImageAndText.svelte'
 
   export const prerender = true
 </script>
@@ -11,40 +12,87 @@
     content="Hlavní stránka prodeje bot. Zde najdete spoustu krásných bot a botiček pro vaše děti a ratolesti" />
 </svelte:head>
 
-<section class="first">  
-<section>
-    <div class="inner">
+<div class="body" /> 
+
+
+<section class="first">
+  <div class="inner">
+    <div class="column">
+      <h2>Dívčí obuv</h2>
       <nav>
- 
-    <h2>Dívčí obuv</h2> 
-      <a href="https://www.boty-boticky.cz/boty?season=ba%C4%8Dkory&gender=D%C3%ADv%C4%8D%C3%AD"><img src="domaci_holka2.png" alt="backory"> 
-      <a href="https://www.boty-boticky.cz/boty?season=podzim,jaro&gender=D%C3%ADv%C4%8D%C3%AD"><img src="holinky_holka2.png" alt="holinky"><br><br>
-        <a href="https://www.boty-boticky.cz/boty?season=celoro%C4%8Dn%C3%AD&gender=D%C3%ADv%C4%8D%C3%AD"><img src="celorocni_holka.png" alt="celorocni">
-      <a href="https://www.boty-boticky.cz/boty?season=sn%C4%9Bhule&gender=D%C3%ADv%C4%8D%C3%AD"><img src="divci_snehule2.png" alt="snehule"><br><br>
-      <a href="https://www.boty-boticky.cz/boty?season=tenisky&gender=D%C3%ADv%C4%8D%C3%AD"><img src="divci_tenisky2.png" alt="tenisky">
-      <a href="https://www.boty-boticky.cz/boty?season=leto&gender=D%C3%ADv%C4%8D%C3%AD"><img src="letni_holka2,.png" alt="letni">
+      <ImageLink
+        link="https://www.boty-boticky.cz/boty?season=ba%C4%8Dkory&gender=D%C3%ADv%C4%8D%C3%AD"
+        src="/uvod/domaci_holka2.png"
+        alt="bačkory" />
+      <ImageLink
+        href="https://www.boty-boticky.cz/boty?season=podzim,jaro&gender=D%C3%ADv%C4%8D%C3%AD"
+        src="/uvod/holinky_holka2.png"
+        alt="holinky" />
+      <ImageLink
+        href="https://www.boty-boticky.cz/boty?season=celoro%C4%8Dn%C3%AD&gender=D%C3%ADv%C4%8D%C3%AD"
+        src="/uvod/celorocni_holka.png"
+        alt="celoroční" />
 
-  </nav>    
-  <nav>  
-  <h2>Chlapecká obuv</h2>
-          <a href="https://www.boty-boticky.cz/boty?season=ba%C4%8Dkory&gender=Chlapeck%C3%A1"><img src="backory_kluk.png" alt="backory"> 
-      <a href="https://www.boty-boticky.cz/boty?season=jaro,podzim&gender=Chlapeck%C3%A1"><img src="gumaky_kluk.png" alt="holinky"><br><br>
-        <a href="https://www.boty-boticky.cz/boty?season=celoro%C4%8Dn%C3%AD&gender=Chlapeck%C3%A1"><img src="celorocni_kluk.png" alt="celorocni">
-      <a href="https://www.boty-boticky.cz/boty?season=sn%C4%9Bhule,zima&gender=Chlapeck%C3%A1"><img src="snehule_kluk.png" alt="snehule"><br><br>
-      <a href="https://www.boty-boticky.cz/boty?season=tenisky&gender=Chlapeck%C3%A1"><img src="tenisky_kluk2.png" alt="tenisky">
-      <a href="https://www.boty-boticky.cz/boty?season=leto&gender=Chlapeck%C3%A1"><img src="letni_kluk.png" alt="sandaly">
-    </nav>  
+      <ImageLink
+        href="https://www.boty-boticky.cz/boty?season=sn%C4%9Bhule&gender=D%C3%ADv%C4%8D%C3%AD"
+        src="/uvod/divci_snehule2.png"
+        alt="sněhule" />
+      <ImageLink
+        href="https://www.boty-boticky.cz/boty?season=tenisky&gender=D%C3%ADv%C4%8D%C3%AD"
+        src="/uvod/divci_tenisky2.png"
+        alt="tenisky" />
 
-       </div>
+      <ImageLink
+        href="https://www.boty-boticky.cz/boty?season=leto&gender=D%C3%ADv%C4%8D%C3%AD"
+        src="/uvod/letni_holka2.png"
+        alt="letní" />
+      </nav>
+    </div>
+    <div class="column">
+      <h2>Chlapecká obuv</h2>
+      <nav>
+      <ImageLink
+        link="/boty?season=ba%C4%8Dkory&gender=Chlapeck%C3%A1"
+        src="/uvod/backory_kluk.png"
+        alt="bačkory" />
+      <ImageLink
+        link="/boty?season=jaro,podzim&gender=Chlapeck%C3%A1"
+        src="/uvod/gumaky_kluk.png"
+        alt="holinky" />
+      <ImageLink
+        link="/boty?season=celoro%C4%8Dn%C3%AD&gender=Chlapeck%C3%A1"
+        src="/uvod/celorocni_kluk.png"
+        alt="celoroční" />
+      <ImageLink
+        link="/boty?season=sn%C4%9Bhule,zima&gender=Chlapeck%C3%A1"
+        src="/uvod/snehule_kluk.png"
+        alt="sněhule" />
+      <ImageLink
+        link="/boty?season=tenisky&gender=Chlapeck%C3%A1"
+        src="/uvod/tenisky_kluk.png"
+        alt="tenisky" />
+      <ImageLink
+        link="/boty?season=leto&gender=Chlapeck%C3%A1"
+        src="/uvod/letni_kluk.png"
+        alt="sandály" />
+      </nav>
+    </div>
+  </div>
 </section>
-  
-  <div class="bottom-row" />
-</section>
-
 
 
 <style>
-  .bottom-row {
+  .body {
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('/backgrounds/kidsshoes1600.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* .bottom-row {
     position: absolute;
     left: 5rem;
     right: 5rem;
@@ -53,35 +101,48 @@
     justify-content: space-evenly;
     height: 10rem;
     background-color: rgba(255, 255, 255, 0.2);
+  } */
+  h2 {
+    filter: drop-shadow(0.1rem 0.1rem 4px rgba(0, 0, 0, 0.7));
+    margin-left: 1rem;
   }
-  
-  .first {
-    height: 100vh;
 
-    background-image: url('/backgrounds/kidsshoes1600.jpg');
+  .first {
+    /* height: 100vh; */
+
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url('/backgrounds/kidsshoes1600.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center; */
   }
   .inner {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
   h1 {
     text-transform: uppercase;
-    font-family: "Verdana", Verdana, serif;
+    font-family: 'Verdana', Verdana, serif;
     font-size: 4rem;
     font-weight: 800;
     line-height: 1.1;
     filter: drop-shadow(0.2rem 0.2rem 5px rgba(0, 0, 0, 0.7));
   }
-  
- nav {
+
+  .column {
     justify-self: center;
-    display:flex;
+    display: flex;
     flex-direction: column;
   }
-  
+
+  nav {
+    justify-content: center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin-bottom:3rem;
+  }
+
   p {
     margin: 2rem auto;
     line-height: 1.35;
