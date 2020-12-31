@@ -24,7 +24,7 @@
           src="/uvod/domaci_holka2.png"
           alt="bačkory" />
         <ImageLink
-          link="https://www.boty-boticky.cz/boty?season=podzim,jaro&gender=D%C3%ADv%C4%8D%C3%AD"
+          link="https://www.boty-boticky.cz/boty?season=podzim,jaro,holinky&gender=D%C3%ADv%C4%8D%C3%AD"
           src="/uvod/holinky_holka2.png"
           alt="holínky" />
         <ImageLink
@@ -33,9 +33,9 @@
           alt="celoroční" />
 
         <ImageLink
-          link="https://www.boty-boticky.cz/boty?season=sn%C4%9Bhule&gender=D%C3%ADv%C4%8D%C3%AD"
+          link="https://www.boty-boticky.cz/boty?season=sn%C4%9Bhule,zimn%C3%AD&gender=D%C3%ADv%C4%8D%C3%AD"
           src="/uvod/divci_snehule2.png"
-          alt="sněhule" />
+          alt="sněhule a zimní" />
         <ImageLink
           link="https://www.boty-boticky.cz/boty?season=tenisky&gender=D%C3%ADv%C4%8D%C3%AD"
           src="/uvod/divci_tenisky2.png"
@@ -55,7 +55,7 @@
           src="/uvod/backory_kluk.png"
           alt="bačkory" />
         <ImageLink
-          link="/boty?season=jaro,podzim&gender=Chlapeck%C3%A1"
+          link="/boty?season=jaro,podzim,holinky&gender=Chlapecká"
           src="/uvod/gumaky_kluk.png"
           alt="holínky" />
         <ImageLink
@@ -63,9 +63,9 @@
           src="/uvod/celorocni_kluk.png"
           alt="celoroční" />
         <ImageLink
-          link="/boty?season=sn%C4%9Bhule,zima&gender=Chlapeck%C3%A1"
+          link="/boty?season=sněhule,zima,zimní&gender=Chlapecká"
           src="/uvod/snehule_kluk.png"
-          alt="sněhule" />
+          alt="sněhule a zimní" />
         <ImageLink
           link="/boty?season=tenisky&gender=Chlapeck%C3%A1"
           src="/uvod/tenisky_kluk.png"
