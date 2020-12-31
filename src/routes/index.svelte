@@ -35,7 +35,7 @@
         <ImageLink
           link="https://www.boty-boticky.cz/boty?season=sn%C4%9Bhule,zimn%C3%AD&gender=D%C3%ADv%C4%8D%C3%AD"
           src="/uvod/divci_snehule2.png"
-          alt="sněhule zimní" />
+          alt="zimní" />
         <ImageLink
           link="https://www.boty-boticky.cz/boty?season=tenisky&gender=D%C3%ADv%C4%8D%C3%AD"
           src="/uvod/divci_tenisky2.png"
@@ -65,7 +65,7 @@
         <ImageLink
           link="/boty?season=sněhule,zima,zimní&gender=Chlapecká"
           src="/uvod/snehule_kluk.png"
-          alt="sněhule zimní" />
+          alt="zimní" />
         <ImageLink
           link="/boty?season=tenisky&gender=Chlapeck%C3%A1"
           src="/uvod/tenisky_kluk.png"
