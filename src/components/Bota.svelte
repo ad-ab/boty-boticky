@@ -7,7 +7,7 @@
 
   import { format, fixUrl } from '$components/common.js'
 
-  let seasonList = ['jaro', 'léto', 'podzim', 'zima']
+  let seasonList = ['tenisky', 'letní', 'holinky', 'zimní']
   let genderList = ['Chlapecká', 'Dívčí']
 
   $: shouldFadeGender = (string) =>
