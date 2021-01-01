@@ -24,6 +24,8 @@
   const removeItemByIndex = (i) =>
     cartStore.set([...$cartStore.filter((_, index) => index !== i)])
 
+  const formatPrice = num => num ? `${num} Kč` : 'Zdarma'
+
   $: checkoutTotal =
     shipping.shippingOptions[selectedShipping] +
     $cartStore.map((x) => x.price).reduce((a, c) => Number(a) + Number(c), 0)
@@ -65,7 +67,7 @@
           bind:value={selectedShipping}
           style="width:200px; padding:0.3rem">
           {#each Object.keys(shipping.shippingOptions) as x}
-            <option value={x} key={x}>{x} ({totalShippingText})</option>
+            <option value={x} key={x}>{x} ({formatPrice(shipping.shippingOptions[x])})</option>
           {/each}
         </select>
         <div>{totalShippingText}</div>
