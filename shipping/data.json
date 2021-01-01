@@ -1,10 +1,10 @@
 {
     "shippingOptions": {
-        "PPL - předem na účet": 85
-        "PPL - dobírka": 105
-        "Česká pošta - předem na účet": 90
-        "Česká pošta - dobírka": 105
-        "Zásilkovna - předem na účet": 60 
+        "PPL - předem na účet": 85,
+        "PPL - dobírka": 105,
+        "Česká pošta - předem na účet": 90,
+        "Česká pošta - dobírka": 105,
+        "Zásilkovna - předem na účet": 60,
         "Zásilkovna - dobírka": 65
     },
     "freeShippingLimit": 1500
