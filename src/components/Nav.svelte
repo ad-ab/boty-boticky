@@ -17,8 +17,7 @@
     <nav><a class="" href="/boty" rel="preload">Boty</a></nav>
 
     <a class="cart" href="/checkout">
-          <img src="/uvod/kosik4.jpg">
-Košík
+   <Basket small />Košík
       {#if $cartStore.length > 0}
         ({$cartStore.length})
 
