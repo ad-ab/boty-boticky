@@ -5,7 +5,7 @@
   export let options
 
   import { createForm } from 'svelte-forms-lib'
-  import { string, object } from 'yup'
+  import { string, object, bool } from 'yup'
   import cartStore from '$components/cart.js'
 
   let isSending = false
@@ -31,6 +31,12 @@
       .required('PSČ je povinné'),
     phone: string().required('Telefonní číslo je povinné'),
     note: string(),
+    rules: string()
+      .matches(/true/, 'Musite souhlasit s podmínkami')
+      .required('Musite souhlasit s podmínkami'),
+    gdpr: string()
+      .matches(/true/, 'Musíte souhlasit s GDPR')
+      .required('Musíte souhlasit s GDPR'),
   })
 
   const { form, errors, handleChange, handleSubmit, handleReset } = createForm({
@@ -43,6 +49,8 @@
       code: '',
       phone: '',
       note: '',
+      gdpr: 'false',
+      rules: 'false',
     },
     validationSchema: schema,
     onSubmit: async (values) => {
@@ -55,7 +63,13 @@
             headers: { 'Content-type': 'application/json' },
             body: JSON.stringify({
               ...values,
-              cart: cart.map(x=> ({id:x.id, name:x.name, size: x.size, price: x.price, stock: x.stock })),
+              cart: cart.map((x) => ({
+                id: x.id,
+                name: x.name,
+                size: x.size,
+                price: x.price,
+                stock: x.stock,
+              })),
               shipping: {
                 selected: shipping,
                 totalShipping,
@@ -189,6 +203,29 @@
     </div>
   {/if}
 
+  <div>
+    <input
+      type="checkbox"
+      id="rules"
+      name="rules"
+      on:change={handleChange}
+      on:blur={handleChange}
+      bind:value={$form.rules} />
+    <label for="rules">Souhlasím s pravidlama</label>
+    <small>{$errors.rules}</small>
+  </div>
+  <div>
+    <input
+      type="checkbox"
+      id="gdpr"
+      name="gdpr"
+      on:change={handleChange}
+      on:blur={handleChange}
+      bind:value={$form.gdpr} />
+    <label for="gdpr">Souhlasím s GDPR</label>
+    <small>{$errors.gdpr}</small>
+  </div>
+
   <div class="right">
     <div />
     <button class="dark" type="submit" alt="submit">Odeslat</button>
@@ -196,6 +233,8 @@
 </form>
 
 <style>
+
+  
   form {
     display: flex;
     flex-direction: column;
