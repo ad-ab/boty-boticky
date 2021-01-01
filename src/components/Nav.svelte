@@ -2,6 +2,8 @@
   import cartStore from '$components/cart.js'
 
   import Footprint from '$components/icons/Footprint.svelte'
+  import Basket from '$components/icons/Basket.svelte'
+
 </script>
 
 <header>
