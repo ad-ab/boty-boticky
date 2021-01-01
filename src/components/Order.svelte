@@ -211,7 +211,7 @@
       on:change={handleChange}
       on:blur={handleChange}
       bind:value={$form.rules} />
-    <label for="rules">Souhlasím s pravidlama</label>
+    <label for="rules"><a href= "https://www.boty-boticky.cz/obchod"> Souhlasím s obchodními podmínkami</a></label>
     <small>{$errors.rules}</small>
   </div>
   <div>
@@ -222,7 +222,7 @@
       on:change={handleChange}
       on:blur={handleChange}
       bind:value={$form.gdpr} />
-    <label for="gdpr">Souhlasím s GDPR</label>
+    <label for="gdpr"><a href= "https://www.boty-boticky.cz/gdpr">Souhlasím se zpracováním osobních údajů</a></label>
     <small>{$errors.gdpr}</small>
   </div>
 
