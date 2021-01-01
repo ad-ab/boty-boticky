@@ -5,7 +5,7 @@
         "Česká pošta - předem na účet": 90,
         "Česká pošta - dobírka": 105,
         "Zásilkovna - předem na účet": 65, 
-        "Zásilkovna - dobírka": 85
+        "Zásilkovna - dobírka": 85,
     },
     "freeShippingLimit": 1500
 }
