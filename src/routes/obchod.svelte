@@ -3,6 +3,7 @@
   <meta name="description" content="Stránka s obchodními podmínkami boty-boticky.cz. Zde najdete kontakty kam se obrátit v případě problémů.">
 </svelte:head>
 
+<section class="content">
 <h1>OBCHODNÍ PODMÍNKY</h1>
 <p>
 Obchodní společnost: Ing. Helena Tylová, www.boty-boticky.cz
@@ -273,6 +274,8 @@ HEUREKA - OVĚŘENO ZÁKAZNÍKY  Vaši spokojenost s nákupem zjišťujeme prost
  <p>
 
 Formulář pro odstoupení od kupní smlouvy<br><br>
-<img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/formular.jpg" alt="tabulka velikosti formular reklamace, vrácení stélka">
+<img src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/formular.jpg" alt="tabulka velikosti formular reklamace, vrácení stélka" width="100%">
 
 </p>
+
+</section>

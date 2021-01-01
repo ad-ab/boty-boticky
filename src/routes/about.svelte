@@ -2,8 +2,10 @@
   <title>Doprava | Boty Botičky - Prodej dětských bot</title>
   <meta name="description" content="Více informací o webu boty-boticky.cz.">
 </svelte:head>
+
+<section class="content">
+  <h1>Doprava</h1>
 <p>
-Doprava
 
 
 CENÍK DOPRAVY<br><br>
@@ -29,3 +31,4 @@ V hotovosti na prodejně                                         0,- Kč<br>
 Při nákupu nad 1500,- Kč DOPRAVA ZDARMA<br>
 
 </p>
+</section>

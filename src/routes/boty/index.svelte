@@ -91,7 +91,7 @@
 <div class="card-list">
   {#each filteredProducts as product, index (product.id)}
     {#if index < showCount}
-      <div key={product.id} class="content">
+      <div key={product.id} class="content-boty">
         <Bota {...product} />
       </div>
     {:else}
@@ -143,14 +143,14 @@
     justify-content: center;
   }
 
-  .content {
+  .content-boty {
     padding: 0.5rem;
     width: 350px;
     height: 400px;
   }
 
   @media only screen and (max-width: 674px) {
-    .content {
+    .content-boty {
       padding: 0.4rem 0;
       max-width: 400px;
       width: 100%;

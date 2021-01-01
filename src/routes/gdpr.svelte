@@ -5,6 +5,7 @@
     content="Stránka s gdpr webu boty-boticky.cz. Zde najdete kontakty kam se obrátit v případě problémů." />
 </svelte:head>
 
+<section class="content">
 <h1>GDPR</h1>
 
 <h2>Podmínky ochrany osobních údajů</h2>
@@ -110,3 +111,4 @@
   zveřejní na svých internetových stránkách a zároveň Vám zašle novou verzi
   těchto podmínek Vaši e-mailovou adresu, kterou jste správci poskytl/a.
 </p>
+</section>

@@ -3,6 +3,7 @@
   <meta name="description" content="Stránka vrácení zboží webu boty-boticky.cz. Zde najdete kontakty kam se obrátit v případě problémů.">
 </svelte:head>
 
+<section class="content">
 <h1>Vrácení zboží</h1>
 <p>
 Internetový prodej má jednu zásadní nevýhodu a tou je, že si Vaše dítě obuv nemůže vyzkoušet. Proto jsme pro Vás připravili rady pro výběr obuvi, které Vám pomohou s výběrem správné velikosti. Protože se udávaná velikost může u různých výrobců lišit, doporučujeme vždy před zakoupením nových botiček přeměřit velikost chodidla.
@@ -89,3 +90,4 @@ Vkládejte formulář, prosím, vždy do krabice s vrácenou obuví- nelepte ho 
 Nakupovat můžete jako registrovaný i neregistrovaný zákazník. Po vložení zboží do košíku a vyplnění potřebných údajů dojde k uložení a odeslání objednávky. Po odeslání objednávky Vám přijde automatický e-mail s potvrzením o přijetí objednávky (jedná se o informativní email).
 Poté vyčkejte na další zprávu ve které Vás budeme informovat o dostupnosti zboží. Všechno zboží máme skladem, ale prodáváme přes více obchodů. Proto s platbou vyčkejte na potvrzení objednávky.Po zpracování vaší objednávky Vám pošleme potvrzení o dostupnosti zboží a žádost o uhrazení částky.Při platbě prosím uveďte variabilní symbol číslo objednávky pro rychlejší identifikaci platby. Další e-mail, který od nás obdržíte, je informace o přijetí platby a odeslání zásilky.
 </p>
+</section>

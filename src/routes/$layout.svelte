@@ -50,7 +50,6 @@
     font-size: 0.8rem;
     cursor: pointer;
   }
-  
 
   :global(.button-selected) {
     background-color: rgb(150, 150, 150);
@@ -71,7 +70,7 @@
 
   :global(button:disabled) {
     border: 2px solid darkgray;
-    color:  darkgray;
+    color: darkgray;
     cursor: not-allowed;
   }
 
@@ -84,11 +83,19 @@
   }
 
   :global(h1) {
-    font-size:2rem;
+    font-size: 2rem;
   }
 
   :global(.description img) {
     max-width: 100%;
+  }
+
+  :global(.content) {
+    max-width: 600px;
+    min-width: 400px;
+    width:auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   main {
