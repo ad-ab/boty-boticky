@@ -15,7 +15,7 @@
     <nav><a class="" href="/boty" rel="preload">Boty</a></nav>
 
     <a class="cart" href="/checkout">
-          <img src="kosik.png">
+          <img src="/uvod/kosik.png">
 Košík
       {#if $cartStore.length > 0}
         ({$cartStore.length})
