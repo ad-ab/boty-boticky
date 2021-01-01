@@ -76,7 +76,7 @@ Ing. Helena Tylová, Vlčí 93, 440 01 Chlumčany<br><br>
 
 
 
-Vrátit zboží můžete také přes Zásilkovnu- platí pro zákazníky z ČR i SK. Stačí vyplnit kdo/co vrací (níže je k vytištění formulář k vrácení) a nezapoměňte na číslo účtu. Snadná a levná cesta, jak zboží poslat zpět k nám prostřednictvím Zásilkovny- za tuto službu Vám následně odečteme 60 Kč z vráceného zboží, obsluze stačí nadiktovat kód 97853076 a oni vše vyřídí za Vás. Seznam poboček, kde můžete balík odeslat najdete na www.zasilkovna.cz/pobocky. Zásilkovnu můžete využít, i pokud k Vám balík putoval jiným přepravcem.
+Vrátit zboží můžete také přes Zásilkovnu- platí pro zákazníky z ČR i SK. Stačí vyplnit kdo/co vrací (níže je k vytištění formulář k vrácení) a nezapoměňte na číslo účtu. Snadná a levná cesta, jak zboží poslat zpět k nám prostřednictvím Zásilkovny- za tuto službu Vám následně odečteme 60 Kč z vráceného zboží, obsluze stačí nadiktovat kód 97986275 a oni vše vyřídí za Vás. Seznam poboček, kde můžete balík odeslat najdete na www.zasilkovna.cz/pobocky. Zásilkovnu můžete využít, i pokud k Vám balík putoval jiným přepravcem.
 <br>
 I zde je nutné do balíčku přidat info k vrácení:
 
