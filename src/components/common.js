@@ -1,10 +1,14 @@
 export const isClientSide = typeof window !== "undefined";
 
 // creates a object with the search values from the url
+const excludedParams = ['fbclid'];
 export const getQuery = () => {
   const result = {};
   const query = new URLSearchParams(window.location.search);
-  for (const [key, value] of query) result[key] = value.split(",");
+  for (const [key, value] of query) {
+    if (excludedParams.includes(key)) continue;
+    result[key] = value.split(",");
+  } 
   return result;
 };
 
