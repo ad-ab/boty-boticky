@@ -85,8 +85,8 @@ id|name|brand|gender|season|size|price|photo|descriptionPath
 0085|Holínky Demar Mammut modro-zelené|Demar|Chlapecká|holinky, sněhule|22/23, 24/25, 26/27, 28/29, 30/31, 32/33, 34/35|399|demar/gumaky-mammut/0045.jpg|mammut.txt
 0086|Holínky Demar Mammut červené|Demar|Dívčí|holinky, sněhule|22/23, 24/25, 26/27, 28/29, 30/31, 32/33, 34/35|399|demar/gumaky-mammut/0046.jpg|mammut.txt
 0087|Sněhule Demar červené šněrování Snowmar|Demar|Dívčí|zimní, sněhule|20/21, 22/23, 24/25, 26/27|429|demar/snehule/0047.jpg|snehule_snowmar.txt
-0088|Sněhule Demar Doggy růžové AKCE|Demar|Dívčí|zimní, sněhule|20/21, 22/23, 24/25, 26/27|399|demar/snehule/0048.jpg|snehule_doggy.txt
-0089|Sněhule Demar Doggy fialové AKCE|Demar|Dívčí|zimní, sněhule|20/21, 22/23, 24/25, 26/27|399|demar/snehule/0049.jpg|snehule_doggy.txt
+0088|Sněhule Demar Doggy růžové AKCE|Demar|Dívčí|zimní, sněhule|20/21, 22/23, 24/25, 26/27|380|demar/snehule/0048.jpg|snehule_doggy.txt
+0089|Sněhule Demar Doggy fialové AKCE|Demar|Dívčí|zimní, sněhule|20/21, 22/23, 24/25, 26/27|380|demar/snehule/0049.jpg|snehule_doggy.txt
 0090|Sněhule Demar modré šněrování Snowmar|Demar|Chlapecká|zimní, sněhule|20/21, 22/23, 24/25, 26/27|429|demar/snehule/0050.jpg|snehule_snowmar.txt
 0091|Sněhule Demar luxusní bílé|Demar|Dívčí|zimní, sněhule|20/21, 22/23, 24/25, 26/27|459|demar/snehule/0051.jpg|snehule_furry.txt
 0092|Sněhule Demar luxusní černé|Demar|Uni|zimní, sněhule|20/21, 22/23, 24/25, 26/27, 28/29, 30/31, 32/33, 34/35|459|demar/snehule/0052.jpg|snehule_furry.txt
@@ -140,7 +140,7 @@ id|name|brand|gender|season|size|price|photo|descriptionPath
 0141|Demar sněhule Kenny 2 růžové|Demar|Dívčí|sněhule, zimní|30/31, 32/33, 34/35|499|demar/snehule/0100.jpg|snehule_kenny2.txt
 0142|Demar sněhule Kenny modré tučňák|Demar|Chlapecká|sněhule, zimní|20/21, 22/23, 24/25, 26/27, 28/29|460|demar/snehule/0101.jpg|snehule_kenny.txt
 0143|Demar sněhule Kenny 2 modré|Demar|Chlapecká|sněhule, zimní|30/31, 32/33, 34/35|499|demar/snehule/0102.jpg|snehule_kenny2.txt
-0144|Sněhule Demar Doggy modré AKCE|Demar|Chlapecká|zimní, sněhule|20/21, 22/23, 24/25, 26/27, 28/29|399|demar/snehule/0103.jpg|snehule_doggy.txt
+0144|Sněhule Demar Doggy modré AKCE|Demar|Chlapecká|zimní, sněhule|20/21, 22/23, 24/25, 26/27, 28/29|380|demar/snehule/0103.jpg|snehule_doggy.txt
 0145|Sněhule Demar Little Lamb|Demar|Dívčí|zimní, sněhule|20/21, 22/23, 24/25, 26/27, 28/29|399|demar/snehule/0104.jpg|snehule_lamb.txt
 0146|Sněhule Demar modré zateplené|Demar|Chlapecká|zimní, sněhule|36/37, 38/39|349|demar/snehule/0105.jpg|snehule_damske.txt
 0147|D.D.Step celoroční had svítící 068-65AL|D.D.Step|Dívčí|celoroční|33, 34|759|ddstep/celorocni/0106.jpg|ddstep_sklad.txt
