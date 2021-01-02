@@ -11,6 +11,7 @@
     name="description"
     content="Hlavní stránka prodeje bot. Zde najdete spoustu krásných bot a botiček pro vaše děti a ratolesti" />
 </svelte:head>
+<div><img src="https://www.vyprodej-dovoz.cz/boty/uvod/reklama.png"></div>
 
 <div class="body" />
 
