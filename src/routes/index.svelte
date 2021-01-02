@@ -26,7 +26,7 @@
           alt="bačkory" />
         <ImageLink
           link="https://www.boty-boticky.cz/boty?season=podzim,jaro,holinky&gender=D%C3%ADv%C4%8D%C3%AD"
-          src="/uvod/pokus3.jpg"
+          src="/uvod/pokus4.jpg"
           alt="holínky" />
         <ImageLink
           link="https://www.boty-boticky.cz/boty?season=celoro%C4%8Dn%C3%AD&gender=D%C3%ADv%C4%8D%C3%AD"
