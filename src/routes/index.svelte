@@ -14,7 +14,7 @@
 
 <div class="body" />
 <img src="/boty?season=sn%C4%9Bhule&gender=Chlapeck%C3%A1,D%C3%ADv%C4%8D%C3%AD"
-          src="/uvod/poutac.jpg"
+          src="/uvod/reklama.png"
   />
 
 <section class="first">
