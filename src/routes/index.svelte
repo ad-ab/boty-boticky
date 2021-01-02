@@ -56,7 +56,7 @@
           alt="bačkory" />
         <ImageLink
           link="/boty?season=jaro,podzim,holinky&gender=Chlapecká"
-          src="/uvod/gumaky_kluk.png"
+          src="/uvod/holinky_pokus.jpg"
           alt="holínky" />
         <ImageLink
           link="/boty?season=celoro%C4%8Dn%C3%AD&gender=Chlapeck%C3%A1"
