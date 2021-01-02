@@ -30,7 +30,7 @@
           alt="holínky" />
         <ImageLink
           link="https://www.boty-boticky.cz/boty?season=celoro%C4%8Dn%C3%AD&gender=D%C3%ADv%C4%8D%C3%AD"
-          src="/uvod/celorocni_holka.png"
+          src="/uvod/celorocni_pokus.jpg"
           alt="celoroční" />
 
         <ImageLink
