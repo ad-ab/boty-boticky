@@ -13,6 +13,10 @@
 </svelte:head>
 
 <div class="body" />
+<ImageLink
+          link="/boty?season=sn%C4%9Bhule&gender=Chlapeck%C3%A1,D%C3%ADv%C4%8D%C3%AD"
+          src="/uvod/poutac.jpg"
+          alt="holínky" />
 
 <section class="first">
   <div class="inner">
