@@ -44,7 +44,7 @@
 
         <ImageLink
           link="https://www.boty-boticky.cz/boty?season=leto&gender=D%C3%ADv%C4%8D%C3%AD"
-          src="/uvod/letni_holka2.png"
+          src="/uvod/letni_holcicka.jpg"
           alt="letní" />
       </nav>
     </div>
