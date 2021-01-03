@@ -53,7 +53,7 @@
       <nav>
         <ImageLink
           link="/boty?season=ba%C4%8Dkory&gender=Chlapeck%C3%A1"
-          src="/uvod/backory_kluk.png"
+          src="/uvod/backory_pokus2.jpg"
           alt="bačkory" />
         <ImageLink
           link="/boty?season=jaro,podzim,holinky&gender=Chlapecká"
