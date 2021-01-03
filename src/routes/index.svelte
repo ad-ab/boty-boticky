@@ -35,7 +35,7 @@
 
         <ImageLink
           link="https://www.boty-boticky.cz/boty?season=sn%C4%9Bhule,zimn%C3%AD&gender=D%C3%ADv%C4%8D%C3%AD"
-          src="/uvod/divci_snehule2.png"
+          src="/uvod/snehule_pokus.jpg"
           alt="zimní" />
         <ImageLink
           link="https://www.boty-boticky.cz/boty?season=tenisky&gender=D%C3%ADv%C4%8D%C3%AD"
