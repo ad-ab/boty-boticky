@@ -65,7 +65,7 @@
           alt="celoroční" />
         <ImageLink
           link="/boty?season=sněhule,zima,zimní&gender=Chlapecká"
-          src="/uvod/snehule_kluk.png"
+          src="/uvod/pokus_snehule.jpg"
           alt="zimní" />
         <ImageLink
           link="/boty?season=tenisky&gender=Chlapeck%C3%A1"
