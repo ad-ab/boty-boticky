@@ -11,9 +11,9 @@
     name="description"
     content="Hlavní stránka prodeje bot. Zde najdete spoustu krásných bot a botiček pro vaše děti a ratolesti" />
 </svelte:head>
+<p><img src="https://www.vyprodej-dovoz.cz/boty/uvod/reklama.png"></p>
 
 <div class="body" />
-<p><img src="https://www.vyprodej-dovoz.cz/boty/uvod/reklama.png"></p>
 
 <section class="first">
   <div class="inner">
@@ -73,7 +73,7 @@
           alt="tenisky" />
         <ImageLink
           link="/boty?season=leto&gender=Chlapeck%C3%A1"
-          src="/uvod/letni_kluk.png"
+          src="/uvod/letni_kluk.jpg"
           alt="letní" />
       </nav>
     </div>
