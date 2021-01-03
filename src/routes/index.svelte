@@ -22,7 +22,7 @@
       <nav>
         <ImageLink
           link="https://www.boty-boticky.cz/boty?season=ba%C4%8Dkory&gender=D%C3%ADv%C4%8D%C3%AD"
-          src="/uvod/domaci_holka2.png"
+          src="/uvod/backory_pokus.jpg"
           alt="bačkory" />
         <ImageLink
           link="https://www.boty-boticky.cz/boty?season=podzim,jaro,holinky&gender=D%C3%ADv%C4%8D%C3%AD"
