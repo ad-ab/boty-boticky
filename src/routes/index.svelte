@@ -11,12 +11,12 @@
     name="description"
     content="Hlavní stránka prodeje bot. Zde najdete spoustu krásných bot a botiček pro vaše děti a ratolesti" />
 </svelte:head>
-<p><img src="https://www.vyprodej-dovoz.cz/boty/uvod/reklama.png"></p>
 
 <div class="body" />
 
 <section class="first">
-  <div class="inner">
+  <div class="inner"><p><img src="https://www.vyprodej-dovoz.cz/boty/uvod/reklama.png"></p>
+
     <div class="column">
       <h2>Dívčí obuv</h2>
       <nav>
