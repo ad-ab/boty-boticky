@@ -39,7 +39,7 @@
           alt="zimní" />
         <ImageLink
           link="https://www.boty-boticky.cz/boty?season=tenisky&gender=D%C3%ADv%C4%8D%C3%AD"
-          src="/uvod/divci_tenisky2.png"
+          src="/uvod/tenisky.jpg"
           alt="tenisky" />
 
         <ImageLink
