@@ -61,7 +61,7 @@
           alt="holínky" />
         <ImageLink
           link="/boty?season=celoro%C4%8Dn%C3%AD&gender=Chlapeck%C3%A1"
-          src="/uvod/celorocni_kluk.png"
+          src="/uvod/celoroc.jpg"
           alt="celoroční" />
         <ImageLink
           link="/boty?season=sněhule,zima,zimní&gender=Chlapecká"
