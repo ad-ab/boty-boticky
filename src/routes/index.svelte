@@ -69,7 +69,7 @@
           alt="zimní" />
         <ImageLink
           link="/boty?season=tenisky&gender=Chlapeck%C3%A1"
-          src="/uvod/tenisky_kluk.png"
+          src="/uvod/tenisky_kluk.jpg"
           alt="tenisky" />
         <ImageLink
           link="/boty?season=leto&gender=Chlapeck%C3%A1"
