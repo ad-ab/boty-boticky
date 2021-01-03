@@ -15,7 +15,7 @@
 <div class="body" />
 
 <section class="first">
-  <div class="inner"><p><img src="https://www.vyprodej-dovoz.cz/boty/uvod/reklama.png"></p>
+  <div class="inner">
 
     <div class="column">
       <h2>Dívčí obuv</h2>
