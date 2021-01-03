@@ -13,7 +13,7 @@
 </svelte:head>
 
 <div class="body" />
-<div><img src="https://www.vyprodej-dovoz.cz/boty/uvod/reklama.png"></div>
+<p><img src="https://www.vyprodej-dovoz.cz/boty/uvod/reklama.png"></p>
 
 <section class="first">
   <div class="inner">
