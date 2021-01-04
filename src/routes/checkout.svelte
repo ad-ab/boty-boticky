@@ -106,7 +106,7 @@
 
       <h1>Objednávka</h1>
     </div>
-    <p>*Prosím nezadávejte skutečná data, tato stránka je pouze zkušební</p><br>Pro objednávku do Německa zadávejte prosím adresu výdejního místa Hermes<br>
+   <br>Pro objednávku do Německa zadávejte prosím adresu výdejního místa Hermes<br>
     <Order
       cart={$cartStore}
       shipping={selectedShipping}
