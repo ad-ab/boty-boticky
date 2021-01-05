@@ -39,7 +39,7 @@
   <div class="card">
     <div class="img">
       <img
-        src="https://www.vyprodej-dovoz.cz/boty/boty-fotky/{product.photo}"
+        src="http://faktury.boty-boticky.cz/domains/vyprodej-dovoz/boty/boty-fotky/{product.photo}"
         alt={product.name}
         style="width:100%" />
     </div>
