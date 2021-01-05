@@ -24,7 +24,7 @@
         height="190"
         width="190"
         loading="auto"
-        src="http://boty-boticky.cz/domains/vyprodej-dovoz/boty/boty-fotky/{photo}"
+        src="http://faktury.boty-boticky.cz/domains/vyprodej-dovoz/boty/boty-fotky/{photo}"
         alt={name} />
       <div class="brand">{brand}</div>
     </div>
